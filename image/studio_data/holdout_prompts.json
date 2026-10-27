@@ -1,0 +1,426 @@
+{
+ "in_niche": {
+  "restaurant-italian": [
+   "wood fired pizza on a wooden board",
+   "plate of spaghetti carbonara with red wine",
+   "cosy Italian trattoria, candles, checkered tablecloth, warm evening glow",
+   "margherita pizza with fresh basil, rustic dark wood table",
+   "mere pizza aur pasta restaurant ke liye ek photo chahiye",
+   "पिज़्ज़ा और पास्ता वाले रेस्टोरेंट की तस्वीर"
+  ],
+  "cafe": [
+   "latte art in a white cup",
+   "coffee shop with laptop and croissant on table",
+   "warm cosy cafe, brown tones, steaming cappuccino by the window",
+   "moody dark coffee bar with espresso machine and hanging bulbs",
+   "meri coffee shop ke liye ek achhi si photo",
+   "कॉफी शॉप की तस्वीर जिसमें लैटे आर्ट बना हो"
+  ],
+  "bakery": [
+   "fresh baked bread loaves in a basket",
+   "cakes and pastries in a bakery display",
+   "golden baguettes just out of the oven, warm morning light",
+   "pastel pink cupcakes and cream cakes on a marble counter",
+   "meri bakery ke liye fresh bread aur cake ki photo",
+   "a shop where ovens bake loaves and pastries every dawn"
+  ],
+  "indian-thali": [
+   "Indian thali with dal, sabzi, roti and rice",
+   "full veg thali on a steel plate",
+   "colourful traditional thali, bright yellow dal, hot rotis, homely mood",
+   "rustic dhaba style thali served on banana leaf, warm earthy tones",
+   "mere dhabe ke liye dal roti sabzi wali thali ki photo",
+   "खाने की थाली जिसमें दाल, सब्ज़ी, रोटी और चावल हो"
+  ],
+  "fast-food": [
+   "burger and fries with a cola",
+   "cheeseburger meal on a tray",
+   "juicy double burger, golden fries, bright red and yellow colours",
+   "greasy late night fast food combo, neon lights, cola cup",
+   "mere burger joint ke liye picture chahiye, fries aur cola ke saath",
+   "बर्गर, फ्राइज़ और कोल्ड ड्रिंक वाली तस्वीर"
+  ],
+  "ice-cream": [
+   "ice cream cones in different flavours",
+   "chocolate sundae with cherry on top",
+   "pastel pink and mint ice cream scoops, cheerful summer mood",
+   "colourful gelato parlour counter with waffle cones",
+   "meri ice cream parlour ke liye ek mast picture",
+   "ठंडी मलाईदार आइसक्रीम के कोन की फोटो"
+  ],
+  "juice-bar": [
+   "fresh orange juice glasses on a table",
+   "smoothie bar with blended fruit drinks",
+   "vibrant green smoothie with kiwi and spinach, bright healthy mood",
+   "colourful fruit juices in tall glasses, sunny tropical vibe",
+   "mere juice center ke liye fresh fruit juice ki photo",
+   "ताज़े फलों का रस और स्मूदी की दुकान"
+  ],
+  "sweet-shop": [
+   "laddu and jalebi in a plate",
+   "indian mithai box with assorted sweets",
+   "festive sweet shop display, golden jalebi, saffron laddus, warm diwali glow",
+   "trays of colourful barfi and gulab jamun, bright festive mood",
+   "meri mithai ki dukaan ke liye picture",
+   "त्योहार पर बँटने वाली मिठाइयाँ, लड्डू और जलेबी"
+  ],
+  "sushi": [
+   "sushi platter with salmon nigiri and rolls",
+   "japanese sushi restaurant chef preparing rolls",
+   "minimal black slate with fresh sashimi, soy sauce, calm elegant mood",
+   "colourful maki rolls with chopsticks, moody dark background",
+   "mere sushi restaurant ke liye ek photo chahiye",
+   "कच्ची मछली और चावल के रोल वाला जापानी रेस्टोरेंट"
+  ],
+  "kurti-store": [
+   "women wearing printed cotton kurtis",
+   "kurti collection on hangers in a store",
+   "pastel floral kurtis, soft pink and mint, elegant ethnic look",
+   "colourful ethnic wear boutique rack with embroidered kurtis, festive mood",
+   "meri kurti ki dukaan ke liye model photo",
+   "औरतों के लिए रंगीन कढ़ाई वाले कुर्ते की दुकान"
+  ],
+  "saree-boutique": [
+   "silk saree draped on a mannequin",
+   "woman in red banarasi saree",
+   "rich maroon and gold silk sarees, royal traditional mood",
+   "colourful sarees folded on shelves in a boutique, warm lights",
+   "meri saree boutique ke liye picture chahiye",
+   "नौ गज़ की रेशमी साड़ी पहने महिला"
+  ],
+  "shoe-store": [
+   "white sneakers on a shelf",
+   "leather formal shoes in a shop",
+   "bright neon running sneakers on a dark background, energetic vibe",
+   "polished brown leather shoes, classic elegant mood",
+   "mere shoe shop ke liye sneakers ki photo",
+   "पैरों में पहनने वाले जूतों की दुकान, स्पोर्ट्स और चमड़े वाले"
+  ],
+  "jewellery": [
+   "gold necklace on black velvet",
+   "diamond rings in a display case",
+   "bridal gold jewellery set glowing in warm light, luxury mood",
+   "elegant silver earrings and pendant on soft cream background",
+   "meri jewellery shop ke liye sone ke gehne ki photo",
+   "सोने के हार और अंगूठियों की दुकान"
+  ],
+  "grocery": [
+   "kirana store shelves full of groceries",
+   "supermarket aisle with shopping cart",
+   "fresh vegetables and fruits in baskets, bright green and cheerful",
+   "neighbourhood general store, packed shelves of rice, dal and flour, warm light",
+   "meri kirana dukaan ke liye picture",
+   "राशन, सब्ज़ी और रोज़ का सामान बेचने वाली दुकान"
+  ],
+  "bookstore": [
+   "shelves full of books",
+   "bookstore with a reading corner",
+   "cosy old library, wooden shelves, warm lamp light, quiet mood",
+   "colourful stack of novels on a table, bookshop in autumn",
+   "meri book shop ke liye kitabon ki photo",
+   "किताबों से भरी अलमारियाँ और पढ़ने की जगह"
+  ],
+  "florist": [
+   "bouquet of red roses",
+   "flower shop with fresh bouquets",
+   "pastel peonies and tulips in a rustic vase, soft romantic mood",
+   "bright sunflowers and marigolds in buckets, cheerful spring colours",
+   "meri flower shop ke liye gulab ke bouquet ki photo",
+   "ताज़े फूलों के गुलदस्ते बनाने वाली दुकान"
+  ],
+  "toy-store": [
+   "colourful toys on a shelf",
+   "kids toy shop with teddy bears and blocks",
+   "bright rainbow building blocks and plush toys, playful happy mood",
+   "wooden toys and toy cars for children on a pastel background",
+   "mere toy store ke liye bacchon ke khilone ki photo",
+   "बच्चों के खिलौनों की दुकान, टेडी और गाड़ियाँ"
+  ],
+  "dental": [
+   "dentist treating a patient",
+   "dentist chair with overhead light",
+   "clean modern dental clinic, soft blue and white, calming mood",
+   "child getting braces checked, friendly bright office",
+   "mere dental clinic ke liye daanton ki photo",
+   "दाँतों की सफ़ाई और इलाज करने वाला डॉक्टर"
+  ],
+  "clinic-doctor": [
+   "doctor with stethoscope examining a patient",
+   "family physician in a clinic room",
+   "friendly doctor in white coat, soft green clinic, reassuring mood",
+   "calm consultation room with desk and blood pressure monitor, light blue",
+   "mere doctor clinic ke liye photo chahiye",
+   "बुखार और सामान्य बीमारी के लिए मरीज़ देखते डॉक्टर"
+  ],
+  "pharmacy": [
+   "pharmacist behind medicine counter",
+   "shelves of medicines and tablets",
+   "clean chemist shop, green cross sign, trustworthy fresh mood",
+   "white and green pharmacy shelves with bottles and strips of pills",
+   "meri medical store ke liye dawai ki photo",
+   "दवाइयों की दुकान जहाँ केमिस्ट पर्ची देखकर दवा देता है"
+  ],
+  "gym": [
+   "dumbbells on a rack",
+   "man lifting weights in a gym",
+   "dark gym, kettlebells and barbell, dramatic orange light, intense mood",
+   "bright modern fitness studio with treadmills, energetic blue tones",
+   "meri gym ke liye workout ki photo",
+   "कसरत करने और बॉडी बनाने की जगह जहाँ वज़न उठाते हैं"
+  ],
+  "yoga": [
+   "woman doing yoga pose on a mat",
+   "meditation in a quiet studio",
+   "peaceful yoga studio at sunrise, soft beige and warm glow",
+   "group yoga class in lotus pose, calm green plants, serene mood",
+   "mere yoga class ke liye shanti wali photo",
+   "सुबह ध्यान और आसन करते लोग"
+  ],
+  "spa": [
+   "massage therapy with hot stones",
+   "spa room with candles and towels",
+   "relaxing spa, soft candlelight, orchids, warm calm mood",
+   "zen wellness retreat with towels and essential oils, neutral tones",
+   "meri spa ke liye massage ki relaxing photo",
+   "थकान उतारने के लिए मालिश और सुगंधित मोमबत्तियाँ"
+  ],
+  "salon": [
+   "hairdresser styling a woman's hair",
+   "beauty salon chairs and mirrors",
+   "chic pink salon interior, glamorous mood, hair colour",
+   "woman getting a facial and haircut, soft rose gold tones",
+   "meri beauty parlour ke liye hair styling ki photo",
+   "बाल कटवाने और सँवारने वाला ब्यूटी पार्लर"
+  ],
+  "barber": [
+   "barber shaving a man's beard",
+   "barber shop chair and razor",
+   "vintage barbershop, dark wood, red leather chair, classic mood",
+   "man getting beard trim, moody warm lighting",
+   "meri barber shop ke liye dadhi aur shave ki photo",
+   "दाढ़ी बनाने और पुरुषों के बाल काटने की दुकान"
+  ],
+  "pet-clinic": [
+   "vet examining a dog",
+   "cat at the veterinary clinic",
+   "friendly animal hospital, puppy with stethoscope, soft teal calm mood",
+   "veterinarian checking a rabbit, bright caring atmosphere",
+   "mere pet clinic ke liye kutte ki photo",
+   "बीमार पालतू जानवरों का इलाज करने वाला अस्पताल"
+  ],
+  "saas": [
+   "analytics dashboard on a laptop screen",
+   "software dashboard with charts",
+   "sleek dark mode dashboard with glowing blue graphs, modern tech mood",
+   "clean purple gradient SaaS interface showing metrics and growth charts",
+   "mere software product ke liye dashboard ki picture",
+   "कंप्यूटर स्क्रीन पर चार्ट और आँकड़ों वाला सॉफ़्टवेयर"
+  ],
+  "mobile-app": [
+   "smartphone showing an app screen",
+   "mobile app development team coding",
+   "floating phones with colourful app interfaces, gradient background, modern mood",
+   "developer designing app screens on a phone mockup, bright teal",
+   "mujhe apni mobile app company ke liye picture chahiye",
+   "फ़ोन के लिए ऐप बनाने वाले डेवलपर्स"
+  ],
+  "ecommerce": [
+   "parcels and boxes with a laptop for online shopping",
+   "online store shopping cart on screen",
+   "colourful shopping bags and delivery boxes, cheerful online store mood",
+   "person ordering products on phone, orange cart icon, bright background",
+   "meri online store ke liye shopping parcel ki photo",
+   "घर बैठे ऑनलाइन सामान ऑर्डर करना और पार्सल आना"
+  ],
+  "digital-agency": [
+   "marketing team brainstorming at a table",
+   "creative agency office with designers",
+   "colourful social media icons and strategy board, energetic creative mood",
+   "digital marketing campaign on laptop, bold magenta and yellow",
+   "meri digital marketing agency ke liye team photo",
+   "कंपनियों का सोशल मीडिया और विज्ञापन संभालने वाली एजेंसी"
+  ],
+  "accounting-finance": [
+   "accountant with calculator and tax papers",
+   "financial documents and spreadsheet on a desk",
+   "professional finance office, navy blue and grey, trustworthy mood",
+   "chartered accountant reviewing balance sheets, calm neutral tones",
+   "meri CA firm ke liye tax filing ki photo",
+   "हिसाब किताब और इनकम टैक्स रिटर्न भरने वाला दफ़्तर"
+  ],
+  "law-firm": [
+   "lawyer with law books and gavel",
+   "advocate in a courtroom",
+   "serious law office, dark wood, golden scales of justice, formal mood",
+   "attorney signing legal contract, deep navy and gold",
+   "meri law firm ke liye vakeel ki photo",
+   "अदालत में मुकदमा लड़ने वाला वकील"
+  ],
+  "school": [
+   "classroom with students at desks",
+   "children in school uniform",
+   "bright cheerful classroom, colourful posters, happy kids learning",
+   "teacher at blackboard, warm sunlight, nostalgic school mood",
+   "mere school ke liye bachon ki classroom photo",
+   "बच्चे जहाँ रोज़ सुबह यूनिफ़ॉर्म पहनकर पढ़ने जाते हैं"
+  ],
+  "coaching-tuition": [
+   "students preparing for competitive exams",
+   "tuition class with teacher and whiteboard",
+   "focused students with notes and books, exam prep, calm blue study mood",
+   "coaching institute classroom, motivated teens, bright energetic colours",
+   "mere coaching institute ke liye exam preparation ki photo",
+   "JEE और NEET की तैयारी करने वाले विद्यार्थी"
+  ],
+  "real-estate": [
+   "houses for sale with a sold sign",
+   "modern apartment building exterior",
+   "luxury villa with pool at sunset, warm golden mood",
+   "handing over house keys, new home, bright cheerful",
+   "mere property dealer ke liye ghar ki photo",
+   "मकान और फ़्लैट बेचने खरीदने वाला प्रॉपर्टी का कारोबार"
+  ],
+  "interior-design": [
+   "stylish living room with sofa",
+   "interior designer with fabric swatches",
+   "cosy scandinavian living room, beige tones, soft natural light",
+   "luxury bedroom decor in deep green and gold, elegant mood",
+   "mere interior design studio ke liye drawing room ki photo",
+   "घर के अंदर की सजावट और फ़र्नीचर का डिज़ाइन"
+  ],
+  "construction": [
+   "construction workers on a building site",
+   "crane and concrete building under construction",
+   "yellow excavator at sunrise on a big building project, rugged mood",
+   "engineers with hard hats and blueprints, orange and grey",
+   "meri construction company ke liye building site ki photo",
+   "सीमेंट और ईंट से इमारत बनाने वाला ठेकेदार"
+  ],
+  "plumbing": [
+   "plumber fixing a pipe under the sink",
+   "wrench and copper pipes",
+   "plumber repairing a leaking tap, clean blue tones, reliable mood",
+   "bathroom pipe fitting with tools, bright and tidy",
+   "mere plumber business ke liye nal pipe ki photo",
+   "नल और पाइप की लीकेज ठीक करने वाला मिस्त्री"
+  ],
+  "electrician": [
+   "electrician working on wiring",
+   "electrical switch board with wires",
+   "electrician with voltmeter, bright yellow and black, safe professional mood",
+   "colourful cables and circuit breaker panel, dark background",
+   "mere electrician ke kaam ke liye wiring ki photo",
+   "बिजली के तार और स्विच बोर्ड ठीक करने वाला"
+  ],
+  "cleaning": [
+   "cleaner mopping a floor",
+   "housekeeping staff cleaning a room",
+   "sparkling clean kitchen with bright fresh light, lemon yellow accents",
+   "team in uniform with mops and spray bottles, fresh blue mood",
+   "meri safai service ke liye cleaning ki photo",
+   "घर और दफ़्तर में झाड़ू पोछा करने वाली सर्विस"
+  ],
+  "solar-energy": [
+   "solar panels on a rooftop",
+   "wind turbines and solar farm",
+   "blue solar panels under bright sun, clean green energy mood",
+   "engineer installing solar panel at golden sunset",
+   "meri solar company ke liye rooftop panel ki photo",
+   "सूरज की रोशनी से बिजली बनाने वाले पैनल"
+  ],
+  "agriculture-farm": [
+   "tractor ploughing a field",
+   "farmer in a wheat field",
+   "green crop rows under golden morning light, peaceful rural mood",
+   "red tractor in a lush farm, blue sky",
+   "meri kheti ke liye khet ki photo",
+   "किसान खेत में फसल उगाते और काटते हुए"
+  ],
+  "car-repair": [
+   "mechanic repairing a car engine",
+   "car garage with a lifted vehicle",
+   "dark workshop with tools, orange light, grease and grit mood",
+   "mechanic checking under the hood, blue overalls, bright garage",
+   "mere garage ke liye gaadi ki repair ki photo",
+   "ख़राब गाड़ी को ठीक करने वाला मैकेनिक"
+  ],
+  "car-wash": [
+   "car being washed with foam",
+   "car detailing and polishing",
+   "shiny black car covered in white foam, glossy blue water spray",
+   "glossy red car after detailing, sparkling clean mood",
+   "meri car wash center ke liye gaadi dhulai ki photo",
+   "गाड़ी की धुलाई और चमकाने वाली सर्विस"
+  ],
+  "car-showroom": [
+   "new cars in a dealership showroom",
+   "sports car on display in glass showroom",
+   "bright showroom with shiny white SUVs, premium modern mood",
+   "red luxury car under spotlight, elegant dark showroom",
+   "meri car showroom ke liye nayi gaadiyon ki photo",
+   "नई गाड़ियाँ बेचने वाला बड़ा शोरूम"
+  ],
+  "photography": [
+   "photographer holding a camera",
+   "photo studio with lights and backdrop",
+   "moody dark studio, softbox lighting, camera on tripod",
+   "photographer shooting portrait in golden hour, warm dreamy mood",
+   "meri photography ke liye camera ki photo",
+   "तस्वीरें खींचने वाला फ़ोटोग्राफ़र कैमरे के साथ"
+  ],
+  "wedding": [
+   "wedding mandap with flowers",
+   "indian wedding stage decoration",
+   "red and gold shaadi mandap, marigold garlands, festive royal mood",
+   "pastel floral wedding mandap by the lake at dusk",
+   "meri shaadi ki decoration ke liye mandap ki photo",
+   "शादी का मंडप फूलों और रोशनी से सजा हुआ"
+  ],
+  "event-party": [
+   "birthday party decoration with balloons",
+   "event planner setting up party tables",
+   "colourful balloons and streamers, cheerful celebration mood",
+   "gold and black party backdrop with confetti, glam night",
+   "meri event planning company ke liye birthday party ki photo",
+   "जन्मदिन की पार्टी में गुब्बारे और सजावट"
+  ],
+  "travel-agency": [
+   "tourists with suitcases at an airport",
+   "holiday tour package beach destination",
+   "tropical beach with turquoise water, relaxing holiday mood",
+   "passport, map and plane tickets on desk, adventurous orange tones",
+   "meri travel agency ke liye holiday tour ki photo",
+   "घूमने जाने के लिए टिकट और टूर पैकेज बुक करने वाला दफ़्तर"
+  ],
+  "logistics": [
+   "delivery truck at a warehouse",
+   "courier man delivering a parcel",
+   "busy warehouse with stacked boxes and forklift, orange and grey industrial mood",
+   "cargo trucks on highway at dusk, fast delivery",
+   "meri courier company ke liye godown ki photo",
+   "माल को एक शहर से दूसरे शहर पहुँचाने वाली ट्रांसपोर्ट कंपनी"
+  ]
+ },
+ "off_niche": [
+  "scuba diving school underwater coral reef",
+  "hot air balloons floating over green valleys",
+  "blacksmith forging a glowing sword",
+  "pottery workshop with clay on a spinning wheel",
+  "ski resort with snowy slopes and chairlift",
+  "pirate ship sailing in a stormy sea",
+  "rocket launching from a space station at night",
+  "floodlit cricket stadium during a match",
+  "ballet dance academy girls on stage",
+  "bowling alley with neon lights",
+  "casino poker table with chips",
+  "skateboard park with graffiti walls",
+  "fishing boat on a misty lake at dawn",
+  "circus tent with acrobats and clowns",
+  "robot arm in a futuristic laboratory",
+  "bird watching in a dense rainforest",
+  "meri paragliding company ke liye pahaadon ki picture",
+  "मेरी पॉटरी की कार्यशाला के लिए चित्र",
+  "vintage vinyl record shop with turntables",
+  "lighthouse on a rocky cliff in a storm"
+ ]
+}

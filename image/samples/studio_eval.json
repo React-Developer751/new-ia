@@ -1,0 +1,172 @@
+{
+  "niches": 50,
+  "matching_keywords_only": {
+    "correct": 228,
+    "fallback": 67,
+    "wrong": 5,
+    "total": 300,
+    "off_niche_wrong": 1,
+    "wrong_examples": [
+      [
+        "बीमार पालतू जानवरों का इलाज करने वाला अस्पताल",
+        "pet-clinic",
+        "clinic-doctor"
+      ],
+      [
+        "हिसाब किताब और इनकम टैक्स रिटर्न भरने वाला दफ़्तर",
+        "accounting-finance",
+        "bookstore"
+      ],
+      [
+        "luxury bedroom decor in deep green and gold, elegant mood",
+        "interior-design",
+        "jewellery"
+      ],
+      [
+        "सूरज की रोशनी से बिजली बनाने वाले पैनल",
+        "solar-energy",
+        "electrician"
+      ],
+      [
+        "glossy red car after detailing, sparkling clean mood",
+        "car-wash",
+        "cleaning"
+      ]
+    ]
+  },
+  "matching_with_model": {
+    "correct": 291,
+    "fallback": 9,
+    "wrong": 0,
+    "total": 300,
+    "off_niche_wrong": 0,
+    "wrong_examples": []
+  },
+  "pictures": {
+    "right": 147,
+    "fallback": 3,
+    "wrong": 0,
+    "total": 150,
+    "off_niche_fallback": 60,
+    "off_niche_wrong": 0,
+    "wrong_examples": []
+  },
+  "colour_holdout": {
+    "images": 50,
+    "trained_rmse": 34.0,
+    "average_image_rmse": 59.2,
+    "untrained_rmse": 63.0
+  },
+  "sets": [
+    {
+      "niche": "restaurant-italian",
+      "seconds": 7.86,
+      "min_distance": 16,
+      "palette_family": 0.961,
+      "hero_contrast": 4.8,
+      "hero_bytes": 33105,
+      "max_tile_bytes": 24676,
+      "redrawn": 0,
+      "judge_ok": true
+    },
+    {
+      "niche": "gym",
+      "seconds": 8.19,
+      "min_distance": 24,
+      "palette_family": 0.892,
+      "hero_contrast": 4.83,
+      "hero_bytes": 29610,
+      "max_tile_bytes": 21798,
+      "redrawn": 0,
+      "judge_ok": true
+    },
+    {
+      "niche": "dental",
+      "seconds": 6.88,
+      "min_distance": 24,
+      "palette_family": 0.917,
+      "hero_contrast": 4.62,
+      "hero_bytes": 34177,
+      "max_tile_bytes": 17598,
+      "redrawn": 0,
+      "judge_ok": true
+    },
+    {
+      "niche": "saas",
+      "seconds": 7.21,
+      "min_distance": 16,
+      "palette_family": 0.887,
+      "hero_contrast": 6.17,
+      "hero_bytes": 34890,
+      "max_tile_bytes": 20750,
+      "redrawn": 0,
+      "judge_ok": true
+    },
+    {
+      "niche": "kurti-store",
+      "seconds": 7.16,
+      "min_distance": 20,
+      "palette_family": 0.868,
+      "hero_contrast": 4.89,
+      "hero_bytes": 44960,
+      "max_tile_bytes": 24906,
+      "redrawn": 0,
+      "judge_ok": true
+    },
+    {
+      "niche": "salon",
+      "seconds": 6.71,
+      "min_distance": 18,
+      "palette_family": 0.943,
+      "hero_contrast": 4.9,
+      "hero_bytes": 36448,
+      "max_tile_bytes": 21369,
+      "redrawn": 0,
+      "judge_ok": true
+    },
+    {
+      "niche": "bakery",
+      "seconds": 8.44,
+      "min_distance": 14,
+      "palette_family": 0.934,
+      "hero_contrast": 4.86,
+      "hero_bytes": 41743,
+      "max_tile_bytes": 23823,
+      "redrawn": 0,
+      "judge_ok": true
+    },
+    {
+      "niche": "yoga",
+      "seconds": 7.62,
+      "min_distance": 20,
+      "palette_family": 0.866,
+      "hero_contrast": 4.59,
+      "hero_bytes": 28902,
+      "max_tile_bytes": 16428,
+      "redrawn": 0,
+      "judge_ok": true
+    },
+    {
+      "niche": "real-estate",
+      "seconds": 7.14,
+      "min_distance": 14,
+      "palette_family": 0.851,
+      "hero_contrast": 4.91,
+      "hero_bytes": 36371,
+      "max_tile_bytes": 23818,
+      "redrawn": 0,
+      "judge_ok": true
+    },
+    {
+      "niche": "school",
+      "seconds": 6.39,
+      "min_distance": 24,
+      "palette_family": 0.757,
+      "hero_contrast": 4.82,
+      "hero_bytes": 42853,
+      "max_tile_bytes": 22722,
+      "redrawn": 0,
+      "judge_ok": true
+    }
+  ]
+}

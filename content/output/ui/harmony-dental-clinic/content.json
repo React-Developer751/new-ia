@@ -1,0 +1,203 @@
+{
+  "brand": "Harmony Dental Clinic",
+  "niche": "care",
+  "kind": "health",
+  "profile": "dental",
+  "business_type": "dental",
+  "type_label": "Dental Clinic",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "calm",
+  "keywords": [
+    "pune",
+    "braces",
+    "implants",
+    "subah",
+    "shaam",
+    "tak"
+  ],
+  "eyebrow": "Dental Clinic · Pune",
+  "location": "Pune",
+  "audience": "",
+  "hero_heading": "Braces and implants, gentle and unhurried",
+  "tagline": "No pressure, no jargon, just a clear plan.",
+  "about_title": "About us",
+  "about": [
+    "We treat implants and braces in Pune. We'd rather you knew exactly what to expect.",
+    "You'll find us in Pune, open 9am to 6pm. Tell us who it is for and we'll suggest options."
+  ],
+  "features_title": "Care we offer",
+  "features": [
+    {
+      "title": "Braces",
+      "text": "If braces is on your mind, book a visit and we'll talk it through."
+    },
+    {
+      "title": "Implants",
+      "text": "Message us about implants; we reply to every enquiry."
+    },
+    {
+      "title": "Aligners",
+      "text": "Clear trays that move teeth step by step. Bring your questions about Aligners."
+    },
+    {
+      "title": "Extractions",
+      "text": "Removing a tooth that cannot be saved."
+    },
+    {
+      "title": "Whitening",
+      "text": "Not sure if Whitening is right for you? A consultation will tell you."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Opening hours",
+      "text": "Hours: 9am to 6pm. Drop by or send a message."
+    },
+    {
+      "title": "Clear next steps",
+      "text": "You'll know what comes next."
+    },
+    {
+      "title": "Follow-up included",
+      "text": "We check in after treatment."
+    }
+  ],
+  "stats_title": "Find us",
+  "stats": [
+    {
+      "value": "Pune",
+      "label": "Where we work"
+    },
+    {
+      "value": "9am to 6pm",
+      "label": "Open"
+    }
+  ],
+  "steps_title": "What happens next",
+  "steps": [
+    {
+      "title": "Tell us your concern",
+      "text": "Share what's been bothering you at the time of booking."
+    },
+    {
+      "title": "Meet the team",
+      "text": "We examine, explain your options and answer questions."
+    },
+    {
+      "title": "Agree a plan",
+      "text": "Choose the treatment that suits you, then follow-up as needed."
+    }
+  ],
+  "faq_title": "Before you ask",
+  "faq": [
+    {
+      "q": "When are you open?",
+      "a": "Our hours are 9am to 6pm."
+    },
+    {
+      "q": "Where are you?",
+      "a": "Find us in Pune. Message us and we'll send directions."
+    },
+    {
+      "q": "Can I ask about braces?",
+      "a": "Yes; let us know what you'd like to know about braces."
+    },
+    {
+      "q": "Can I change my plans?",
+      "a": "Tell us as early as you can and we will look at what's possible."
+    }
+  ],
+  "blog_title": "Our notes",
+  "blog": [
+    {
+      "title": "Braces and implants: how they differ",
+      "excerpt": "A plain-language comparison."
+    },
+    {
+      "title": "What a fair price looks like",
+      "excerpt": "Questions that make quotes easier to compare."
+    },
+    {
+      "title": "How to prepare for braces",
+      "excerpt": "Simple steps to take before you arrive."
+    }
+  ],
+  "contact": {
+    "place": "Pune",
+    "hours": [
+      "9am to 6pm"
+    ]
+  },
+  "cta_primary": "Book an appointment",
+  "cta_secondary": "Call the clinic",
+  "cta_text": "Bring your questions about braces.",
+  "cta_title": "Tell us what you need",
+  "footer": "© Harmony Dental Clinic. All rights reserved.",
+  "offers": [],
+  "hours": "9am to 6pm",
+  "prices": [],
+  "facts_used": {
+    "city": {
+      "value": "Pune",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "braces",
+        "implants"
+      ],
+      "source": "prompt"
+    },
+    "hours": {
+      "value": "9am to 6pm",
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "name",
+    "offers",
+    "prices",
+    "phone",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "dental (confidence high)",
+    "items_from_prompt": [
+      "braces",
+      "implants"
+    ],
+    "place": "Pune",
+    "mode": "typical offerings fill gaps",
+    "copy": "frames + user phrases",
+    "profile": "dental",
+    "kind": "health"
+  },
+  "needs_review": [
+    "No business name was given; 'Harmony Dental Clinic' is a placeholder.",
+    "Typical dental clinic offerings were used for: Aligners, Extractions, Whitening. List your real services (3 or more) to replace them."
+  ]
+}

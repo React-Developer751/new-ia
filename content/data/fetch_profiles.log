@@ -1,0 +1,248 @@
+   skip https://www.pizzahut.com TimeoutError
+italian train https://www.pizzahut.com -> 0
+italian train https://www.olivegarden.com -> 17
+north_indian train https://www.dishoom.com -> 155
+north_indian train https://www.barbequenation.com -> 0
+   skip https://www.bikanervala.com HTTPError
+north_indian train https://www.bikanervala.com -> 0
+north_indian train https://www.haldirams.com -> 0
+north_indian train https://www.karimhotels.com -> 16
+   skip https://www.punjabigrill.in URLError
+north_indian train https://www.punjabigrill.in -> 0
+   skip https://www.rajdhanirestaurants.com URLError
+north_indian HOLDOUT https://www.rajdhanirestaurants.com -> 0
+north_indian HOLDOUT https://www.chickinn.com -> 33
+north_indian train https://www.mcdonaldsindia.com -> 0
+south_indian train https://www.saravanabhavan.com -> 23
+   skip https://www.mtrfoods.com/products/product_category/6 ConnectionResetError
+south_indian train https://www.mtrfoods.com -> 14
+south_indian train https://www.aabsweets.com -> 199
+south_indian train https://www.sangeethaveg.com -> 32
+south_indian train https://www.udupigrand.com -> 0
+   skip https://www.ricebowl.in URLError
+south_indian train https://www.ricebowl.in -> 0
+   skip https://www.murugansidli.com URLError
+south_indian train https://www.murugansidli.com -> 0
+chinese train https://www.pandaexpress.com -> 0
+chinese train https://www.wagamama.com -> 29
+   skip https://www.chingsecret.com URLError
+chinese train https://www.chingsecret.com -> 0
+chinese train https://www.wowmomo.com -> 7
+chinese HOLDOUT https://www.hakkasan.com -> 0
+chinese train https://www.yauatcha.com -> 0
+   skip https://www.pfchangs.com/menu HTTPError
+   skip https://www.pfchangs.com/menu/happy-hour HTTPError
+   skip https://www.pfchangs.com/menu/happy-hour?utm_source=Website&utm_medium=Homepage+Content+Block&utm_campaign=New+Happy+Hour HTTPError
+chinese train https://www.pfchangs.com -> 22
+   skip https://www.dinetai.com URLError
+chinese HOLDOUT https://www.dinetai.com -> 0
+   skip https://www.faasos.io URLError
+street_food HOLDOUT https://www.faasos.io -> 0
+street_food train https://www.burgerking.in -> 0
+street_food train https://www.pavbhaji.in -> 10
+   skip https://www.streetfoodfestival.in URLError
+street_food train https://www.streetfoodfestival.in -> 0
+   skip https://www.nandosindia.in URLError
+street_food train https://www.nandosindia.in -> 0
+bakery train https://www.theobroma.in -> 107
+   skip https://www.monginis.net TimeoutError
+bakery train https://www.monginis.net -> 0
+bakery train https://www.greggs.co.uk -> 12
+   skip https://www.gailsbread.co.uk HTTPError
+bakery train https://www.gailsbread.co.uk -> 0
+bakery train https://www.krispykreme.com -> 112
+bakery train https://www.nothingbundtcakes.com -> 9
+bakery train https://www.insomniacookies.com -> 0
+bakery train https://www.breadtalk.com -> 0
+   skip https://www.paul-uk.com HTTPError
+bakery HOLDOUT https://www.paul-uk.com -> 0
+   skip https://www.chaayos.com HTTPError
+tea_cafe train https://www.chaayos.com -> 0
+tea_cafe HOLDOUT https://www.chaipoint.com -> 81
+   skip https://www.chaisuttabar.com URLError
+tea_cafe HOLDOUT https://www.chaisuttabar.com -> 0
+   skip https://www.cafecoffeeday.com URLError
+tea_cafe HOLDOUT https://www.cafecoffeeday.com -> 0
+   skip https://www.bluetokaicoffee.com HTTPError
+tea_cafe train https://www.bluetokaicoffee.com -> 0
+   skip https://www.costa.co.uk TimeoutError
+tea_cafe HOLDOUT https://www.costa.co.uk -> 0
+tea_cafe train https://www.caffenero.com -> 6
+   skip https://www.twinings.co.uk HTTPError
+tea_cafe HOLDOUT https://www.twinings.co.uk -> 0
+   skip https://www.teabox.com HTTPError
+tea_cafe HOLDOUT https://www.teabox.com -> 0
+   skip https://www.brewdog.com HTTPError
+bar train https://www.brewdog.com -> 0
+bar train https://www.fullers.co.uk -> 0
+bar HOLDOUT https://www.greeneking.co.uk -> 0
+bar train https://www.tgifridays.com -> 0
+   skip https://www.hardrockcafe.com TimeoutError
+bar HOLDOUT https://www.hardrockcafe.com -> 0
+bar train https://www.slugandlettuce.co.uk -> 17
+dental train https://www.clovedental.in -> 42
+dental train https://www.mydentist.co.uk -> 0
+dental train https://www.mouthhealthy.org -> 0
+   skip https://www.colgate.com HTTPError
+dental train https://www.colgate.com -> 0
+dental train https://www.dentalhealth.org -> 0
+dental train https://www.bupa.co.uk -> 0
+dental train https://www.dentistry.co.uk -> 0
+   skip https://www.smiledirectclub.com HTTPError
+dental train https://www.smiledirectclub.com -> 0
+   skip https://www.kayaclinic.com/services/anti_ageing HTTPError
+   skip https://www.kayaclinic.com/services/beauty-facial HTTPError
+   skip https://www.kayaclinic.com/services/hair-loss-in-women HTTPError
+skin HOLDOUT https://www.kayaclinic.com -> 30
+skin train https://www.olivaclinic.com -> 54
+skin train https://www.aad.org -> 7
+skin train https://dermnetnz.org -> 0
+skin train https://www.skinvision.com -> 49
+   skip https://www.vlccwellness.com/products/all-products HTTPError
+   skip https://www.vlccwellness.com/about-us HTTPError
+skin train https://www.vlccwellness.com -> 17
+eye train https://www.dragarwal.com -> 173
+eye HOLDOUT https://www.maxivisioneyehospitals.com -> 18
+   skip https://www.lvpei.org/services/community-eye-care/ ConnectionResetError
+eye train https://www.lvpei.org -> 58
+eye train https://www.specsavers.co.uk -> 0
+eye train https://www.aao.org -> 0
+eye train https://www.nei.nih.gov -> 172
+eye HOLDOUT https://www.visionexpress.com -> 0
+   skip https://www.csp.org.uk/about-csp TimeoutError
+physio train https://www.csp.org.uk -> 67
+physio train https://www.choosept.com -> 0
+physio train https://www.physio-pedia.com -> 0
+physio train https://www.nhs.uk/conditions/physiotherapy -> 140
+physio train https://www.physio.co.uk -> 34
+physio train https://www.bupa.co.uk/health-information -> 0
+crossfit HOLDOUT https://www.crossfit.com -> 96
+crossfit HOLDOUT https://www.f45training.com -> 0
+crossfit train https://www.orangetheory.com -> 9
+crossfit train https://www.barrys.com -> 32
+yoga train https://www.yogaalliance.org -> 0
+yoga train https://www.artofliving.org -> 251
+yoga train https://www.yogajournal.com -> 40
+yoga train https://www.corepoweryoga.com -> 53
+yoga HOLDOUT https://www.yogaworks.com -> 0
+yoga train https://www.isha.sadhguru.org -> 7
+zumba train https://www.zumba.com -> 0
+zumba train https://www.cult.fit -> 0
+zumba train https://www.dancefitness.com -> 10
+zumba train https://www.jazzercise.com -> 0
+kurti train https://www.fabindia.com -> 0
+kurti train https://www.biba.in -> 79
+   skip https://www.wforwoman.com HTTPError
+kurti train https://www.wforwoman.com -> 0
+kurti HOLDOUT https://www.aurelia.in -> 0
+   skip https://www.libas.in HTTPError
+kurti train https://www.libas.in -> 0
+kurti train https://www.globaldesi.in -> 21
+   skip https://www.nalli.com HTTPError
+saree train https://www.nalli.com -> 0
+   skip https://www.pothys.com/collections/brands HTTPError
+   skip https://www.pothys.com/collections/samudrika-pattu HTTPError
+   skip https://www.pothys.com/collections/parampara-pattu-silk-sarees HTTPError
+   skip https://www.pothys.com/collections/vastrakala-silk-sarees HTTPError
+   skip https://www.pothys.com/collections/vasundhara-pattu-silk-sarees HTTPError
+   skip https://www.pothys.com/collections/vasundhara-lite-silk-mix HTTPError
+   skip https://www.pothys.com/collections/mayuri-menpattu-soft-silk HTTPError
+saree train https://www.pothys.com -> 2
+saree train https://www.kalanikethan.com -> 0
+saree train https://www.taneira.com -> 0
+saree train https://www.mysilkroute.com -> 2
+saree HOLDOUT https://www.cbazaar.com -> 0
+   skip https://www.croma.com HTTPError
+electronics train https://www.croma.com -> 0
+electronics HOLDOUT https://www.reliancedigital.in -> 0
+electronics train https://www.vijaysales.com -> 73
+electronics train https://www.currys.co.uk -> 0
+electronics train https://www.argos.co.uk -> 0
+   skip https://www.bestbuy.com TimeoutError
+electronics train https://www.bestbuy.com -> 0
+   skip https://www.crossword.in HTTPError
+books train https://www.crossword.in -> 0
+books HOLDOUT https://www.bookswagon.com -> 2
+books train https://www.waterstones.com -> 0
+books HOLDOUT https://www.blackwells.co.uk -> 0
+books train https://www.booktopia.com.au -> 35
+books train https://www.bookshop.org -> 0
+autosales train https://www.heromotocorp.com -> 138
+   skip https://www.bajajauto.com/about-us/bajaj-team TimeoutError
+autosales HOLDOUT https://www.bajajauto.com -> 185
+autosales train https://www.tvsmotor.com -> 174
+autosales train https://www.royalenfield.com -> 101
+autosales train https://www.honda2wheelersindia.com -> 234
+autosales train https://www.marutisuzuki.com -> 17
+   skip https://www.yamaha-motor-india.com/about-companyprofile.html ConnectionResetError
+autosales HOLDOUT https://www.yamaha-motor-india.com -> 34
+autosales train https://www.carwale.com -> 26
+tyres HOLDOUT https://www.mrftyres.com -> 72
+tyres train https://www.ceat.com -> 65
+tyres train https://www.apollotyres.com -> 70
+tyres train https://www.michelin.in -> 0
+tyres train https://www.bridgestone.com -> 45
+tyres train https://www.kwik-fit.com -> 105
+   skip https://www.makeblock.com HTTPError
+robotics HOLDOUT https://www.makeblock.com -> 0
+robotics train https://education.lego.com -> 104
+robotics train https://www.arduino.cc -> 16
+robotics train https://www.firstinspires.org -> 348
+   skip https://www.stemrobotics.com URLError
+robotics train https://www.stemrobotics.com -> 0
+robotics train https://www.codingal.com -> 660
+   skip https://www.ceramicartsnetwork.org/resources/forum HTTPError
+pottery HOLDOUT https://www.ceramicartsnetwork.org -> 295
+pottery train https://www.americanceramics.org -> 0
+   skip https://www.claycentre.com URLError
+pottery train https://www.claycentre.com -> 0
+   skip https://www.mudcolour.com URLError
+pottery train https://www.mudcolour.com -> 0
+pottery train https://www.potterycrafters.com -> 8
+italian train https://www.giallozafferano.com -> 0
+   skip https://www.bbcgoodfood.com/recipes/collection/italian-recipes TimeoutError
+italian train https://www.bbcgoodfood.com/recipes/collection/italian-recipes -> 0
+   skip https://www.seriouseats.com/italian-recipes HTTPError
+italian train https://www.seriouseats.com/italian-recipes -> 0
+north_indian HOLDOUT https://www.vegrecipesofindia.com -> 0
+north_indian train https://www.cookwithmanali.com -> 0
+north_indian train https://www.indianhealthyrecipes.com -> 26
+south_indian train https://www.hebbarskitchen.com -> 0
+south_indian HOLDOUT https://www.archanaskitchen.com -> 32
+south_indian train https://www.sinfullyspicy.com -> 0
+chinese train https://thewoksoflife.com -> 0
+chinese train https://www.chinasichuanfood.com -> 0
+chinese train https://www.omnivorescookbook.com -> 0
+   skip https://www.indianhealthyrecipes.com/pani-puri-recipe HTTPError
+street_food train https://www.indianhealthyrecipes.com/pani-puri-recipe -> 0
+street_food train https://www.cookwithmanali.com/pav-bhaji -> 0
+street_food HOLDOUT https://www.vegrecipesofindia.com/vada-pav-recipe -> 0
+   skip https://www.kingarthurbaking.com/locations TimeoutError
+   skip https://www.kingarthurbaking.com/recipes/features TimeoutError
+   skip https://www.kingarthurbaking.com/recipes/collections/new-from-the-test-kitchen TimeoutError
+   skip https://www.kingarthurbaking.com/recipes/collections/make-ahead-breakfast-recipes TimeoutError
+bakery train https://www.kingarthurbaking.com -> 41
+bakery train https://sallysbakingaddiction.com -> 0
+   skip https://www.bbcgoodfood.com/about-bbc-good-food TimeoutError
+bakery train https://www.bbcgoodfood.com/recipes/collection/cake-recipes -> 28
+tea_cafe train https://www.teaforturmeric.com -> 0
+   skip https://www.bbcgoodfood.com/recipes/collection/tea-recipes TimeoutError
+tea_cafe train https://www.bbcgoodfood.com/recipes/collection/tea-recipes -> 0
+tea_cafe train https://www.indianhealthyrecipes.com/masala-chai-recipe -> 0
+bar HOLDOUT https://www.liquor.com -> 37
+bar train https://www.diffordsguide.com -> 97
+bar train https://www.bbcgoodfood.com/recipes/collection/cocktail-recipes -> 61
+dental train https://www.nidcr.nih.gov -> 39
+   skip https://www.nhs.uk/conditions/dental-health HTTPError
+dental train https://www.nhs.uk/conditions/dental-health -> 0
+dental train https://www.mouthhealthy.org/all-topics-a-z -> 0
+kurti train https://www.utsavfashion.com -> 0
+   skip https://www.craftsvilla.com URLError
+kurti train https://www.craftsvilla.com -> 0
+kurti HOLDOUT https://www.indianclothstore.com -> 31
+saree train https://www.utsavfashion.com/saree -> 0
+   skip https://www.craftsvilla.com/sarees URLError
+saree train https://www.craftsvilla.com/sarees -> 0
+electronics train https://www.gsmarena.com -> 26
+   skip https://www.which.co.uk/about-which/which-communities-a83TF8y8eQpt TimeoutError
+electronics HOLDOUT https://www.which.co.uk/reviews -> 80
