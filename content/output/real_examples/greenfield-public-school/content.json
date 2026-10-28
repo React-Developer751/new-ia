@@ -1,0 +1,210 @@
+{
+  "brand": "Greenfield Public School",
+  "niche": "education",
+  "kind": "education",
+  "profile": "",
+  "business_type": "school",
+  "type_label": "Coaching & Tuition Centre",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "friendly",
+  "keywords": [
+    "indore",
+    "nursery",
+    "class",
+    "cbse",
+    "sports",
+    "science"
+  ],
+  "eyebrow": "Coaching & Tuition Centre · Indore",
+  "location": "Indore",
+  "audience": "",
+  "hero_heading": "Greenfield Public School for nursery to class 12, CBSE and sports in Indore",
+  "tagline": "Looking for science labs in Indore? Greenfield Public School teaches it, along with school bus.",
+  "about_title": "About Greenfield Public School",
+  "about": [
+    "Greenfield Public School teaches school bus, nursery to class 12 and CBSE in Indore. Every child starts from where they are.",
+    "You'll find Greenfield Public School in Indore. Let us know what suits you and we will confirm."
+  ],
+  "features_title": "What we teach",
+  "features": [
+    {
+      "title": "Nursery To Class 12",
+      "text": "Nursery to class 12: ask how it is taught and how it is checked."
+    },
+    {
+      "title": "CBSE",
+      "text": "Ask how CBSE fits into the school day."
+    },
+    {
+      "title": "Sports",
+      "text": "Sports: ask for details before you make up your mind."
+    },
+    {
+      "title": "Science Labs",
+      "text": "Feel free to ask us about science labs when you visit."
+    },
+    {
+      "title": "School Bus",
+      "text": "Message us about school bus; we reply to every enquiry."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Admissions open",
+      "text": "Ask us for the details."
+    },
+    {
+      "title": "Parents in the loop",
+      "text": "Updates you can rely on."
+    },
+    {
+      "title": "Local and personal",
+      "text": "Run by people you can talk to."
+    }
+  ],
+  "stats_title": "Good to know",
+  "stats": [
+    {
+      "value": "Indore",
+      "label": "Where we work"
+    }
+  ],
+  "steps_title": "What happens next",
+  "steps": [
+    {
+      "title": "Get in touch",
+      "text": "Send a message or call and let us know what you need."
+    },
+    {
+      "title": "We talk it through",
+      "text": "We explain the options in plain words."
+    },
+    {
+      "title": "Begin the year",
+      "text": "We guide you through the first weeks."
+    }
+  ],
+  "faq_title": "Before you ask",
+  "faq": [
+    {
+      "q": "How do I ask about admission?",
+      "a": "Yes, admissions are open; message us to begin."
+    },
+    {
+      "q": "Where are you?",
+      "a": "Find us in Indore. Message us and we'll send directions."
+    },
+    {
+      "q": "Can I ask about nursery to class 12?",
+      "a": "Certainly; ask how it is taught."
+    },
+    {
+      "q": "How do I pay?",
+      "a": "Feel free to ask us when you book and we'll explain the options."
+    }
+  ],
+  "blog_title": "From the journal",
+  "blog": [
+    {
+      "title": "Notes on getting started",
+      "excerpt": "The first steps, without the jargon."
+    },
+    {
+      "title": "Why we answer every message",
+      "excerpt": "Replies are part of the service."
+    },
+    {
+      "title": "The first week: what to expect",
+      "excerpt": "How children settle into a new class."
+    }
+  ],
+  "contact": {
+    "place": "Indore"
+  },
+  "cta_primary": "Ask about admission",
+  "cta_secondary": "See the classes",
+  "cta_text": "Ask about admission and tell us your child's class.",
+  "cta_title": "Come and see for yourself",
+  "footer": "© Greenfield Public School. All rights reserved.",
+  "offers": [
+    {
+      "id": "admissions",
+      "text": "Admissions open"
+    }
+  ],
+  "hours": "",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "Greenfield Public School",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Indore",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "nursery to class 12",
+        "CBSE",
+        "sports",
+        "science labs",
+        "school bus"
+      ],
+      "source": "prompt"
+    },
+    "offers": {
+      "value": [
+        "Admissions open"
+      ],
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "hours",
+    "prices",
+    "phone",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "school (confidence high)",
+    "items_from_prompt": [
+      "nursery to class 12",
+      "CBSE",
+      "sports",
+      "science labs",
+      "school bus"
+    ],
+    "place": "Indore",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "",
+    "kind": "education"
+  },
+  "needs_review": []
+}

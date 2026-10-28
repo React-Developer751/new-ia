@@ -1,0 +1,198 @@
+{
+  "brand": "Rahul",
+  "niche": "education",
+  "kind": "education",
+  "profile": "",
+  "business_type": "school",
+  "type_label": "Coaching & Tuition Centre",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "friendly",
+  "keywords": [
+    "mera",
+    "naam",
+    "aur",
+    "main",
+    "delhi",
+    "tuition"
+  ],
+  "eyebrow": "Coaching & Tuition Centre · Delhi",
+  "location": "Delhi",
+  "audience": "",
+  "hero_heading": "Maths and science in Delhi",
+  "tagline": "Learn English classes in Delhi. Learning is better with encouragement.",
+  "about_title": "About Rahul",
+  "about": [
+    "People come to Rahul for science and English classes in Delhi. Message first if you prefer.",
+    "In Delhi: free trial. Ask how parents are kept informed."
+  ],
+  "features_title": "Programmes",
+  "features": [
+    {
+      "title": "Maths",
+      "text": "Ask who teaches maths and how progress is shared."
+    },
+    {
+      "title": "Science",
+      "text": "Bring your questions about science."
+    },
+    {
+      "title": "English Classes",
+      "text": "Message us about English classes; we reply to every enquiry."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Free trial",
+      "text": "Come once for free and see if it suits you."
+    },
+    {
+      "title": "Local and personal",
+      "text": "Run by people you can talk to."
+    },
+    {
+      "title": "Easy to ask",
+      "text": "Questions are always welcome."
+    }
+  ],
+  "stats_title": "Good to know",
+  "stats": [
+    {
+      "value": "Delhi",
+      "label": "Where we work"
+    }
+  ],
+  "steps_title": "Three simple steps",
+  "steps": [
+    {
+      "title": "Get in touch",
+      "text": "Send a message or call and let us know what you need."
+    },
+    {
+      "title": "Meet the team",
+      "text": "We explain the school day and answer your questions."
+    },
+    {
+      "title": "Get started",
+      "text": "We begin when you're ready."
+    }
+  ],
+  "faq_title": "Questions we get asked",
+  "faq": [
+    {
+      "q": "Can I visit the school first?",
+      "a": "Of course; message us and we will arrange a time."
+    },
+    {
+      "q": "Which classes do you teach?",
+      "a": "Tell us your child's age and we will point you to the right class."
+    },
+    {
+      "q": "Where are you?",
+      "a": "Find us in Delhi. Message us and we will send directions."
+    },
+    {
+      "q": "Can I ask about maths?",
+      "a": "Yes; let us know what you'd like to know about maths."
+    }
+  ],
+  "blog_title": "Worth reading",
+  "blog": [
+    {
+      "title": "The first week: what to expect",
+      "excerpt": "How children settle into a new class."
+    },
+    {
+      "title": "A short guide to science",
+      "excerpt": "The basics, in plain words."
+    },
+    {
+      "title": "Making the most of your first visit",
+      "excerpt": "A short list to bring with you."
+    }
+  ],
+  "contact": {
+    "place": "Delhi"
+  },
+  "cta_primary": "Ask about admission",
+  "cta_secondary": "See the classes",
+  "cta_text": "Ask about admission; we will explain the next step.",
+  "cta_title": "Say hello",
+  "footer": "© Rahul. All rights reserved.",
+  "offers": [
+    {
+      "id": "free_trial",
+      "text": "Free trial"
+    }
+  ],
+  "hours": "",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "Rahul",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Delhi",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "maths",
+        "science",
+        "English classes"
+      ],
+      "source": "prompt"
+    },
+    "offers": {
+      "value": [
+        "Free trial"
+      ],
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "hours",
+    "prices",
+    "phone",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "school (confidence high)",
+    "items_from_prompt": [
+      "maths",
+      "science",
+      "English classes"
+    ],
+    "place": "Delhi",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "",
+    "kind": "education"
+  },
+  "needs_review": []
+}

@@ -118,6 +118,71 @@ SCHOOL = dict(
     _generic=True,
 )
 
+
+HOTEL = dict(
+    who="guests", does=("offers", "hosts"), do=("offer", "host"), ing=("Offering", "Hosting"), come="Stay for",
+    act=("Check availability", "See the rooms"), act_online=("Book a room online", "See the rooms"),
+    book_how_online="Book a room online", book_how="Message us your dates to book a room",
+    tails=["a comfortable stay", "away from the rush", "made to feel at home", "rest well", "for a few days or a few weeks"],
+    closers=["Rest well; we'll take care of the rest.", "Tell us your dates and we'll do the planning.", "Arrive tired, leave rested.", "Ask us what is close by.", "Every guest is looked after personally.",
+             "Come for a night or stay a week.", "Questions before you arrive are welcome.", "Your room is one message away."],
+    invites=["Tell us your dates and how many are coming.", "Ask what is included before you book.", "Message us if you need anything arranged before you arrive.", "Tell us if anyone needs special arrangements.",
+             "Ask about getting here and where to go nearby.", "Share your plans and we'll suggest what suits.", "Ask us about the rooms before you decide.", "Tell us what matters most for your stay."],
+    feat=["Ask about {i} when you book.", "{I} is part of the stay; ask us how it works.", "Curious about {i}? Ask us before you arrive.", "Tell us if {i} matters to you and we'll confirm.",
+          "Ask what comes with {i}.", "If {i} is why you are coming, say so when you book.", "Ask us what to expect from {i}.", "{I}: message us for the details."],
+    steps=[[("Pick your dates", "Tell us when you arrive and when you leave."), ("Choose what suits you", "Look through {list2_or} and tell us what you'd like."), ("Arrive and settle in", "We'll confirm the details before you come.")],
+           [("Send your dates", "{book_how}, and say how many are coming."), ("We confirm", "We reply with what is available."), ("Enjoy your stay", "Rest, explore and ask us for anything you need.")],
+           [("Ask your questions", "Anything about the rooms, the place or getting here."), ("Book", "Tell us the dates that work."), ("Come and relax", "We'll have things ready.")]],
+    faq=[("How do I book a room?", ["{book_how}, and tell us how many are coming.", "Use the contact details on this page and tell us your dates."], "online_booking", ["You can book online, or contact us directly.", "Online booking is available."]),
+         ("Can I ask for something special?", ["Of course; tell us when you book and we'll say what we can do.", "Message us before you arrive and we'll see what's possible."], None, None),
+         ("Can you help with getting here?", ["Ask us when you book and we'll explain how to reach us.", "Message us and we'll send directions."], "pickup", ["Yes, pickup is available; tell us when you arrive.", "We can arrange a pickup; message us your arrival time."]),
+         ("Is there anything included with the room?", ["Ask us when you book and we'll list what comes with your stay.", "Message us and we'll tell you what is included."], None, None),
+         ("When can I reach you?", ["We're open {hours}.", "Our hours are {hours}."], "hours", None),
+         ("Where are you?", ["We're in {city}; get in touch for directions.", "Find us in {city}. Message us and we'll send directions."], "city", None),
+         ("Can I ask about {i1}?", ["Of course; ask us what it involves.", "Yes; tell us what you'd like to know about {i1}."], "item", None),
+         ("Can I ask questions before I book?", ["Of course; that's what the first message is for.", "Yes; ask as many as you like."], None, None)],
+    highlights=[("Easy to book", "Tell us your dates and we'll take it from there."), ("Look after you", "Someone is always on hand."), ("Rest well", "A quiet room after a long day."),
+                ("Ask us anything", "Questions before you arrive are welcome."), ("Come as you are", "A night or a long stay."), ("Know before you go", "We'll tell you what is included.")],
+    blog=[("What to know before you book a stay", "A short list of questions worth asking."), ("Making the most of {i1}", "A few simple ideas for your visit."), ("Planning a trip with the family", "Dates, rooms and what to pack."),
+          ("A short guide to getting here", "Simple tips for arriving without stress."), ("Why {i1} makes a difference", "What it adds to a stay."), ("Travelling light", "What you really need for a few days away."),
+          ("Choosing the right room", "Questions to ask before you decide."), ("What to do nearby", "Ask us; we love the question.")],
+    cta_text=["{act1} and tell us your dates.", "Planning a stay? {act1}.", "Your room is one message away.", "Ask about {i1} when you {act1_l}.", "Tell us your dates; we'll do the rest.",
+              "{act1}, or message us your plans.", "Stay a night; stay a week.", "Come and rest."],
+    _generic=True,
+)
+
+PHARMACY = dict(
+    who="customers", does=("stocks", "supplies"), do=("stock", "supply"), ing=("Stocking", "Supplying"), come="Find",
+    act=("Order medicines", "Visit the store"), act_online=("Order online", "Visit the store"),
+    book_how_online="Order online", book_how="Message us what you need",
+    tails=["when you need it", "with advice at the counter", "close to home", "ask the pharmacist", "everyday health"],
+    closers=["Ask the pharmacist if you are unsure.", "Bring the prescription and we'll take it from there.", "Questions about a medicine are always welcome.", "Everyday health, close to home.",
+             "Message us what you need and we'll confirm.", "Check the strength and dose with the pharmacist.", "Ask before you buy; it takes a minute.", "Always read the label."],
+    invites=["Message us what you need and we'll confirm.", "Send the prescription and we'll get it ready.", "Ask the pharmacist about anything on the label.", "Tell us if you need something for someone at home.",
+             "Ask what is in stock before you come.", "Tell us what you usually take and we'll check availability.", "Ask for a recommendation at the counter.", "Share what you're looking for and we'll help."],
+    feat=["Ask what is in stock for {i}.", "{I} is available; ask the pharmacist about it.", "Need {i}? Message us before you come.", "Ask us about {i} and we'll check.",
+          "Tell us what you need in {i} and we'll help.", "If {i} is what you need, ask at the counter.", "Ask about {i}; we'll tell you what we have.", "{I}: message us for availability."],
+    steps=[[("Tell us what you need", "Send the name, or the prescription."), ("We check and confirm", "We tell you what is in stock."), ("Collect or receive", "Pick it up, or ask about delivery.")],
+           [("Send your list", "Message us the items you need."), ("We prepare it", "We pack it and confirm."), ("Get it", "Come by or ask how it can reach you.")],
+           [("Ask the pharmacist", "Any question about a medicine or product."), ("Choose", "Look through {list2_or} with us."), ("Take it home", "With clear instructions.")]],
+    faq=[("How do I order?", ["{book_how}, and send the prescription if one is needed.", "Use the contact details on this page and tell us what you need."], "online_order", ["You can order online, or contact us directly.", "Online ordering is available."]),
+         ("Do you deliver?", ["Ask us what is possible for your area and we'll tell you honestly.", "Message us your location and we'll say what we can do."], "home_delivery", ["Yes, home delivery is available.", "We deliver; message us your location."]),
+         ("Do I need a prescription?", ["For prescription medicines, bring or send the prescription; the pharmacist will guide you.", "Ask us when you order and we'll tell you."], None, None),
+         ("Can I ask about a medicine?", ["Of course; ask the pharmacist anything about it.", "Yes; message us and we'll explain."], None, None),
+         ("When are you open?", ["We're open {hours}.", "Our hours are {hours}."], "hours", None),
+         ("Where are you?", ["We're in {city}; get in touch for directions.", "Find us in {city}. Message us and we'll send directions."], "city", None),
+         ("Can I ask about {i1}?", ["Of course; ask us what we have.", "Yes; tell us what you'd like to know about {i1}."], "item", None),
+         ("Can you check if something is in stock?", ["Message us the name and we'll confirm.", "Ask before you come; we'll check."], None, None)],
+    highlights=[("Ask the pharmacist", "Questions are always welcome."), ("Close to home", "Everyday needs, easy to reach."), ("Check before you come", "Message us and we'll confirm stock."),
+                ("Clear advice", "Instructions explained at the counter."), ("Easy to order", "Tell us what you need."), ("For the family", "Something for everyone at home.")],
+    blog=[("Questions to ask your pharmacist", "A short list worth keeping."), ("Storing medicines safely at home", "Simple habits that help."), ("Reading a label properly", "What to look for before you take anything."),
+          ("A short guide to {i1}", "What it is and when people ask about it."), ("Keeping a family medicine box", "What to keep, and how to check it."), ("Why {i1} needs a conversation", "Ask before you buy."),
+          ("Planning your monthly medicines", "How to avoid last-minute trips."), ("Travelling with medicines", "A few simple rules.")],
+    cta_text=["{act1} and tell us what you need.", "Need something? {act1}.", "Your order is one message away.", "Ask about {i1} when you {act1_l}.", "Tell us what you need; we'll check.",
+              "{act1}, or message us.", "Ask the pharmacist first.", "Check stock before you come."],
+    _generic=True,
+)
+
 TEA = dict(does=("serves", "brews", "pours"), do=("serve", "brew", "pour"), ing=("Serving", "Brewing"), come="Come for",
            act=("Visit us", "See the menu"), act_online=("Order online", "See the menu"),
            invites=["Tell us when you're coming and we'll make room.", "Ask for a recommendation when you arrive.", "Ask what is freshly made today.", "Message us if you're coming with a group.",
@@ -125,8 +190,47 @@ TEA = dict(does=("serves", "brews", "pours"), do=("serve", "brew", "pour"), ing=
            cta_text=["{act1} and ask what's fresh.", "Start with a cup; ask about {i1}.", "Your next cup is one message away.", "Ask about {i1} when you {act1_l}.", "Come as you are; we'll handle the rest.",
                      "{act1}, or message us your plans.", "Try {i1} and tell us what you think.", "Stay a while; nobody is rushing you."], _generic=True)
 
+_BEAUTY_FAQ = {f[0]: f for f in VOICE["beauty"]["faq"]}
+
+TATTOO = dict(
+    act=("Book an appointment", "Call the studio"), act_online=("Book an appointment online", "Call the studio"),
+    tails=["with time for you", "drawn around your idea", "unhurried", "from sketch to aftercare", "one design at a time"],
+    closers=["Bring a reference if you have one.", "Take a seat; we'll start with a chat.", "We sketch first, then we begin.", "Ask what to expect before you book.",
+             "Your design, your time.", "No two designs are the same.", "Tell us the idea and we'll draw it up.", "Ask about aftercare before you leave."],
+    invites=["Book a time and tell us the design you have in mind.", "Message us a reference picture or a sketch.", "Tell us where on the body you are thinking of, and the size.",
+             "Ask about timings before you book.", "Bring a friend if you like.", "Ask about cover-ups and touch-ups.", "Say what you have in mind and we'll suggest options.",
+             "Message us if you are unsure about a design."],
+    feat=["Tell us what you want from {i}; we'll suggest what fits.", "{I}: start with a chat about the design and where it goes.", "Booking {i}? Bring a reference for what you have in mind.",
+          "We take time over {i}, and we ask before we begin.", "{I} is planned around you, not a template.", "Not sure about {i}? Ask for a consultation first.",
+          "Pair {i} with a touch-up visit if it suits you.", "Ask what to expect from {i} before you book."],
+    highlights=[("Sketch first", "Every design starts with a chat and a drawing."), ("Planned around you", "Not a template."), ("Unhurried", "Time for the details."),
+                ("Questions welcome", "Ask how the studio works before you book."), ("Aftercare explained", "You leave knowing how to look after it."), ("Bring your ideas", "References welcome.")],
+    faq=[_BEAUTY_FAQ["How do I book an appointment?"],
+         ("Can I bring my own design?", ["Yes; a reference or sketch helps us understand what you have in mind.", "Please do; it makes the first chat easier."], None, None),
+         ("Can you cover up an old tattoo?", ["Ask us when you book and we'll tell you what is possible.", "Send a photo and we'll advise."], None, None),
+         ("How long will my appointment take?", ["It depends on the design and size; we'll tell you when you book.", "Ask us when you book and we'll give you an idea."], None, None),
+         ("What about aftercare?", ["We'll explain how to look after it before you leave.", "Ask us and we'll walk you through it."], None, None),
+         _BEAUTY_FAQ["When are you open?"], _BEAUTY_FAQ["Where are you?"], _BEAUTY_FAQ["Can I ask about {i1}?"]],
+    blog=[("How to explain the design you want", "References, words and the one question to ask your artist."), ("Getting ready for {i1}", "What to do the day before."),
+          ("Looking after a new tattoo", "Simple habits for the first weeks."), ("{I1} or {i2}: how to choose", "A plain guide to deciding."),
+          ("Questions to ask before {i1}", "A short list worth bringing."), ("Choosing a placement and size", "How the spot on the body changes the design."),
+          ("Planning a cover-up", "What to ask before you commit."), ("Your first visit", "What happens from the first chat to the last step.")],
+    _generic=True,
+)
+
+SPA = dict(
+    act=("Book a treatment", "Call the spa"), act_online=("Book a treatment online", "Call the spa"),
+    invites=["Book a time and tell us what you'd like.", "Message us the treatment you have in mind.", "Ask about timings before you book.", "Bring a friend if you like.",
+             "Tell us if it is for a special day.", "Ask which treatment suits you.", "Message us if you are unsure which service to pick.", "Say how long you have and we'll suggest options."],
+    highlights=[("Listening first", "Every visit starts with a chat."), ("Planned around you", "Not a template."), ("Unhurried", "Time to switch off."),
+                ("Come as you are", "No rush, no pressure."), ("Easy to book", "Message or call; we'll find a time."), ("Ask first", "Questions about a treatment are welcome.")],
+    faq=[f if not f[0].startswith("Do you do bridal") else ("Do you offer packages or gift visits?", ["Ask us when you book and we'll tell you what is possible.", "Tell us the occasion and we'll advise."], None, None)
+         for f in VOICE["beauty"]["faq"]],
+    _generic=True,
+)
+
 PROFILE_VOICE = {"bakery": BAKERY, "yoga": YOGA, "tea_cafe": TEA}
-TYPE_VOICE = {"sweets": SWEETS, "school": SCHOOL}
+TYPE_VOICE = {"tattoo": TATTOO, "spa": SPA, "sweets": SWEETS, "school": SCHOOL, "playschool": dict(SCHOOL, come="Enrol in"), "hotel": HOTEL, "pharmacy": PHARMACY}
 
 
 def profile_voice(kind, profile, type_id=None):

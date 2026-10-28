@@ -1,0 +1,220 @@
+{
+  "brand": "Glow Studio",
+  "niche": "care",
+  "kind": "beauty",
+  "profile": "",
+  "business_type": "salon",
+  "type_label": "Hair & Beauty Salon",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "playful",
+  "keywords": [
+    "salon",
+    "andheri",
+    "mumbai",
+    "haircut",
+    "hair",
+    "colour"
+  ],
+  "eyebrow": "Hair & Beauty Salon · Mumbai",
+  "location": "Mumbai",
+  "audience": "",
+  "hero_heading": "Glow Studio, Mumbai: Hair & Beauty Salon",
+  "tagline": "Looking for haircut in Mumbai? Glow Studio offers it, along with hair colour.",
+  "about_title": "About Glow Studio",
+  "about": [
+    "One focus: bridal makeup, facial and waxing in Mumbai. No two appointments are the same.",
+    "You will find Glow Studio in Mumbai. Tell us the occasion and we will plan the time."
+  ],
+  "features_title": "Services",
+  "features": [
+    {
+      "title": "Haircut",
+      "text": "Tell us what you need from haircut and we will suggest where to start."
+    },
+    {
+      "title": "Hair Colour",
+      "text": "Let us know what you want from hair colour; we will suggest what suits you."
+    },
+    {
+      "title": "Keratin",
+      "text": "Keratin is planned around you, not a template."
+    },
+    {
+      "title": "Bridal Makeup",
+      "text": "Ask us how bridal makeup works and what to expect."
+    },
+    {
+      "title": "Facial",
+      "text": "Booking facial? Bring a photo of what you have in mind."
+    },
+    {
+      "title": "Waxing",
+      "text": "Waxing: start with a chat about the look and the occasion."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Opening hours",
+      "text": "Hours: Tue-Sun 10am-8pm. Drop by or send a message."
+    },
+    {
+      "title": "Bring your ideas",
+      "text": "Photos welcome."
+    },
+    {
+      "title": "Unhurried",
+      "text": "Time for the details."
+    }
+  ],
+  "stats_title": "In short",
+  "stats": [
+    {
+      "value": "Mumbai",
+      "label": "Where we work"
+    },
+    {
+      "value": "Tue-Sun 10am-8pm",
+      "label": "Open"
+    }
+  ],
+  "steps_title": "How it works",
+  "steps": [
+    {
+      "title": "Reserve a slot",
+      "text": "Call or message us to book; mention any special occasion."
+    },
+    {
+      "title": "Chat first",
+      "text": "We talk through the look, the occasion and what suits you."
+    },
+    {
+      "title": "Relax and enjoy",
+      "text": "Take a seat; we will take care of the rest."
+    }
+  ],
+  "faq_title": "Quick answers",
+  "faq": [
+    {
+      "q": "When are you open?",
+      "a": "Our hours are Tue-Sun 10am-8pm."
+    },
+    {
+      "q": "Where are you?",
+      "a": "Find us in Mumbai. Message us and we'll send directions."
+    },
+    {
+      "q": "Can I ask about haircut?",
+      "a": "Yes; let us know what you'd like to know about haircut."
+    },
+    {
+      "q": "Can someone else book for me?",
+      "a": "Certainly; share the details and we will take it from there."
+    }
+  ],
+  "blog_title": "Worth reading",
+  "blog": [
+    {
+      "title": "Questions to ask before you book",
+      "excerpt": "Plain answers beat long brochures."
+    },
+    {
+      "title": "Why we answer every message",
+      "excerpt": "Replies are part of the service."
+    },
+    {
+      "title": "Looking after the result of haircut",
+      "excerpt": "Simple habits for the week afterwards."
+    }
+  ],
+  "contact": {
+    "phone": "98200 11223",
+    "place": "Mumbai",
+    "address": "Andheri",
+    "hours": [
+      "Tue-Sun 10am-8pm"
+    ]
+  },
+  "cta_primary": "Book an appointment",
+  "cta_secondary": "Call the salon",
+  "cta_text": "Your time starts with a message.",
+  "cta_title": "Start with a conversation",
+  "footer": "© Glow Studio. All rights reserved.",
+  "offers": [],
+  "hours": "Tue-Sun 10am-8pm",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "Glow Studio",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Mumbai",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "haircut",
+        "hair colour",
+        "keratin",
+        "bridal makeup",
+        "facial",
+        "waxing"
+      ],
+      "source": "prompt"
+    },
+    "hours": {
+      "value": "Tue-Sun 10am-8pm",
+      "source": "prompt"
+    },
+    "phone": {
+      "value": "98200 11223",
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "offers",
+    "prices",
+    "email"
+  ],
+  "generated_by": {
+    "business_type": "salon (confidence high)",
+    "items_from_prompt": [
+      "haircut",
+      "hair colour",
+      "keratin",
+      "bridal makeup",
+      "facial",
+      "waxing"
+    ],
+    "place": "Mumbai",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "",
+    "kind": "beauty"
+  },
+  "needs_review": []
+}

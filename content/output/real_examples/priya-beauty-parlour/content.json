@@ -1,0 +1,200 @@
+{
+  "brand": "Priya Beauty Parlour",
+  "niche": "care",
+  "kind": "beauty",
+  "profile": "",
+  "business_type": "salon",
+  "type_label": "Hair & Beauty Salon",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "playful",
+  "keywords": [
+    "apne",
+    "naam",
+    "kanpur",
+    "facial",
+    "threading",
+    "bridal"
+  ],
+  "eyebrow": "Hair & Beauty Salon · Kanpur",
+  "location": "Kanpur",
+  "audience": "",
+  "hero_heading": "Priya Beauty Parlour for facial, threading and bridal makeup in Kanpur",
+  "tagline": "Come in for hair spa in Kanpur. We listen first, then we begin.",
+  "about_title": "About Priya Beauty Parlour",
+  "about": [
+    "People come to Priya Beauty Parlour for hair spa and mehendi in Kanpur. Take a seat; we will start with a chat.",
+    "You will find Priya Beauty Parlour in Kanpur. Send a short message and we will take it from there."
+  ],
+  "features_title": "Book a service",
+  "features": [
+    {
+      "title": "Facial",
+      "text": "Tell us what you need from facial and we'll suggest where to start."
+    },
+    {
+      "title": "Threading",
+      "text": "Not sure about threading? Start with a short conversation."
+    },
+    {
+      "title": "Bridal Makeup",
+      "text": "Booking bridal makeup? Bring a photo of what you have in mind."
+    },
+    {
+      "title": "Hair Spa",
+      "text": "Not sure about hair spa? Ask for a consultation first."
+    },
+    {
+      "title": "Mehendi",
+      "text": "Tell us what you want from mehendi; we will suggest what suits you."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Details explained",
+      "text": "Before anything begins."
+    },
+    {
+      "title": "For every occasion",
+      "text": "Everyday, party or wedding."
+    },
+    {
+      "title": "Easy to book",
+      "text": "Message or call; we'll find a time."
+    }
+  ],
+  "stats_title": "Details at a glance",
+  "stats": [
+    {
+      "value": "Kanpur",
+      "label": "Where we work"
+    }
+  ],
+  "steps_title": "Getting started",
+  "steps": [
+    {
+      "title": "Get in touch",
+      "text": "Send a message or call and tell us what you need."
+    },
+    {
+      "title": "Choose your service",
+      "text": "Pick from facial or threading, or ask for a suggestion."
+    },
+    {
+      "title": "Get started",
+      "text": "We begin when you're ready."
+    }
+  ],
+  "faq_title": "Quick answers",
+  "faq": [
+    {
+      "q": "How long will my appointment take?",
+      "a": "It depends on the service; we will tell you when you book."
+    },
+    {
+      "q": "Where are you?",
+      "a": "We're in Kanpur; get in touch for directions."
+    },
+    {
+      "q": "Can I ask about facial?",
+      "a": "Certainly; ask what it involves and how to prepare."
+    },
+    {
+      "q": "Can someone else book for me?",
+      "a": "Yes; just let us know who the booking is for."
+    }
+  ],
+  "blog_title": "Notes and guides",
+  "blog": [
+    {
+      "title": "Questions to ask before threading",
+      "excerpt": "A short list worth bringing."
+    },
+    {
+      "title": "Small things that make a difference",
+      "excerpt": "Notes from everyday experience."
+    },
+    {
+      "title": "Planning wedding-day beauty",
+      "excerpt": "A timeline that keeps the morning calm."
+    }
+  ],
+  "contact": {
+    "place": "Kanpur"
+  },
+  "cta_primary": "Book an appointment",
+  "cta_secondary": "Call the salon",
+  "cta_text": "Book an appointment, and let us know the look you have in mind.",
+  "cta_title": "Your next step is one message away",
+  "footer": "© Priya Beauty Parlour. All rights reserved.",
+  "offers": [],
+  "hours": "",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "Priya Beauty Parlour",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Kanpur",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "facial",
+        "threading",
+        "bridal makeup",
+        "hair spa",
+        "mehendi"
+      ],
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "offers",
+    "hours",
+    "prices",
+    "phone",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "salon (confidence high)",
+    "items_from_prompt": [
+      "facial",
+      "threading",
+      "bridal makeup",
+      "hair spa",
+      "mehendi"
+    ],
+    "place": "Kanpur",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "",
+    "kind": "beauty"
+  },
+  "needs_review": []
+}

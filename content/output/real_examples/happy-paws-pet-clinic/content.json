@@ -1,0 +1,214 @@
+{
+  "brand": "Happy Paws Pet Clinic",
+  "niche": "care",
+  "kind": "health",
+  "profile": "",
+  "business_type": "vet",
+  "type_label": "Veterinary Clinic",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "friendly",
+  "keywords": [
+    "austin",
+    "tx",
+    "vaccinations",
+    "dental",
+    "cleaning",
+    "spay"
+  ],
+  "eyebrow": "Veterinary Clinic · Austin",
+  "location": "Austin",
+  "audience": "",
+  "hero_heading": "Austin's vaccinations and dental cleaning",
+  "tagline": "Visit us for spay and neuter in Austin. Take a look around and ask us anything.",
+  "about_title": "About Happy Paws Pet Clinic",
+  "about": [
+    "People come to Happy Paws Pet Clinic for grooming and vaccinations in Austin. Let us know what matters most to you.",
+    "You'll find Happy Paws Pet Clinic in Austin. Bring any earlier reports or scans to the first visit."
+  ],
+  "features_title": "Treatments",
+  "features": [
+    {
+      "title": "Vaccinations",
+      "text": "Bring your questions about vaccinations."
+    },
+    {
+      "title": "Dental Cleaning",
+      "text": "If dental cleaning is on your mind, book a visit and we'll talk it through."
+    },
+    {
+      "title": "Spay And Neuter",
+      "text": "Bring your questions about spay and neuter; the clinician will take them one by one."
+    },
+    {
+      "title": "Boarding",
+      "text": "We'll explain boarding in plain words."
+    },
+    {
+      "title": "Grooming",
+      "text": "Not sure if grooming is right for you? A consultation will tell you."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Opening hours",
+      "text": "Hours: Mon-Fri 8am-6pm, Sat 9am-1pm. Drop by or send a message."
+    },
+    {
+      "title": "Follow-up included",
+      "text": "We check in after treatment."
+    },
+    {
+      "title": "Details explained",
+      "text": "Before anything begins."
+    }
+  ],
+  "stats_title": "The basics",
+  "stats": [
+    {
+      "value": "Austin",
+      "label": "Where we work"
+    },
+    {
+      "value": "Mon-Fri 8am-6pm, Sat 9am-1pm",
+      "label": "Open"
+    }
+  ],
+  "steps_title": "From first message to finish",
+  "steps": [
+    {
+      "title": "Tell us your concern",
+      "text": "Share what's been bothering you at the time of booking."
+    },
+    {
+      "title": "Meet the team",
+      "text": "We examine, explain your options and answer questions."
+    },
+    {
+      "title": "Agree a plan",
+      "text": "Choose the treatment that suits you, then follow-up as needed."
+    }
+  ],
+  "faq_title": "Questions we get asked",
+  "faq": [
+    {
+      "q": "When are you open?",
+      "a": "Our hours are Mon-Fri 8am-6pm, Sat 9am-1pm."
+    },
+    {
+      "q": "Where are you?",
+      "a": "We're in Austin; reach out for directions."
+    },
+    {
+      "q": "Can I ask about vaccinations?",
+      "a": "Of course; ask what it involves and what to expect."
+    },
+    {
+      "q": "How do I pay?",
+      "a": "Ask us when you book and we'll explain the options."
+    }
+  ],
+  "blog_title": "Short guides",
+  "blog": [
+    {
+      "title": "What to bring when you get in touch",
+      "excerpt": "A short list that saves a second message."
+    },
+    {
+      "title": "What a good first conversation covers",
+      "excerpt": "And what to expect afterwards."
+    },
+    {
+      "title": "Planning ahead",
+      "excerpt": "How to give yourself time."
+    }
+  ],
+  "contact": {
+    "phone": "(512) 555-0143",
+    "place": "Austin",
+    "hours": [
+      "Mon-Fri 8am-6pm, Sat 9am-1pm"
+    ]
+  },
+  "cta_primary": "Book an appointment",
+  "cta_secondary": "Call the clinic",
+  "cta_text": "Book an appointment, and let us know what you'd like help with.",
+  "cta_title": "Let's talk",
+  "footer": "© Happy Paws Pet Clinic. All rights reserved.",
+  "offers": [],
+  "hours": "Mon-Fri 8am-6pm, Sat 9am-1pm",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "Happy Paws Pet Clinic",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Austin",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "vaccinations",
+        "dental cleaning",
+        "spay and neuter",
+        "boarding",
+        "grooming"
+      ],
+      "source": "prompt"
+    },
+    "hours": {
+      "value": "Mon-Fri 8am-6pm, Sat 9am-1pm",
+      "source": "prompt"
+    },
+    "phone": {
+      "value": "(512) 555-0143",
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "offers",
+    "prices",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "vet (confidence high)",
+    "items_from_prompt": [
+      "vaccinations",
+      "dental cleaning",
+      "spay and neuter",
+      "boarding",
+      "grooming"
+    ],
+    "place": "Austin",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "",
+    "kind": "health"
+  },
+  "needs_review": []
+}

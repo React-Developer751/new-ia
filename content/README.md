@@ -35,6 +35,10 @@ Training teaches business-type detection only. Wording comes from the hand-writt
 - Every page passes validators: no placeholders, no repeated 6-word span, no other niche's words, every named service present.
 - Same prompt + same seed gives the same page. Input is cleaned (markup, braces, newlines, very long text) and bad `--facts` files give a clear error.
 - `needs_review` tells you when to check: invented brand name, unsure business type, typical offerings used, no city.
+- No business name given: the heading says what the business is and where ("Dental Clinic, Pune"). Nothing is made up; `needs_review` says to add your name (and suggests one from a business email domain, never uses it).
+- Typos: words that name the kind of business ("resturant", "salun", "gim") are corrected everywhere; inside the detected trade a one-letter slip in an unknown word ("makup", "cardeo") is corrected too. Real names and dishes are left alone, and every change is listed in `needs_review`.
+- Services typed with no commas ("dog food cat food aquarium fish toys") are cut with known phrases and word shape. On 16 fresh prompts I did not tune on, 66% of services came out right (3% without it), and the page always notes how the run was cut so you can add commas.
+- Whole sentences work too ("We are a bakery in Jaipur. We make cakes and cookies. You can order on WhatsApp.").
 
 ## Limits (read these)
 
@@ -51,5 +55,7 @@ python3 -m unittest discover -p "test_*.py"   # 100+ tests
 python3 training/evaluate.py                  # accuracy / quality numbers
 python3 training/check_copy.py                # no 6-word span copied from training pages
 ```
+
+Typo vocabulary: `python3 training/build_vocab.py` rebuilds `data/vocab.json`.
 
 Retraining (optional, needs internet only for `fetch_*`): `training/train.py`, `training/train_templates.py`. Data lives in `data/`.

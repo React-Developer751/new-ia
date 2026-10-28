@@ -1,0 +1,213 @@
+{
+  "brand": "Hotel Sea Breeze",
+  "niche": "hosting",
+  "kind": "travel",
+  "profile": "",
+  "business_type": "hotel",
+  "type_label": "Hotel & Stay",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "warm",
+  "keywords": [
+    "goa",
+    "ac",
+    "rooms",
+    "view",
+    "free",
+    "breakfast"
+  ],
+  "eyebrow": "Hotel & Stay · Goa",
+  "location": "Goa",
+  "audience": "",
+  "hero_heading": "24 AC rooms in Goa",
+  "tagline": "Stay for sea view in Goa. Rest well; we will take care of the rest.",
+  "about_title": "About Hotel Sea Breeze",
+  "about": [
+    "It starts with free breakfast. Hotel Sea Breeze hosts swimming pool and 24 AC rooms too in Goa.",
+    "In Goa: pickup and free Wi-Fi. Let us know what you have in mind."
+  ],
+  "features_title": "Where we can take you",
+  "features": [
+    {
+      "title": "24 AC Rooms",
+      "text": "Bring your questions about 24 AC rooms."
+    },
+    {
+      "title": "Sea View",
+      "text": "Sea view is part of the stay; feel free to ask us how it works."
+    },
+    {
+      "title": "Free Breakfast",
+      "text": "Curious about free breakfast? Feel free to ask us before you arrive."
+    },
+    {
+      "title": "Swimming Pool",
+      "text": "Curious about swimming pool? Feel free to ask us anything."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Pickup",
+      "text": "Tell us when and where, and we'll confirm the pickup."
+    },
+    {
+      "title": "Free Wi-Fi",
+      "text": "Online while you wait or work."
+    },
+    {
+      "title": "Questions welcome",
+      "text": "Big or small."
+    }
+  ],
+  "stats_title": "Where and when",
+  "stats": [
+    {
+      "value": "Goa",
+      "label": "Where we work"
+    }
+  ],
+  "steps_title": "What happens next",
+  "steps": [
+    {
+      "title": "Send your dates",
+      "text": "Message us your dates to book a room, and say how many are coming."
+    },
+    {
+      "title": "Book",
+      "text": "Let us know the dates that work."
+    },
+    {
+      "title": "Enjoy your stay",
+      "text": "Rest, explore and feel free to ask us for anything you need."
+    }
+  ],
+  "faq_title": "Before you ask",
+  "faq": [
+    {
+      "q": "Can you help with getting here?",
+      "a": "Yes, pickup is available; tell us when you arrive."
+    },
+    {
+      "q": "Where are you?",
+      "a": "Find us in Goa. Send us a message and we will send directions."
+    },
+    {
+      "q": "Can I ask about 24 AC rooms?",
+      "a": "Yes; tell us what you'd like to know about 24 AC rooms."
+    },
+    {
+      "q": "Is there anything I should prepare?",
+      "a": "Feel free to ask us and we'll tell you what to have ready."
+    }
+  ],
+  "blog_title": "Notes and guides",
+  "blog": [
+    {
+      "title": "Why we answer every message",
+      "excerpt": "Replies are part of the service."
+    },
+    {
+      "title": "Making the most of your first visit",
+      "excerpt": "A short list to bring with you."
+    },
+    {
+      "title": "Notes on getting started",
+      "excerpt": "The first steps, without the jargon."
+    }
+  ],
+  "contact": {
+    "phone": "0832-2456789",
+    "place": "Goa"
+  },
+  "cta_primary": "Check availability",
+  "cta_secondary": "See the rooms",
+  "cta_text": "Let us know your dates; we will do the rest.",
+  "cta_title": "Come and see for yourself",
+  "footer": "© Hotel Sea Breeze. All rights reserved.",
+  "offers": [
+    {
+      "id": "pickup",
+      "text": "Pickup"
+    },
+    {
+      "id": "wifi",
+      "text": "Free Wi-Fi"
+    }
+  ],
+  "hours": "",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "Hotel Sea Breeze",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Goa",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "24 AC rooms",
+        "sea view",
+        "free breakfast",
+        "swimming pool"
+      ],
+      "source": "prompt"
+    },
+    "offers": {
+      "value": [
+        "Pickup",
+        "Free Wi-Fi"
+      ],
+      "source": "prompt"
+    },
+    "phone": {
+      "value": "0832-2456789",
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "hours",
+    "prices",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "hotel (confidence high)",
+    "items_from_prompt": [
+      "24 AC rooms",
+      "sea view",
+      "free breakfast",
+      "swimming pool"
+    ],
+    "place": "Goa",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "",
+    "kind": "travel"
+  },
+  "needs_review": []
+}

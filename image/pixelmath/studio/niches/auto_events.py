@@ -814,8 +814,8 @@ def _tile_wall(S, u0, u1, v0, v1, c1, size=0.09):
 
 @niche("car-wash", "Car wash", subjects=("auto_foam_car",),
        strong=("car wash", "car detailing", "carwash", "foam wash", "auto detailing", "car cleaning", "vehicle wash", "car spa",
-               "gaadi dhulai", "कार वॉश", "कार धुलाई", "कार डिटेलिंग", "गाड़ी धुलाई"),
-       weak=("detailing", "wash", "foam", "polish", "ceramic coating", "bike wash"), accent="#3498db", mood="light", group="auto",
+               "gaadi dhulai", "कार वॉश", "कार धुलाई", "कार डिटेलिंग", "गाड़ी धुलाई", "गाड़ी की धुलाई", "car after detailing"),
+       weak=("detailing", "wash", "foam", "polish", "ceramic coating", "bike wash", "धुलाई", "चमकाने", "sparkling clean", "glossy car"), accent="#3498db", mood="light", group="auto",
        avoid=("repair", "mechanic", "garage", "showroom", "dealer"))
 def car_wash(S):
     P = S.pal
@@ -1660,8 +1660,8 @@ def _cloud(S, u, v, s, alpha=0.9):
 
 @niche("travel-agency", "Travel agency", subjects=("auto_globe", "auto_suitcase"),
        strong=("travel agency", "tour", "holiday", "vacation", "tourism", "flights", "trip", "tour operator", "travel agent", "tour packages",
-               "visa and tickets", "holiday packages", "यात्रा", "टूर", "ट्रैवल एजेंसी", "टूर एंड ट्रैवल्स", "ghumne"),
-       weak=("travel", "ticket", "visa", "passport", "hotel booking", "cruise", "honeymoon"), accent="#16a085", mood="light", group="travel")
+               "visa and tickets", "holiday packages", "plane tickets", "tourists", "यात्रा", "टूर", "ट्रैवल एजेंसी", "टूर एंड ट्रैवल्स", "ghumne"),
+       weak=("travel", "ticket", "visa", "passport", "hotel booking", "cruise", "honeymoon", "itinerary", "sightseeing", "suitcases", "पर्यटक"), accent="#16a085", mood="light", group="travel")
 def travel(S):
     P = S.pal
     dk = P.mood == "dark"

@@ -1,22 +1,12 @@
 {
-  "niches": 50,
+  "niches": 97,
   "matching_keywords_only": {
-    "correct": 228,
-    "fallback": 67,
-    "wrong": 5,
-    "total": 300,
-    "off_niche_wrong": 1,
+    "correct": 408,
+    "fallback": 157,
+    "wrong": 17,
+    "total": 582,
+    "off_niche_wrong": 0,
     "wrong_examples": [
-      [
-        "बीमार पालतू जानवरों का इलाज करने वाला अस्पताल",
-        "pet-clinic",
-        "clinic-doctor"
-      ],
-      [
-        "हिसाब किताब और इनकम टैक्स रिटर्न भरने वाला दफ़्तर",
-        "accounting-finance",
-        "bookstore"
-      ],
       [
         "luxury bedroom decor in deep green and gold, elegant mood",
         "interior-design",
@@ -28,142 +18,198 @@
         "electrician"
       ],
       [
-        "glossy red car after detailing, sparkling clean mood",
-        "car-wash",
+        "bright clean rehab room, soft blue tones, patient stretching with therapist guidance",
+        "physio",
         "cleaning"
+      ],
+      [
+        "aankhon ke hospital ke liye doctor jo aankh check kar raha ho",
+        "eye-clinic",
+        "clinic-doctor"
+      ],
+      [
+        "playful cheerful colours, happy dog with toys, leashes and bowls on shelves",
+        "petshop",
+        "toy-store"
+      ],
+      [
+        "clean minimalist concrete and glass, sunlit modern building facade, neutral greys",
+        "architect",
+        "cleaning"
+      ],
+      [
+        "trustworthy navy and gold, advisor explaining protection plan to happy family",
+        "insurance",
+        "jewellery"
+      ],
+      [
+        "mystical deep purple and gold, zodiac wheel, candles and star charts",
+        "astrology",
+        "jewellery"
       ]
     ]
   },
   "matching_with_model": {
-    "correct": 291,
-    "fallback": 9,
+    "correct": 566,
+    "fallback": 16,
     "wrong": 0,
-    "total": 300,
-    "off_niche_wrong": 0,
+    "total": 582,
+    "off_niche_wrong": 2,
     "wrong_examples": []
   },
   "pictures": {
-    "right": 147,
-    "fallback": 3,
+    "right": 276,
+    "fallback": 15,
     "wrong": 0,
-    "total": 150,
-    "off_niche_fallback": 60,
-    "off_niche_wrong": 0,
-    "wrong_examples": []
+    "total": 291,
+    "off_niche_fallback": 102,
+    "off_niche_wrong": 6,
+    "wrong_examples": [
+      [
+        "floodlit cricket stadium during a match",
+        null,
+        "sports-academy"
+      ],
+      [
+        "floodlit cricket stadium during a match",
+        null,
+        "sports-academy"
+      ],
+      [
+        "floodlit cricket stadium during a match",
+        null,
+        "sports-academy"
+      ],
+      [
+        "robot arm in a futuristic laboratory",
+        null,
+        "robotics-lab"
+      ],
+      [
+        "robot arm in a futuristic laboratory",
+        null,
+        "robotics-lab"
+      ],
+      [
+        "robot arm in a futuristic laboratory",
+        null,
+        "robotics-lab"
+      ]
+    ]
   },
   "colour_holdout": {
-    "images": 50,
-    "trained_rmse": 34.0,
-    "average_image_rmse": 59.2,
-    "untrained_rmse": 63.0
+    "images": 97,
+    "trained_rmse": 33.6,
+    "average_image_rmse": 57.6,
+    "untrained_rmse": 60.6
   },
   "sets": [
     {
       "niche": "restaurant-italian",
-      "seconds": 7.86,
-      "min_distance": 16,
+      "seconds": 8.1,
+      "min_distance": 18,
       "palette_family": 0.961,
-      "hero_contrast": 4.8,
-      "hero_bytes": 33105,
-      "max_tile_bytes": 24676,
+      "hero_contrast": 4.78,
+      "hero_bytes": 36969,
+      "max_tile_bytes": 24697,
       "redrawn": 0,
       "judge_ok": true
     },
     {
       "niche": "gym",
-      "seconds": 8.19,
-      "min_distance": 24,
-      "palette_family": 0.892,
-      "hero_contrast": 4.83,
-      "hero_bytes": 29610,
-      "max_tile_bytes": 21798,
+      "seconds": 8.26,
+      "min_distance": 22,
+      "palette_family": 0.901,
+      "hero_contrast": 4.75,
+      "hero_bytes": 34128,
+      "max_tile_bytes": 21808,
       "redrawn": 0,
       "judge_ok": true
     },
     {
       "niche": "dental",
-      "seconds": 6.88,
+      "seconds": 7.22,
       "min_distance": 24,
-      "palette_family": 0.917,
-      "hero_contrast": 4.62,
-      "hero_bytes": 34177,
-      "max_tile_bytes": 17598,
+      "palette_family": 0.916,
+      "hero_contrast": 4.86,
+      "hero_bytes": 35192,
+      "max_tile_bytes": 17667,
       "redrawn": 0,
       "judge_ok": true
     },
     {
       "niche": "saas",
-      "seconds": 7.21,
+      "seconds": 7.53,
       "min_distance": 16,
-      "palette_family": 0.887,
-      "hero_contrast": 6.17,
-      "hero_bytes": 34890,
-      "max_tile_bytes": 20750,
+      "palette_family": 0.888,
+      "hero_contrast": 6.26,
+      "hero_bytes": 39876,
+      "max_tile_bytes": 21677,
       "redrawn": 0,
       "judge_ok": true
     },
     {
       "niche": "kurti-store",
-      "seconds": 7.16,
+      "seconds": 7.4,
       "min_distance": 20,
-      "palette_family": 0.868,
-      "hero_contrast": 4.89,
-      "hero_bytes": 44960,
-      "max_tile_bytes": 24906,
+      "palette_family": 0.878,
+      "hero_contrast": 4.8,
+      "hero_bytes": 50083,
+      "max_tile_bytes": 24715,
       "redrawn": 0,
       "judge_ok": true
     },
     {
       "niche": "salon",
-      "seconds": 6.71,
-      "min_distance": 18,
-      "palette_family": 0.943,
+      "seconds": 6.74,
+      "min_distance": 22,
+      "palette_family": 0.926,
       "hero_contrast": 4.9,
-      "hero_bytes": 36448,
-      "max_tile_bytes": 21369,
+      "hero_bytes": 38946,
+      "max_tile_bytes": 21492,
       "redrawn": 0,
       "judge_ok": true
     },
     {
       "niche": "bakery",
-      "seconds": 8.44,
-      "min_distance": 14,
-      "palette_family": 0.934,
-      "hero_contrast": 4.86,
-      "hero_bytes": 41743,
-      "max_tile_bytes": 23823,
+      "seconds": 8.66,
+      "min_distance": 16,
+      "palette_family": 0.938,
+      "hero_contrast": 4.85,
+      "hero_bytes": 48208,
+      "max_tile_bytes": 24026,
       "redrawn": 0,
       "judge_ok": true
     },
     {
       "niche": "yoga",
-      "seconds": 7.62,
-      "min_distance": 20,
-      "palette_family": 0.866,
-      "hero_contrast": 4.59,
-      "hero_bytes": 28902,
+      "seconds": 7.97,
+      "min_distance": 18,
+      "palette_family": 0.904,
+      "hero_contrast": 4.73,
+      "hero_bytes": 31395,
       "max_tile_bytes": 16428,
       "redrawn": 0,
       "judge_ok": true
     },
     {
       "niche": "real-estate",
-      "seconds": 7.14,
-      "min_distance": 14,
-      "palette_family": 0.851,
-      "hero_contrast": 4.91,
-      "hero_bytes": 36371,
-      "max_tile_bytes": 23818,
+      "seconds": 7.54,
+      "min_distance": 16,
+      "palette_family": 0.858,
+      "hero_contrast": 4.85,
+      "hero_bytes": 38458,
+      "max_tile_bytes": 23877,
       "redrawn": 0,
       "judge_ok": true
     },
     {
       "niche": "school",
-      "seconds": 6.39,
-      "min_distance": 24,
-      "palette_family": 0.757,
-      "hero_contrast": 4.82,
-      "hero_bytes": 42853,
+      "seconds": 6.55,
+      "min_distance": 20,
+      "palette_family": 0.77,
+      "hero_contrast": 4.83,
+      "hero_bytes": 45548,
       "max_tile_bytes": 22722,
       "redrawn": 0,
       "judge_ok": true

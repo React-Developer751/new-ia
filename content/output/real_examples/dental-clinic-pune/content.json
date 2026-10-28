@@ -1,0 +1,184 @@
+{
+  "brand": "Dental Clinic, Pune",
+  "niche": "care",
+  "kind": "health",
+  "profile": "dental",
+  "business_type": "dental",
+  "type_label": "Dental Clinic",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "calm",
+  "keywords": [
+    "braces",
+    "implants",
+    "crowns"
+  ],
+  "eyebrow": "Dental Clinic · Pune",
+  "location": "Pune",
+  "audience": "",
+  "hero_heading": "Braces and implants, explained clearly",
+  "tagline": "We offer crowns in Pune.",
+  "about_title": "About us",
+  "about": [
+    "We offer implants, crowns and braces in Pune. Take the time you need to decide.",
+    "You'll find us in Pune. Bring any earlier reports or scans to the first visit."
+  ],
+  "features_title": "Services",
+  "features": [
+    {
+      "title": "Braces",
+      "text": "Not sure about braces? Start with a short conversation."
+    },
+    {
+      "title": "Implants",
+      "text": "We will explain implants in plain words."
+    },
+    {
+      "title": "Crowns",
+      "text": "Let us know your concern about crowns and we will recommend what makes sense."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Time for questions",
+      "text": "Ask as many as you need."
+    },
+    {
+      "title": "Clear explanations",
+      "text": "Every step explained before it begins."
+    },
+    {
+      "title": "A plan you agree to",
+      "text": "We recommend; you decide."
+    }
+  ],
+  "stats_title": "Quick facts",
+  "stats": [
+    {
+      "value": "Pune",
+      "label": "Where we work"
+    }
+  ],
+  "steps_title": "Three simple steps",
+  "steps": [
+    {
+      "title": "Say hello",
+      "text": "Let us know what you have in mind."
+    },
+    {
+      "title": "Get a clear assessment",
+      "text": "We look closely and explain what we find."
+    },
+    {
+      "title": "Agree a plan",
+      "text": "Choose the treatment that suits you, then follow-up as needed."
+    }
+  ],
+  "faq_title": "Before you ask",
+  "faq": [
+    {
+      "q": "Will you explain the treatment before starting?",
+      "a": "Yes; we explain each step before it begins and answer your questions."
+    },
+    {
+      "q": "Where are you?",
+      "a": "Find us in Pune. Message us and we will send directions."
+    },
+    {
+      "q": "Can I ask about braces?",
+      "a": "Yes; tell us what you'd like to know about braces."
+    },
+    {
+      "q": "Is there anything I should prepare?",
+      "a": "Feel free to ask us and we'll tell you what to have ready."
+    }
+  ],
+  "blog_title": "Short guides",
+  "blog": [
+    {
+      "title": "Why we answer every message",
+      "excerpt": "Replies are part of the service."
+    },
+    {
+      "title": "How to choose a good dental clinic",
+      "excerpt": "Five questions worth asking before you decide."
+    },
+    {
+      "title": "Why local matters",
+      "excerpt": "A few reasons to choose someone nearby."
+    }
+  ],
+  "contact": {
+    "place": "Pune"
+  },
+  "cta_primary": "Book an appointment",
+  "cta_secondary": "Call the clinic",
+  "cta_text": "Tell us what's on your mind.",
+  "cta_title": "Ready when you are",
+  "footer": "© Dental Clinic, Pune. All rights reserved.",
+  "offers": [],
+  "hours": "",
+  "prices": [],
+  "facts_used": {
+    "city": {
+      "value": "Pune",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "braces",
+        "implants",
+        "crowns"
+      ],
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "name",
+    "offers",
+    "hours",
+    "prices",
+    "phone",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "dental (confidence high)",
+    "items_from_prompt": [
+      "braces",
+      "implants",
+      "crowns"
+    ],
+    "place": "Pune",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "dental",
+    "kind": "health"
+  },
+  "needs_review": [
+    "No business name was given, so the heading is 'Dental Clinic, Pune' (not a name). Add your business name to replace it."
+  ]
+}

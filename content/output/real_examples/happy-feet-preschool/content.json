@@ -1,0 +1,210 @@
+{
+  "brand": "Happy Feet Preschool",
+  "niche": "education",
+  "kind": "education",
+  "profile": "",
+  "business_type": "playschool",
+  "type_label": "Play School & Daycare",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "playful",
+  "keywords": [
+    "pune",
+    "playgroup",
+    "nursery",
+    "kindergarten",
+    "daycare",
+    "activity"
+  ],
+  "eyebrow": "Play School & Daycare · Pune",
+  "location": "Pune",
+  "audience": "",
+  "hero_heading": "Playgroup and nursery in Pune",
+  "tagline": "Happy Feet Preschool teaches kindergarten, daycare and activity classes in Pune. Take a look around and ask us anything.",
+  "about_title": "About Happy Feet Preschool",
+  "about": [
+    "Happy Feet Preschool teaches daycare, activity classes and playgroup in Pune. Message first if you prefer.",
+    "You will find Happy Feet Preschool in Pune. Share your questions before you decide."
+  ],
+  "features_title": "Learn with us",
+  "features": [
+    {
+      "title": "Playgroup",
+      "text": "Tell us what you need from playgroup and we will suggest where to start."
+    },
+    {
+      "title": "Nursery",
+      "text": "Bring your questions about nursery."
+    },
+    {
+      "title": "Kindergarten",
+      "text": "New to kindergarten? Ask the teachers how children are eased in."
+    },
+    {
+      "title": "Daycare",
+      "text": "Curious about daycare? Come and see it in action."
+    },
+    {
+      "title": "Activity Classes",
+      "text": "Not sure about activity classes? Start with a short conversation."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Admissions open",
+      "text": "Feel free to ask us for the details."
+    },
+    {
+      "title": "Details explained",
+      "text": "Before anything begins."
+    },
+    {
+      "title": "Straight answers",
+      "text": "Ask and we will say it plainly."
+    }
+  ],
+  "stats_title": "Where and when",
+  "stats": [
+    {
+      "value": "Pune",
+      "label": "Where we work"
+    }
+  ],
+  "steps_title": "From first message to finish",
+  "steps": [
+    {
+      "title": "Get in touch",
+      "text": "Send a message or call and let us know what you need."
+    },
+    {
+      "title": "Meet the team",
+      "text": "We explain the school day and answer your questions."
+    },
+    {
+      "title": "Get started",
+      "text": "We begin when you're ready."
+    }
+  ],
+  "faq_title": "Frequently asked questions",
+  "faq": [
+    {
+      "q": "How do I ask about admission?",
+      "a": "Yes, admissions are open; message us to begin."
+    },
+    {
+      "q": "How are parents kept informed?",
+      "a": "Message us and we will tell you how teachers keep in touch."
+    },
+    {
+      "q": "Where are you?",
+      "a": "Find us in Pune. Message us and we will send directions."
+    },
+    {
+      "q": "Can I ask about playgroup?",
+      "a": "Certainly; ask how it is taught."
+    }
+  ],
+  "blog_title": "Worth reading",
+  "blog": [
+    {
+      "title": "Talking to teachers",
+      "excerpt": "How to get the most from a meeting."
+    },
+    {
+      "title": "What a fair price looks like",
+      "excerpt": "Questions that make quotes easier to compare."
+    },
+    {
+      "title": "Choosing a school: questions to ask",
+      "excerpt": "A short list for parents before they decide."
+    }
+  ],
+  "contact": {
+    "place": "Pune"
+  },
+  "cta_primary": "Ask about admission",
+  "cta_secondary": "See the classes",
+  "cta_text": "Ask about admission and tell us your child's class.",
+  "cta_title": "Tell us what you need",
+  "footer": "© Happy Feet Preschool. All rights reserved.",
+  "offers": [
+    {
+      "id": "admissions",
+      "text": "Admissions open"
+    }
+  ],
+  "hours": "",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "Happy Feet Preschool",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Pune",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "playgroup",
+        "nursery",
+        "kindergarten",
+        "daycare",
+        "activity classes"
+      ],
+      "source": "prompt"
+    },
+    "offers": {
+      "value": [
+        "Admissions open"
+      ],
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "hours",
+    "prices",
+    "phone",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "playschool (confidence high)",
+    "items_from_prompt": [
+      "playgroup",
+      "nursery",
+      "kindergarten",
+      "daycare",
+      "activity classes"
+    ],
+    "place": "Pune",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "",
+    "kind": "education"
+  },
+  "needs_review": []
+}

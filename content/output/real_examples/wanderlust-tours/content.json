@@ -1,0 +1,204 @@
+{
+  "brand": "Wanderlust Tours",
+  "niche": "hosting",
+  "kind": "travel",
+  "profile": "",
+  "business_type": "travel",
+  "type_label": "Travel Agency",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "friendly",
+  "keywords": [
+    "manali",
+    "himachal",
+    "trekking",
+    "kullu",
+    "honeymoon",
+    "packages"
+  ],
+  "eyebrow": "Travel Agency · Manali",
+  "location": "Manali",
+  "audience": "",
+  "hero_heading": "Himachal trekking and Kullu honeymoon packages in Manali",
+  "tagline": "Travel with us for paragliding in Manali. Ask if anything is unclear.",
+  "about_title": "About Wanderlust Tours",
+  "about": [
+    "It starts with camping. Wanderlust Tours plans taxi service and Himachal trekking too in Manali.",
+    "You will find Wanderlust Tours in Manali. Tell us what you have in mind."
+  ],
+  "features_title": "What we plan",
+  "features": [
+    {
+      "title": "Himachal Trekking",
+      "text": "Feel free to ask us how Himachal trekking works and what to expect."
+    },
+    {
+      "title": "Kullu Honeymoon Packages",
+      "text": "Ask which season is best for Kullu honeymoon packages."
+    },
+    {
+      "title": "Paragliding",
+      "text": "We shape paragliding around your dates and budget."
+    },
+    {
+      "title": "Camping",
+      "text": "Message us about camping; we reply to every enquiry."
+    },
+    {
+      "title": "Taxi Service",
+      "text": "Curious about taxi service? Ask and we will talk it through."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Easy to reach",
+      "text": "Message or call."
+    },
+    {
+      "title": "A real person replies",
+      "text": "Not a form that goes nowhere."
+    },
+    {
+      "title": "A person to message",
+      "text": "If plans change."
+    }
+  ],
+  "stats_title": "At a glance",
+  "stats": [
+    {
+      "value": "Manali",
+      "label": "Where we work"
+    }
+  ],
+  "steps_title": "Three simple steps",
+  "steps": [
+    {
+      "title": "Message us",
+      "text": "Tell us what you'd like to see."
+    },
+    {
+      "title": "Compare options",
+      "text": "We lay out choices for Himachal trekking or Kullu honeymoon packages."
+    },
+    {
+      "title": "Travel",
+      "text": "Go knowing the details are handled."
+    }
+  ],
+  "faq_title": "Questions we get asked",
+  "faq": [
+    {
+      "q": "Can you arrange pickup and transfers?",
+      "a": "Let us know where you're starting and we will advise."
+    },
+    {
+      "q": "Where are you based?",
+      "a": "We're in Manali; get in touch."
+    },
+    {
+      "q": "Can you plan Himachal trekking?",
+      "a": "Yes; feel free to ask us about Himachal trekking."
+    },
+    {
+      "q": "Do you reply to messages?",
+      "a": "Yes; use the contact information on this page and we will reply."
+    }
+  ],
+  "blog_title": "Worth reading",
+  "blog": [
+    {
+      "title": "Reading the small print",
+      "excerpt": "Where to look and what to ask."
+    },
+    {
+      "title": "A short guide to Kullu honeymoon packages",
+      "excerpt": "The basics, in plain words."
+    },
+    {
+      "title": "Keeping track of your plans",
+      "excerpt": "A simple way to stay organised."
+    }
+  ],
+  "contact": {
+    "phone": "9418012345",
+    "place": "Manali"
+  },
+  "cta_primary": "Plan my trip",
+  "cta_secondary": "Get a quote",
+  "cta_text": "Plan my trip; we will outline the options.",
+  "cta_title": "Ready when you are",
+  "footer": "© Wanderlust Tours. All rights reserved.",
+  "offers": [],
+  "hours": "",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "Wanderlust Tours",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Manali",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "Himachal trekking",
+        "Kullu honeymoon packages",
+        "paragliding",
+        "camping",
+        "taxi service"
+      ],
+      "source": "prompt"
+    },
+    "phone": {
+      "value": "9418012345",
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "offers",
+    "hours",
+    "prices",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "travel (confidence high)",
+    "items_from_prompt": [
+      "Himachal trekking",
+      "Kullu honeymoon packages",
+      "paragliding",
+      "camping",
+      "taxi service"
+    ],
+    "place": "Manali",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "",
+    "kind": "travel"
+  },
+  "needs_review": []
+}

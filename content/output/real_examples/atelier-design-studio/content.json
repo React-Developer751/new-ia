@@ -1,0 +1,197 @@
+{
+  "brand": "Atelier Design Studio",
+  "niche": "portfolio",
+  "kind": "creative",
+  "profile": "",
+  "business_type": "design",
+  "type_label": "Design Studio",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "elegant",
+  "keywords": [
+    "am",
+    "freelance",
+    "graphic",
+    "designer",
+    "from",
+    "mumbai"
+  ],
+  "eyebrow": "Design Studio · Mumbai",
+  "location": "Mumbai",
+  "audience": "",
+  "hero_heading": "Logos and brochures, one project at a time",
+  "tagline": "We create social media posts and packaging in Mumbai.",
+  "about_title": "About us",
+  "about": [
+    "On the list: logos, brochures and social media posts. We create them in Mumbai. Good work takes time; we'll tell you how much.",
+    "You'll find us in Mumbai. Message us a few notes and we will reply."
+  ],
+  "features_title": "Our work",
+  "features": [
+    {
+      "title": "Logos",
+      "text": "Not sure about logos? Start with a short conversation."
+    },
+    {
+      "title": "Brochures",
+      "text": "Brochures: start with references, then a plan, then the work."
+    },
+    {
+      "title": "Social Media Posts",
+      "text": "We'll explain social media posts in plain words."
+    },
+    {
+      "title": "Packaging",
+      "text": "Ask to see examples of packaging before you decide."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "A real person replies",
+      "text": "Not a form that goes nowhere."
+    },
+    {
+      "title": "No hard sell",
+      "text": "Take your time."
+    },
+    {
+      "title": "Easy to reach",
+      "text": "Message or call."
+    }
+  ],
+  "stats_title": "In short",
+  "stats": [
+    {
+      "value": "Mumbai",
+      "label": "Where we work"
+    }
+  ],
+  "steps_title": "Three simple steps",
+  "steps": [
+    {
+      "title": "Get in touch",
+      "text": "Send a message or call and tell us what you need."
+    },
+    {
+      "title": "Agree the plan",
+      "text": "Scope, schedule and the shape of logos or brochures."
+    },
+    {
+      "title": "Review and finish",
+      "text": "You give feedback; we polish until it's right."
+    }
+  ],
+  "faq_title": "Questions we get asked",
+  "faq": [
+    {
+      "q": "Where are you based?",
+      "a": "Find us in Mumbai."
+    },
+    {
+      "q": "Can you do logos?",
+      "a": "Yes; ask us about logos."
+    },
+    {
+      "q": "How do I pay?",
+      "a": "Send us a message and we'll tell you how payment works."
+    },
+    {
+      "q": "Can someone else book for me?",
+      "a": "Yes; just let us know who the booking is for."
+    }
+  ],
+  "blog_title": "Notes and guides",
+  "blog": [
+    {
+      "title": "How to choose a good design studio",
+      "excerpt": "Five questions worth asking before you decide."
+    },
+    {
+      "title": "Notes on getting started",
+      "excerpt": "The first steps, without the jargon."
+    },
+    {
+      "title": "Making things that last",
+      "excerpt": "Materials, formats and care."
+    }
+  ],
+  "contact": {
+    "email": "ankita@design.in",
+    "place": "Mumbai"
+  },
+  "cta_primary": "Start a project",
+  "cta_secondary": "See our work",
+  "cta_text": "Share your references.",
+  "cta_title": "Start with a conversation",
+  "footer": "© Atelier Design Studio. All rights reserved.",
+  "offers": [],
+  "hours": "",
+  "prices": [],
+  "facts_used": {
+    "city": {
+      "value": "Mumbai",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "logos",
+        "brochures",
+        "social media posts",
+        "packaging"
+      ],
+      "source": "prompt"
+    },
+    "email": {
+      "value": "ankita@design.in",
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "name",
+    "offers",
+    "hours",
+    "prices",
+    "phone",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "design (confidence high)",
+    "items_from_prompt": [
+      "logos",
+      "brochures",
+      "social media posts",
+      "packaging"
+    ],
+    "place": "Mumbai",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "",
+    "kind": "creative"
+  },
+  "needs_review": [
+    "No business name was given; 'Atelier Design Studio' is a placeholder."
+  ]
+}

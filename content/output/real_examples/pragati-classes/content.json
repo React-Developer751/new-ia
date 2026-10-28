@@ -1,0 +1,214 @@
+{
+  "brand": "Pragati Classes",
+  "niche": "education",
+  "kind": "education",
+  "profile": "",
+  "business_type": "school",
+  "type_label": "Coaching & Tuition Centre",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "friendly",
+  "keywords": [
+    "coaching",
+    "institute",
+    "kota",
+    "iit",
+    "jee",
+    "aur"
+  ],
+  "eyebrow": "Coaching & Tuition Centre · Kota",
+  "location": "Kota",
+  "audience": "",
+  "hero_heading": "IIT JEE and NEET coaching, step by step",
+  "tagline": "Foundation batch and test series in Kota. Let us know what matters most to you.",
+  "about_title": "About Pragati Classes",
+  "about": [
+    "On the list: foundation batch, test series and IIT JEE. Pragati Classes teaches them in Kota. Parents are kept in the loop.",
+    "You'll find Pragati Classes in Kota, open 7am to 8pm. Ask what the first day looks like."
+  ],
+  "features_title": "Subjects",
+  "features": [
+    {
+      "title": "IIT JEE",
+      "text": "Tell us what your child enjoys and we will show where IIT JEE fits."
+    },
+    {
+      "title": "NEET Coaching",
+      "text": "New to NEET coaching? Ask the teachers how children are eased in."
+    },
+    {
+      "title": "Foundation Batch",
+      "text": "Not sure about foundation batch? Start with a short conversation."
+    },
+    {
+      "title": "Test Series",
+      "text": "Tell us what you need from test series and we'll suggest where to start."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Free trial",
+      "text": "Start with a trial before you commit."
+    },
+    {
+      "title": "Opening hours",
+      "text": "Hours: 7am to 8pm. Drop by or send a message."
+    },
+    {
+      "title": "Easy to reach",
+      "text": "Message or call."
+    }
+  ],
+  "stats_title": "Find us",
+  "stats": [
+    {
+      "value": "Kota",
+      "label": "Where we work"
+    },
+    {
+      "value": "7am to 8pm",
+      "label": "Open"
+    }
+  ],
+  "steps_title": "How it works",
+  "steps": [
+    {
+      "title": "Ask about admission",
+      "text": "Message us to ask about admission, and let us know your child's age and class."
+    },
+    {
+      "title": "Meet the team",
+      "text": "We explain the school day and answer your questions."
+    },
+    {
+      "title": "Join the class",
+      "text": "We confirm the details and the first day with you."
+    }
+  ],
+  "faq_title": "Frequently asked questions",
+  "faq": [
+    {
+      "q": "When are you open?",
+      "a": "We're open 7am to 8pm."
+    },
+    {
+      "q": "Where are you?",
+      "a": "Find us in Kota. Send us a message and we'll send directions."
+    },
+    {
+      "q": "Can I ask about IIT JEE?",
+      "a": "Yes; tell us what you'd like to know about IIT JEE."
+    },
+    {
+      "q": "Can I ask questions before I decide?",
+      "a": "Of course; that's what the first conversation is for."
+    }
+  ],
+  "blog_title": "Worth reading",
+  "blog": [
+    {
+      "title": "What to know before NEET coaching",
+      "excerpt": "A short guide for families."
+    },
+    {
+      "title": "What a good first conversation covers",
+      "excerpt": "And what to expect afterwards."
+    },
+    {
+      "title": "Keeping track of your plans",
+      "excerpt": "A simple way to stay organised."
+    }
+  ],
+  "contact": {
+    "place": "Kota",
+    "hours": [
+      "7am to 8pm"
+    ]
+  },
+  "cta_primary": "Ask about admission",
+  "cta_secondary": "See the classes",
+  "cta_text": "Ask how test series works.",
+  "cta_title": "We'd like to hear from you",
+  "footer": "© Pragati Classes. All rights reserved.",
+  "offers": [
+    {
+      "id": "free_trial",
+      "text": "Free trial"
+    }
+  ],
+  "hours": "7am to 8pm",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "Pragati Classes",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Kota",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "IIT JEE",
+        "NEET coaching",
+        "foundation batch",
+        "test series"
+      ],
+      "source": "prompt"
+    },
+    "offers": {
+      "value": [
+        "Free trial"
+      ],
+      "source": "prompt"
+    },
+    "hours": {
+      "value": "7am to 8pm",
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "prices",
+    "phone",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "school (confidence high)",
+    "items_from_prompt": [
+      "IIT JEE",
+      "NEET coaching",
+      "foundation batch",
+      "test series"
+    ],
+    "place": "Kota",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "",
+    "kind": "education"
+  },
+  "needs_review": []
+}

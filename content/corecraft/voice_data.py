@@ -119,6 +119,7 @@ GENERIC = dict(
 
 # verbs of the business itself where the kind's default would sound wrong ("We shoot pottery", "We fix new tyres")
 TYPE_VERBS = {
+    "software": (("builds", "delivers"), ("build", "deliver")),
     "bakery": (("bakes", "sells"), ("bake", "sell")), "pottery": (("makes", "teaches"), ("make", "teach")), "photography": (("shoots", "captures"), ("shoot", "capture")),
     "design": (("designs", "creates"), ("design", "create")), "printing": (("prints", "produces"), ("print", "produce")), "tyres": (("fits", "repairs"), ("fit", "repair")),
     "taxi": (("provides", "runs"), ("provide", "run")), "hotel": (("offers", "hosts"), ("offer", "host")), "sweets": (("makes", "sells"), ("make", "sell")),

@@ -93,14 +93,26 @@ class PaletteAndMatchTests(unittest.TestCase):
         for p in ("submarine under the sea", "astronomy observatory at night", "a pirate ship", "", "shop"):
             self.assertIsNone(match_niche(p)[0], p)
 
+    def test_blind_prompt_gaps_stay_fixed(self):
+        from pixelmath.studio.classifier import as_classifier
+        clf = as_classifier(None)
+        for prompt, niche in (("gents haircut shop", "barber"), ("puppies for sale", "petshop"), ("car washing service", "car-wash"), ("teeth cleaning", "dental"),
+                              ("रंग बिरंगी कुर्तियों के कलेक्शन की तस्वीर चाहिए", "kurti-store"), ("रेशमी साड़ियों के रंगीन संग्रह की तस्वीर", "saree-boutique"),
+                              ("passport, map and plane tickets on desk, adventurous orange tones", "travel-agency")):
+            self.assertEqual(match_niche(prompt, clf)[0], niche, prompt)
+        for prompt in ("shipyard with a big cargo vessel", "old pirate ship sailing stormy seas", "ski resort with snowy slopes"):
+            self.assertIsNone(match_niche(prompt, clf)[0], prompt)             # sounds like a niche (logistics, travel, hotel) but is not
+
     def test_bugs_found_with_real_examples_stay_fixed(self):
         from pixelmath.studio.classifier import as_classifier
         clf = as_classifier(None)
-        for prompt in ("underwater scuba diving school", "driving school with learner cars", "dance academy for kids", "bike showroom with motorcycles",
-                       "pottery workshop with clay", "tattoo parlour with neon sign", "crypto trading bot for investors"):
+        for prompt in ("underwater scuba diving school", "flying school with a small aeroplane", "aviation academy pilot training cockpit",
+                       "cooking school kitchen with chefs and pans", "chess academy with boards and clocks", "crypto trading bot for investors"):
             self.assertIsNone(match_niche(prompt, clf)[0], prompt)             # a lookalike word must never summon the wrong niche
-            if "parlour" not in prompt and "pottery" not in prompt:            # these two are caught by the classifier (generic head nouns)
-                self.assertIsNone(match_niche(prompt)[0], prompt + " (keywords only)")
+            self.assertIsNone(match_niche(prompt)[0], prompt + " (keywords only)")
+        for prompt, niche in (("driving school with learner cars", "driving-school"), ("bike showroom with motorcycles", "bike-showroom"),
+                              ("pottery workshop with clay", "pottery"), ("tattoo parlour with neon sign", "tattoo")):
+            self.assertEqual(match_niche(prompt)[0], niche, prompt)            # these used to be lookalikes; they are real niches now
         self.assertNotEqual(match_niche("furniture showroom", clf)[0], "car-showroom")                       # "showroom" alone is not a car
         self.assertEqual(match_niche("बच्चों का खिलौनों का शोरूम, रंग बिरंगे", clf)[0], "toy-store")        # खिलौनों is an inflected खिलौने
         self.assertEqual(match_niche("दाँतों का इलाज", clf)[0] or "dental", "dental")

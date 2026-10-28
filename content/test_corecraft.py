@@ -1,10 +1,12 @@
 import ast
 import json
+import os
 import sys
 import tempfile
 import unittest
 from pathlib import Path
 
+os.environ.setdefault("CORECRAFT_NO_PHOTOS", "1")        # content tests do not need pictures (test_photos.py does)
 from corecraft import asset_engine, content_engine, design_engine, pipeline
 
 ROOT = Path(__file__).parent

@@ -1,0 +1,210 @@
+{
+  "brand": "Rao & Associates",
+  "niche": "pro",
+  "kind": "pro",
+  "profile": "",
+  "business_type": "accounting",
+  "type_label": "Accounting Firm",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "calm",
+  "keywords": [
+    "chartered",
+    "accountants",
+    "hyderabad",
+    "gst",
+    "filing",
+    "income"
+  ],
+  "eyebrow": "Accounting Firm · Hyderabad",
+  "location": "Hyderabad",
+  "audience": "",
+  "hero_heading": "Rao & Associates: GST filing and income tax in Hyderabad",
+  "tagline": "Rao & Associates prepares audit, company registration and bookkeeping in Hyderabad, with free consultation.",
+  "about_title": "About Rao & Associates",
+  "about": [
+    "Rao & Associates prepares income tax, audit and company registration in Hyderabad, with free consultation. Ask if anything is unclear.",
+    "You will find Rao & Associates in Hyderabad. Message us a few notes and we will reply."
+  ],
+  "features_title": "Our expertise",
+  "features": [
+    {
+      "title": "GST Filing",
+      "text": "GST filing: a short call first, then a clear plan."
+    },
+    {
+      "title": "Income Tax",
+      "text": "Message us about income tax; we reply to every enquiry."
+    },
+    {
+      "title": "Audit",
+      "text": "Curious about audit? Ask us anything."
+    },
+    {
+      "title": "Company Registration",
+      "text": "Not sure about company registration? Start with a short conversation."
+    },
+    {
+      "title": "Bookkeeping",
+      "text": "We'll explain bookkeeping in plain words."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Free consultation",
+      "text": "A first consultation at no cost."
+    },
+    {
+      "title": "Handled by people who know it",
+      "text": "Your matter, not a template."
+    },
+    {
+      "title": "Written summaries",
+      "text": "Ask and we'll send one."
+    }
+  ],
+  "stats_title": "Quick facts",
+  "stats": [
+    {
+      "value": "Hyderabad",
+      "label": "Where we work"
+    }
+  ],
+  "steps_title": "What happens next",
+  "steps": [
+    {
+      "title": "Get in touch",
+      "text": "Send a message or call and let us know what you need."
+    },
+    {
+      "title": "Understand your options",
+      "text": "Plain words, with the pros and cons."
+    },
+    {
+      "title": "Decide and proceed",
+      "text": "Only when you're ready."
+    }
+  ],
+  "faq_title": "Quick answers",
+  "faq": [
+    {
+      "q": "Is the first consultation free?",
+      "a": "Yes, the first consultation is free."
+    },
+    {
+      "q": "What should I bring?",
+      "a": "Bring what you have; we'll tell you what else is needed."
+    },
+    {
+      "q": "Where are you based?",
+      "a": "We're in Hyderabad; get in touch."
+    },
+    {
+      "q": "Can you help with GST filing?",
+      "a": "Yes; feel free to ask us about GST filing."
+    }
+  ],
+  "blog_title": "Notes and guides",
+  "blog": [
+    {
+      "title": "A short guide to bookkeeping",
+      "excerpt": "The basics, in plain words."
+    },
+    {
+      "title": "What a good first conversation covers",
+      "excerpt": "And what to expect afterwards."
+    },
+    {
+      "title": "When to ask for a second opinion",
+      "excerpt": "And how to do it politely."
+    }
+  ],
+  "contact": {
+    "place": "Hyderabad"
+  },
+  "cta_primary": "Book a consultation",
+  "cta_secondary": "Call the office",
+  "cta_text": "Questions about income tax? Ask us.",
+  "cta_title": "Ready when you are",
+  "footer": "© Rao & Associates. All rights reserved.",
+  "offers": [
+    {
+      "id": "free_consult",
+      "text": "Free consultation"
+    }
+  ],
+  "hours": "",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "Rao & Associates",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Hyderabad",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "GST filing",
+        "income tax",
+        "audit",
+        "company registration",
+        "bookkeeping"
+      ],
+      "source": "prompt"
+    },
+    "offers": {
+      "value": [
+        "Free consultation"
+      ],
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "hours",
+    "prices",
+    "phone",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "accounting (confidence high)",
+    "items_from_prompt": [
+      "GST filing",
+      "income tax",
+      "audit",
+      "company registration",
+      "bookkeeping"
+    ],
+    "place": "Hyderabad",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "",
+    "kind": "pro"
+  },
+  "needs_review": []
+}

@@ -1,0 +1,214 @@
+{
+  "brand": "Urban Threads",
+  "niche": "shop",
+  "kind": "retail",
+  "profile": "kurti",
+  "business_type": "clothing",
+  "type_label": "Clothing Boutique",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "playful",
+  "keywords": [
+    "boutique",
+    "women",
+    "kurtis",
+    "sarees",
+    "lehengas",
+    "dupattas"
+  ],
+  "eyebrow": "Clothing Boutique · Jaipur",
+  "location": "Jaipur",
+  "audience": "",
+  "hero_heading": "Urban Threads, Jaipur: Clothing Boutique",
+  "tagline": "Urban Threads stocks women's kurtis, sarees and lehengas in Jaipur.",
+  "about_title": "About Urban Threads",
+  "about": [
+    "On the list: dupattas, women's kurtis and sarees. Urban Threads stocks them in Jaipur. Come in or message us; either works.",
+    "In Jaipur: free shipping, cash on delivery and easy returns. Ask about stock before you travel to the store."
+  ],
+  "features_title": "Shop by category",
+  "features": [
+    {
+      "title": "Women's Kurtis",
+      "text": "Women's kurtis is easier to choose with a person to ask."
+    },
+    {
+      "title": "Sarees",
+      "text": "Curious about sarees? Feel free to ask us anything."
+    },
+    {
+      "title": "Lehengas",
+      "text": "We'll explain lehengas in plain words."
+    },
+    {
+      "title": "Dupattas",
+      "text": "Pair dupattas with something from the rest of the range."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Free shipping",
+      "text": "Shipping costs nothing; send us your address."
+    },
+    {
+      "title": "Cash on delivery",
+      "text": "Pay when your order arrives."
+    },
+    {
+      "title": "Easy returns",
+      "text": "Feel free to ask us how returns and exchanges work."
+    }
+  ],
+  "stats_title": "Quick facts",
+  "stats": [
+    {
+      "value": "Jaipur",
+      "label": "Where we work"
+    }
+  ],
+  "steps_title": "From first message to finish",
+  "steps": [
+    {
+      "title": "Browse",
+      "text": "Look through women's kurtis or sarees online or in the store."
+    },
+    {
+      "title": "Check size and fabric",
+      "text": "Ask us about sizing and care."
+    },
+    {
+      "title": "Get started",
+      "text": "We begin when you're ready."
+    }
+  ],
+  "faq_title": "Good questions",
+  "faq": [
+    {
+      "q": "Do you ship to my city?",
+      "a": "Free shipping is available; message us your address."
+    },
+    {
+      "q": "Is cash on delivery available?",
+      "a": "Yes, cash on delivery is available."
+    },
+    {
+      "q": "Can I return or exchange something?",
+      "a": "Yes, returns are accepted; feel free to ask us for the details."
+    },
+    {
+      "q": "What if I'm not sure what I need?",
+      "a": "Describe the situation and we'll suggest where to start."
+    }
+  ],
+  "blog_title": "Our notes",
+  "blog": [
+    {
+      "title": "How to choose lehengas",
+      "excerpt": "What to look for, what to skip and what to ask."
+    },
+    {
+      "title": "Small things that make a difference",
+      "excerpt": "Notes from everyday experience."
+    },
+    {
+      "title": "Caring for lehengas",
+      "excerpt": "Simple habits that make it last."
+    }
+  ],
+  "contact": {
+    "place": "Jaipur"
+  },
+  "cta_primary": "Shop now",
+  "cta_secondary": "Visit the store",
+  "cta_text": "Shop now, and ask us anything.",
+  "cta_title": "Start with a conversation",
+  "footer": "© Urban Threads. All rights reserved.",
+  "offers": [
+    {
+      "id": "free_shipping",
+      "text": "Free shipping"
+    },
+    {
+      "id": "cod",
+      "text": "Cash on delivery"
+    },
+    {
+      "id": "returns",
+      "text": "Easy returns"
+    }
+  ],
+  "hours": "",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "Urban Threads",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Jaipur",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "women's kurtis",
+        "sarees",
+        "lehengas",
+        "dupattas"
+      ],
+      "source": "prompt"
+    },
+    "offers": {
+      "value": [
+        "Free shipping",
+        "Cash on delivery",
+        "Easy returns"
+      ],
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "hours",
+    "prices",
+    "phone",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "clothing (confidence high)",
+    "items_from_prompt": [
+      "women's kurtis",
+      "sarees",
+      "lehengas",
+      "dupattas"
+    ],
+    "place": "Jaipur",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "kurti",
+    "kind": "retail"
+  },
+  "needs_review": []
+}

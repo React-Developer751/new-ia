@@ -1,0 +1,228 @@
+{
+  "brand": "City Care Hospital",
+  "niche": "care",
+  "kind": "health",
+  "profile": "",
+  "business_type": "clinic",
+  "type_label": "Medical Clinic",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "calm",
+  "keywords": [
+    "nagpur",
+    "emergency",
+    "icu",
+    "cardiology",
+    "orthopaedics",
+    "maternity"
+  ],
+  "eyebrow": "Medical Clinic · Nagpur",
+  "location": "Nagpur",
+  "audience": "",
+  "hero_heading": "Emergency in Nagpur",
+  "tagline": "Cashless insurance, open 24x7: City Care Hospital offers ICU, cardiology and orthopaedics in Nagpur.",
+  "about_title": "About City Care Hospital",
+  "about": [
+    "Orthopaedics and maternity: City Care Hospital offers them in Nagpur. Take the time you need to make up your mind.",
+    "In Nagpur: cashless insurance. Send a short message and we'll take it from there. Also: ambulance."
+  ],
+  "features_title": "Services",
+  "features": [
+    {
+      "title": "Emergency",
+      "text": "Bring your questions about emergency."
+    },
+    {
+      "title": "ICU",
+      "text": "Tell us what you need from ICU and we will suggest where to start."
+    },
+    {
+      "title": "Cardiology",
+      "text": "Bring your questions about cardiology; the clinician will take them one by one."
+    },
+    {
+      "title": "Orthopaedics",
+      "text": "We will explain orthopaedics in plain words, and answer every question."
+    },
+    {
+      "title": "Maternity",
+      "text": "We will explain maternity in plain words."
+    },
+    {
+      "title": "Pathology Lab",
+      "text": "Not sure if pathology lab is right for you? A consultation will tell you."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Cashless insurance",
+      "text": "Ask us for the details."
+    },
+    {
+      "title": "Opening hours",
+      "text": "Hours: 24x7. Drop by or send a message."
+    },
+    {
+      "title": "Easy to reach",
+      "text": "Book and ask questions without fuss."
+    }
+  ],
+  "stats_title": "Quick facts",
+  "stats": [
+    {
+      "value": "Nagpur",
+      "label": "Where we work"
+    },
+    {
+      "value": "24x7",
+      "label": "Open"
+    }
+  ],
+  "steps_title": "Three simple steps",
+  "steps": [
+    {
+      "title": "Reserve a time",
+      "text": "Call or message us to book; bring earlier reports if you have them."
+    },
+    {
+      "title": "Consultation",
+      "text": "We discuss emergency or ICU and what might suit you."
+    },
+    {
+      "title": "Follow-up",
+      "text": "We review how you're doing and adjust the plan."
+    }
+  ],
+  "faq_title": "Quick answers",
+  "faq": [
+    {
+      "q": "When are you open?",
+      "a": "Our hours are 24x7."
+    },
+    {
+      "q": "Where are you?",
+      "a": "We're in Nagpur; reach out for directions."
+    },
+    {
+      "q": "Can I ask about emergency?",
+      "a": "Yes; tell us what you'd like to know about emergency."
+    },
+    {
+      "q": "Is there anything I should prepare?",
+      "a": "We'll tell you what to bring or prepare when you get in touch."
+    }
+  ],
+  "blog_title": "Short guides",
+  "blog": [
+    {
+      "title": "What to expect at your first visit",
+      "excerpt": "A walk through the consultation, from the first question to the plan."
+    },
+    {
+      "title": "Keeping track of your plans",
+      "excerpt": "A simple way to stay organised."
+    },
+    {
+      "title": "Looking after yourself after ambulance",
+      "excerpt": "Everyday habits that support the treatment."
+    }
+  ],
+  "contact": {
+    "place": "Nagpur",
+    "hours": [
+      "24x7"
+    ]
+  },
+  "cta_primary": "Book an appointment",
+  "cta_secondary": "Call the clinic",
+  "cta_text": "A conversation is the best first step.",
+  "cta_title": "Come and see for yourself",
+  "footer": "© City Care Hospital. All rights reserved.",
+  "offers": [
+    {
+      "id": "cashless",
+      "text": "Cashless insurance"
+    }
+  ],
+  "hours": "24x7",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "City Care Hospital",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Nagpur",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "emergency",
+        "ICU",
+        "cardiology",
+        "orthopaedics",
+        "maternity",
+        "pathology lab",
+        "ambulance"
+      ],
+      "source": "prompt"
+    },
+    "offers": {
+      "value": [
+        "Cashless insurance"
+      ],
+      "source": "prompt"
+    },
+    "hours": {
+      "value": "24x7",
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "prices",
+    "phone",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "clinic (confidence high)",
+    "items_from_prompt": [
+      "emergency",
+      "ICU",
+      "cardiology",
+      "orthopaedics",
+      "maternity",
+      "pathology lab",
+      "ambulance"
+    ],
+    "place": "Nagpur",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "",
+    "kind": "health"
+  },
+  "needs_review": []
+}

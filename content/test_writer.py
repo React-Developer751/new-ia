@@ -1,5 +1,6 @@
 """Tests for the facts reader, the per-kind voice, the sub-niche vocabulary, the page validators and the detector."""
 import json
+import os
 import random
 import re
 import sys
@@ -10,6 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).parent
 sys.path.insert(0, str(ROOT / "training"))
 
+os.environ.setdefault("CORECRAFT_NO_PHOTOS", "1")        # content tests do not need pictures (test_photos.py does)
 from corecraft import detector, validators, voice_data
 from corecraft.business_types import T, detect_type
 from corecraft.content_engine import generate_content
@@ -435,6 +437,311 @@ class RealPrompts(unittest.TestCase):
         for key in ("plumber", "yoga", "school", "bakery"):
             items = generate_content(REAL[key][0])["generated_by"]["items_from_prompt"]
             self.assertEqual(len(items), len(REAL[key][3]), (key, items))
+
+
+REAL2 = {   # a second round of prompts: names with a type word in them, localities, thresholds, contact fragments, Hindi names
+    "salon": ("Glow Studio salon in Andheri, Mumbai: haircut, hair colour, keratin, bridal makeup, facial, waxing. Open Tue-Sun 10am-8pm. Book on WhatsApp 98200 11223",
+              "Glow Studio", "Mumbai", ["haircut", "hair colour", "keratin", "bridal makeup", "facial", "waxing"]),
+    "hotel": ("Hotel Sea Breeze, Goa - 24 AC rooms, sea view, free breakfast, airport pickup, swimming pool, free wifi. Booking: 0832-2456789",
+              "Hotel Sea Breeze", "Goa", ["24 AC rooms", "sea view", "free breakfast", "swimming pool"]),
+    "tours": ("Wanderlust Tours, Manali. Himachal trekking, Kullu honeymoon packages, paragliding, camping, taxi service. Call 9418012345",
+              "Wanderlust Tours", "Manali", ["Himachal trekking", "Kullu honeymoon packages", "paragliding", "camping", "taxi service"]),
+    "photo": ("Lens & Light photography studio in Hyderabad - wedding photography, pre-wedding shoots, baby shoots, product photography. Prices from Rs 15000",
+              "Lens & Light", "Hyderabad", ["wedding photography", "pre-wedding shoots", "baby shoots", "product photography"]),
+    "hospital": ("City Care Hospital, Nagpur. 24x7 emergency, ICU, cardiology, orthopaedics, maternity, pathology lab, ambulance. Cashless insurance",
+                 "City Care Hospital", "Nagpur", ["emergency", "ICU", "cardiology", "orthopaedics", "maternity", "pathology lab", "ambulance"]),
+    "medical": ("Apna Medical Store, Lucknow: medicines, home delivery, baby care, surgical items, diabetic care. Open 8am-11pm",
+                "Apna Medical Store", "Lucknow", ["medicines", "baby care", "surgical items", "diabetic care"]),
+    "mobile": ("Mobile Mania, Surat - iPhone, Samsung, Vivo, accessories, repair, EMI available, 1 year warranty",
+               "Mobile Mania", "Surat", ["iPhone", "Samsung", "Vivo", "accessories", "repair"]),
+    "jeweller": ("Kapoor Jewellers, Chandni Chowk Delhi. Gold, diamond, silver jewellery, bridal sets, hallmark, old gold exchange",
+                 "Kapoor Jewellers", "Delhi", ["gold", "diamond", "silver jewellery", "bridal sets", "hallmark", "old gold exchange"]),
+    "preschool": ("Happy Feet Preschool, Pune: playgroup, nursery, kindergarten, daycare, activity classes. Admissions open",
+                  "Happy Feet Preschool", "Pune", ["playgroup", "nursery", "kindergarten", "daycare", "activity classes"]),
+    "software": ("TechNova, a software company in Bengaluru. Custom software, mobile apps, cloud, AI chatbots, free consultation. hello@technova.io",
+                 "TechNova", "Bengaluru", ["custom software", "mobile apps", "cloud", "AI chatbots"]),
+    "ngo": ("Harmony Care NGO, Jaipur - girl child education, food drive, health camps, donate online",
+            "Harmony Care NGO", "Jaipur", ["girl child education", "food drive", "health camps"]),
+    "cars": ("Speedy Motors, Gurgaon - used cars, car service, insurance, finance, exchange offers, free test drive",
+             "Speedy Motors", "Gurgaon", ["used cars", "car service", "insurance", "finance", "exchange offers", "free test drive"]),
+    "kirana": ("मेरी दुकान का नाम शर्मा किराना स्टोर है, जयपुर में, आटा, दाल, चावल, तेल, मसाले, होम डिलीवरी, सुबह 8 से रात 9 बजे तक",
+               "शर्मा किराना स्टोर", "जयपुर", ["आटा", "दाल", "चावल", "तेल", "मसाले"]),
+    "parlour": ("mujhe apne beauty parlour ki website chahiye, naam Priya Beauty Parlour, Kanpur, facial, threading, bridal makeup, hair spa, mehendi",
+                "Priya Beauty Parlour", "Kanpur", ["facial", "threading", "bridal makeup", "hair spa", "mehendi"]),
+    "ca": ("Rao & Associates, chartered accountants, Hyderabad. GST filing, income tax, audit, company registration, bookkeeping. First consultation free",
+           "Rao & Associates", "Hyderabad", ["GST filing", "income tax", "audit", "company registration", "bookkeeping"]),
+    "spa": ("Zen Spa & Wellness, Bangalore. Swedish massage, aromatherapy, body scrub, couples spa, steam. Open 10am to 10pm. Online booking",
+            "Zen Spa & Wellness", "Bangalore", ["Swedish massage", "aromatherapy", "body scrub", "couples spa", "steam"]),
+    "toys": ("Kids Zone toy shop, Ahmedabad. Educational toys, board games, soft toys, return gifts. COD, free shipping above Rs 999",
+             "Kids Zone", "Ahmedabad", ["educational toys", "board games", "soft toys", "return gifts"]),
+}
+
+
+class RealPrompts2(unittest.TestCase):
+    def test_facts(self):
+        for key, (prompt, name, city, items) in REAL2.items():
+            f = facts_for(prompt)
+            self.assertEqual((f["name"], f["city"], f["items"]), (name, city, items), key)
+
+    def test_pages_are_clean(self):
+        for key, (prompt, name, city, items) in REAL2.items():
+            c = generate_content(prompt)
+            blob = " ".join(t for _, t, _ in leaves_of(c)).lower() + " " + " ".join(f["title"] for f in c["features"]).lower()
+            for it in items:
+                self.assertIn(it.lower(), blob, (key, it))
+            for banned in BANNED:
+                self.assertNotIn(banned, blob, key)
+            self.assertFalse([n for n in c["needs_review"] if "quality check" in n or "placeholder" in n], (key, c["needs_review"]))
+            self.assertEqual((c["brand"], c["location"]), (name, city), key)
+
+    def test_offers_and_conditions(self):
+        ids = lambda k: {o["id"] for o in facts_for(REAL2[k][0])["offers"]}   # noqa: E731
+        self.assertIn("cashless", ids("hospital"))
+        self.assertIn("donate", ids("ngo"))
+        self.assertIn("pickup", ids("hotel"))
+        toys = {o["text"] for o in facts_for(REAL2["toys"][0])["offers"]}
+        self.assertIn("Free shipping above Rs 999", toys)
+        self.assertEqual(facts_for(REAL2["toys"][0])["prices"], [])
+        self.assertEqual(facts_for(REAL2["photo"][0])["prices"], [{"name": "Starting price", "price": "from Rs 15000"}])
+
+    def test_localities(self):
+        self.assertEqual(facts_for(REAL2["jeweller"][0])["address"], "Chandni Chowk")
+        self.assertEqual(facts_for(REAL2["salon"][0])["address"], "Andheri")
+
+    def test_hotel_pharmacy_and_preschool_speak_their_own_words(self):
+        hotel = " ".join(t for _, t, _ in leaves_of(generate_content(REAL2["hotel"][0]))).lower()
+        self.assertNotIn("trip", hotel)
+        self.assertIn("room", hotel)
+        pharm = generate_content(REAL2["medical"][0])
+        self.assertNotIn("appointment", pharm["cta_primary"].lower())
+        pre = generate_content(REAL2["preschool"][0])
+        self.assertNotIn("demo", " ".join(t for _, t, _ in leaves_of(pre)).lower())
+        self.assertNotIn("batch", " ".join(t for _, t, _ in leaves_of(pre)).lower())
+        self.assertNotIn("automates", " ".join(t for _, t, _ in leaves_of(generate_content(REAL2["software"][0]))).lower())
+
+    def test_request_words_do_not_eat_a_name(self):
+        from corecraft.facts import strip_request
+        self.assertTrue(strip_request("Apna Medical Store, Lucknow: medicines").startswith("Apna Medical Store"))
+        self.assertEqual(strip_request("apna cafe chahiye Pune"), "cafe chahiye Pune")
+
+
+SENTENCES = {   # people often write whole sentences instead of a list
+    "bakery": ("We are a family-run bakery in Jaipur since 1998. We make fresh cakes, cookies, bread and pastries every morning, and we also take custom orders for birthdays and weddings. We are open from 8am to 9pm and you can order on WhatsApp.",
+               "Jaipur", ["fresh cakes", "cookies", "bread", "pastries", "custom orders"], "8am to 9pm"),
+    "dentist": ("I run a small dental clinic in Indore. I am a dentist with 12 years of experience and we do root canals, braces, teeth whitening and kids dentistry. Appointments are available online.",
+                "Indore", ["root canals", "braces", "teeth whitening", "kids dentistry"], None),
+    "gym": ("Hi, I need a website for my gym. It is called Iron Temple and it is in Chandigarh. We offer weight training, cardio, crossfit, personal training and diet plans. Timings are 5am to 10pm.",
+            "Chandigarh", ["weight training", "cardio", "crossfit", "personal training", "diet plans"], "5am to 10pm"),
+    "security": ("Our company provides CCTV installation, biometric attendance systems, networking and AMC services for offices in Pune. Free site survey available.",
+                 "Pune", ["CCTV installation", "biometric attendance systems", "networking", "AMC services"], None),
+    "tuition": ("Mera naam Rahul hai aur main Delhi mein ek tuition center chalata hoon. Maths, science aur English ki classes 6th se 12th tak. Demo class free hai.",
+                "Delhi", ["maths", "science", "English classes"], None),
+    "designer": ("I am a freelance graphic designer from Mumbai. I design logos, brochures, social media posts and packaging. Contact me at ankita@design.in",
+                 "Mumbai", ["logos", "brochures", "social media posts", "packaging"], None),
+    "restaurant": ("Looking for a website for our restaurant called Spice Garden, we serve Chinese and Thai food, momos, noodles, fried rice and manchurian. Located in Siliguri. Home delivery available.",
+                   "Siliguri", ["momos", "noodles", "fried rice", "manchurian"], None),
+    "garage": ("A car repair garage in Hyderabad offering engine repair, denting and painting, AC service, wheel alignment and car wash. Open all days.",
+               "Hyderabad", ["engine repair", "denting", "painting", "AC service", "wheel alignment", "car wash"], "all days"),
+    "yoga": ("Priya Sharma, yoga teacher in Rishikesh, offering 200 hour teacher training, morning classes, retreats and online sessions",
+             "Rishikesh", ["200 hour teacher training", "morning classes", "retreats", "online sessions"], None),
+    "candles": ("We sell handmade candles, soaps and gift hampers online. Based in Kochi. Free shipping over Rs 500 and cash on delivery available.",
+                "Kochi", ["handmade candles", "soaps", "gift hampers"], None),
+}
+
+
+class SentencePrompts(unittest.TestCase):
+    def test_facts_from_sentences(self):
+        for key, (prompt, city, items, hours) in SENTENCES.items():
+            f = facts_for(prompt)
+            self.assertEqual((f["city"], f["items"]), (city, items), key)
+            self.assertEqual(f["hours"], hours, key)
+
+    def test_names_and_offers_from_sentences(self):
+        self.assertEqual(facts_for(SENTENCES["gym"][0])["name"], "Iron Temple")
+        self.assertEqual(facts_for(SENTENCES["restaurant"][0])["name"], "Spice Garden")
+        self.assertEqual(facts_for(SENTENCES["yoga"][0])["name"], "Priya Sharma")
+        self.assertEqual(facts_for(SENTENCES["designer"][0])["email"], "ankita@design.in")
+        ids = lambda k: {o["id"] for o in facts_for(SENTENCES[k][0])["offers"]}   # noqa: E731
+        self.assertIn("online_booking", ids("dentist"))
+        self.assertIn("free_consult", ids("security"))
+        self.assertIn("free_trial", ids("tuition"))
+        self.assertIn("home_delivery", ids("restaurant"))
+        self.assertEqual(ids("candles"), {"cod", "free_shipping"})   # "cash on delivery" is not home delivery
+        self.assertEqual(facts_for(SENTENCES["dentist"][0])["years"], "12 years of experience")
+
+    def test_no_sentence_fragments_become_services(self):
+        bad = {"we are", "it is", "hi", "my gym", "you can order on", "located in siliguri", "based in kochi", "website for our restaurant", "we do root canals", "dentist"}
+        for key, (prompt, *_rest) in SENTENCES.items():
+            self.assertFalse(bad & {i.lower() for i in facts_for(prompt)["items"]}, key)
+
+    def test_pages_keep_every_service_and_the_name(self):
+        for key, (prompt, city, items, hours) in SENTENCES.items():
+            c = generate_content(prompt)
+            blob = " ".join(t for _, t, _ in leaves_of(c)).lower() + " " + " ".join(f["title"] for f in c["features"]).lower()
+            for it in items:
+                self.assertIn(it.lower(), blob, (key, it))
+            self.assertEqual(c["location"], city, key)
+            self.assertFalse([n for n in c["needs_review"] if "quality check" in n], (key, c["needs_review"]))
+            self.assertNotRegex(blob, r"\b(?:we are|it is)\b\s+and\b|in chandigarh in chandigarh|siliguri home", key)
+
+
+class Typos(unittest.TestCase):
+    def test_business_words_are_corrected(self):
+        from corecraft import typos
+        for wrong, right in (("resturant in pune, pizza", "restaurant"), ("denatl clinic in nagpur", "dental"), ("beauty salun in jaipur", "salon"), ("gim in delhi, cardio", "gym")):
+            text, changes, _ = typos.fix(wrong)
+            self.assertIn(right, text)
+            self.assertTrue(changes, wrong)
+
+    def test_real_words_and_names_are_never_rewritten(self):
+        from corecraft import typos
+        for text in ("Kaju katli, himachal trekking, water tanker supply", "mujhe ek dental clinic chahiye Pune mein, braces, implants", "Forno Rosso, tiramisu, risotto, aligners, invoicing",
+                     "dukaan mein kapde saree kurti lehenga wala", "hello@pixelforge.in www.pixelforge.in", "मुझे एक रेस्टोरेंट चाहिए"):
+            self.assertEqual(typos.fix(text)[0], text)
+
+    def test_typo_prompts_make_the_right_page(self):
+        c = generate_content("resturant in pune, pizza, burger, pasta, cold coffee")
+        self.assertEqual((c["business_type"], c["location"]), ("restaurant", "Pune"))
+        self.assertEqual(c["generated_by"]["items_from_prompt"], ["pizza", "burger", "pasta", "cold coffee"])
+        self.assertTrue([n for n in c["needs_review"] if "resturant" in n and "typing" in n])
+        c = generate_content("gim in delhi, weight traning, cardeo, zumba")
+        self.assertEqual((c["business_type"], c["location"]), ("gym", "Delhi"))
+        self.assertEqual(c["generated_by"]["items_from_prompt"][0], "weight training")
+
+    def test_a_clean_prompt_gets_no_typo_note(self):
+        c = generate_content(ITALIAN)
+        self.assertFalse([n for n in c["needs_review"] if "typing" in n or "as typed" in n])
+
+
+class ScatteredServices(unittest.TestCase):
+    def test_services_spread_over_sentences(self):
+        f = facts_for("we have a bakery in Mumbai. We make cakes and cookies. We also do bread and brownies. We also have custom cakes for weddings. Along with that we sell gift boxes.")
+        self.assertEqual(f["items"], ["cakes", "cookies", "bread", "brownies", "custom cakes", "gift boxes"])
+        f = facts_for("Our clinic is in Pune. Services include root canal. Services include braces. We also provide teeth whitening and implants.")
+        self.assertEqual(f["items"], ["root canal", "braces", "teeth whitening", "implants"])
+
+    def test_a_run_of_words_without_commas(self):
+        f = facts_for("pet shop in bangalore dog food cat food aquarium fish toys")
+        self.assertEqual((f["city"], f["items"]), ("Bangalore", ["dog food", "cat food", "aquarium fish", "toys"]))
+
+    def test_selling_and_area_names(self):
+        self.assertEqual(facts_for("shoe shop in kolkata selling sports shoes, formal shoes, sandals")["items"], ["sports shoes", "formal shoes", "sandals"])
+        f = facts_for("laptop repair shop in Delhi Nehru Place. screen replacement, battery, data recovery, windows install. Call 9999999999")
+        self.assertEqual((f["city"], f["address"], f["name"]), ("Delhi", "Nehru Place", None))
+        self.assertEqual(generate_content("laptop repair shop in Delhi Nehru Place. screen replacement, battery, data recovery, windows install")["generated_by"]["items_from_prompt"],
+                         ["screen replacement", "battery", "data recovery", "windows install"])
+
+
+class NoMadeUpName(unittest.TestCase):
+    def test_heading_says_what_the_business_is_not_a_fake_name(self):
+        c = generate_content("dental clinic in Pune, braces, implants, crowns")
+        self.assertEqual(c["brand"], "Dental Clinic, Pune")
+        self.assertEqual(c["about_title"], "About us")
+        self.assertTrue([n for n in c["needs_review"] if "not a name" in n])
+        self.assertEqual(generate_content("bakery, cakes, cookies, bread")["brand"], "Bakery")
+
+    def test_a_given_name_is_used_and_not_flagged(self):
+        c = generate_content("Smile Hub dental clinic in Pune, braces, implants, crowns")
+        self.assertEqual(c["brand"], "Smile Hub")
+        self.assertFalse([n for n in c["needs_review"] if "No business name" in n])
+
+    def test_email_domain_is_only_a_suggestion(self):
+        c = generate_content("software company in Pune, apps, cloud, chatbots. hello@technova.io")
+        self.assertNotEqual(c["brand"], "Technova")
+        self.assertTrue([n for n in c["needs_review"] if "suggests 'Technova'" in n])
+        c = generate_content("software company in Pune, apps, cloud, chatbots. someone@gmail.com")
+        self.assertFalse([n for n in c["needs_review"] if "suggests" in n])
+
+
+NO_COMMAS = [   # lists typed with no separators; these were used to tune the cutter, so they guard against regressions (the fresh-set score is in the README)
+    ("pet shop in bangalore dog food cat food aquarium fish toys", ["dog food", "cat food", "aquarium fish", "toys"]),
+    ("beauty salon in Jaipur haircut facial bridal makeup waxing threading", ["haircut", "facial", "bridal makeup", "waxing", "threading"]),
+    ("gym in Delhi weight training cardio zumba personal training", ["weight training", "cardio", "zumba", "personal training"]),
+    ("bakery in Mumbai chocolate cake cupcakes brownies fresh bread", ["chocolate cake", "cupcakes", "brownies", "fresh bread"]),
+    ("dental clinic in Pune root canal braces teeth whitening implants", ["root canal", "braces", "teeth whitening", "implants"]),
+    ("mobile shop in Surat iPhone Samsung accessories screen guard repair", ["iPhone", "Samsung", "accessories", "screen guard", "repair"]),
+    ("restaurant in Goa fish curry prawn fry crab masala sol kadi", ["fish curry", "prawn fry", "crab masala", "sol kadi"]),
+    ("electrician in Pune house wiring fan repair inverter installation switch board", ["house wiring", "fan repair", "inverter installation", "switch board"]),
+    ("clothing store in Jaipur kurtis sarees lehengas dupattas", ["kurtis", "sarees", "lehengas", "dupattas"]),
+    ("car wash in Hyderabad interior cleaning exterior polish engine wash ceramic coating", ["interior cleaning", "exterior polish", "engine wash", "ceramic coating"]),
+    ("optical shop in Surat eye test spectacles contact lenses sunglasses", ["eye test", "spectacles", "contact lenses", "sunglasses"]),
+    ("computer institute in Lucknow tally course python course web design course", ["tally course", "python course", "web design course"]),
+]
+
+
+class NoCommaLists(unittest.TestCase):
+    def test_lists_without_separators(self):
+        for prompt, items in NO_COMMAS:
+            self.assertEqual(facts_for(prompt)["items"], items, prompt)
+
+    def test_a_cut_list_is_reported(self):
+        c = generate_content("pet shop in bangalore dog food cat food aquarium fish toys")
+        self.assertTrue([n for n in c["needs_review"] if "without commas" in n and "dog food | cat food" in n], c["needs_review"])
+
+    def test_a_normal_list_is_never_cut_or_reported(self):
+        for p in ("dental clinic in Pune, teeth whitening, root canal, hair spa", "Italian restaurant Forno Rosso, Mumbai, wood fired pizza, fresh pasta, tiramisu"):
+            self.assertFalse([n for n in generate_content(p)["needs_review"] if "without commas" in n], p)
+
+    def test_known_phrases_and_names_stay_whole(self):
+        self.assertEqual(facts_for("salon in Pune, hair spa, bridal makeup, Swedish massage")["items"], ["hair spa", "bridal makeup", "Swedish massage"])
+        self.assertEqual(facts_for("dental clinic in Pune, General dental care, teeth whitening")["items"], ["general dental care", "teeth whitening"])
+
+    def test_an_unlisted_town_before_the_services(self):
+        f = facts_for("dairy in Anand fresh milk paneer butter ghee curd")
+        self.assertEqual(f["city"], "Anand")
+        self.assertTrue(f["items"])
+
+
+FINAL = {   # the last mixed batch: clean list, typos, sentences, no name, Hinglish, Hindi, unlisted town, "a gym with ..."
+    "dosa": ("Spice Route Kitchen, South Indian restaurant in Chennai: masala dosa, idli sambar, filter coffee, pongal, meals. Open 7am to 10pm. Table booking, home delivery. 044 2345 6789",
+             "Spice Route Kitchen", "Chennai", ["masala dosa", "idli sambar", "filter coffee", "pongal", "meals"]),
+    "typo": ("denatl clinic in Nagpur root canal braces teeth whitening implants kids dentistry. Open Mon-Sat 10am-7pm",
+             None, "Nagpur", ["root canal", "braces", "teeth whitening", "implants", "kids dentistry"]),
+    "sweets": ("We are a family-run sweet shop in Udaipur since 1985. We make kaju katli, motichoor ladoo, jalebi and namkeen. We also take orders for weddings and festivals. Open 8am to 10pm, home delivery available. Call 9414012345",
+               None, "Udaipur", ["kaju katli", "motichoor ladoo", "jalebi", "namkeen"]),
+    "hinglish": ("mujhe apne tuition center ki website chahiye, naam Gyan Deep Classes, Patna, maths, science, english, 9th se 12th, demo class free, shaam 4 se raat 8 tak",
+                 "Gyan Deep Classes", "Patna", ["maths", "science", "english"]),
+    "hindi": ("मेरी दुकान का नाम गुप्ता मेडिकल स्टोर है, कानपुर में, दवाइयाँ, बेबी केयर, सर्जिकल सामान, होम डिलीवरी, सुबह 8 से रात 10 बजे तक",
+              "गुप्ता मेडिकल स्टोर", "कानपुर", ["दवाइयाँ", "बेबी केयर", "सर्जिकल सामान"]),
+    "hardware": ("hardware store in Anand cement paint pipes tools bulbs locks", None, "Anand", ["cement", "paint", "pipes", "tools", "bulbs", "locks"]),
+    "gym": ("Nova Fitness Club in Gurgaon, a gym with weight training, cardio, crossfit, zumba and personal training. Free trial class. Open 5am to 11pm. nova@novafit.in",
+            "Nova Fitness Club", "Gurgaon", ["weight training", "cardio", "crossfit", "zumba", "personal training"]),
+}
+
+
+class FinalBatch(unittest.TestCase):
+    def test_facts(self):
+        for key, (prompt, name, city, items) in FINAL.items():
+            f = facts_for(prompt)
+            self.assertEqual((f["city"], f["items"]), (city, items), key)
+            self.assertEqual(f["name"], name, key)
+
+    def test_comma_separated_names_are_not_cut(self):
+        self.assertFalse([n for n in generate_content(FINAL["dosa"][0])["needs_review"] if "without commas" in n])
+        self.assertEqual(generate_content(FINAL["hinglish"][0])["generated_by"]["items_from_prompt"], ["maths", "science", "english"])
+
+    def test_headings_when_there_is_no_name(self):
+        self.assertEqual(generate_content(FINAL["hardware"][0])["brand"], "Store, Anand")
+        self.assertEqual(generate_content("We sell handmade candles, soaps and gift hampers online. Based in Kochi.")["brand"], "Online Store, Kochi")
+        self.assertEqual(generate_content(FINAL["typo"][0])["brand"], "Dental Clinic, Nagpur")
+
+    def test_hindi_medical_store(self):
+        c = generate_content(FINAL["hindi"][0])
+        self.assertEqual(c["type_label"], "मेडिकल स्टोर")
+        self.assertNotIn("अपॉइंटमेंट", c["cta_primary"])
+        self.assertEqual(c["cta_primary"], "दवाई ऑर्डर करें")
+
+    def test_every_type_has_a_hindi_label(self):
+        from corecraft import lang_hi
+        self.assertEqual([k for k in T if k not in lang_hi.LABELS], [])
+
+    def test_pages_keep_every_service(self):
+        for key, (prompt, name, city, items) in FINAL.items():
+            c = generate_content(prompt)
+            blob = " ".join(t for _, t, _ in leaves_of(c)).lower() + " " + " ".join(f["title"] for f in c["features"]).lower()
+            for it in items:
+                self.assertIn(it.lower(), blob, (key, it))
+            self.assertFalse([n for n in c["needs_review"] if "quality check" in n], (key, c["needs_review"]))
 
 
 if __name__ == "__main__":

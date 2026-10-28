@@ -1,0 +1,194 @@
+{
+  "brand": "Priya Sharma",
+  "niche": "fitness",
+  "kind": "fitness",
+  "profile": "yoga",
+  "business_type": "yoga",
+  "type_label": "Yoga Studio",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "friendly",
+  "keywords": [
+    "yoga",
+    "teacher",
+    "rishikesh",
+    "offering",
+    "hour",
+    "training"
+  ],
+  "eyebrow": "Yoga Studio · Rishikesh",
+  "location": "Rishikesh",
+  "audience": "",
+  "hero_heading": "200 hour teacher training and morning classes in Rishikesh",
+  "tagline": "Priya Sharma teaches retreats and online sessions in Rishikesh. Take a look around and feel free to ask us anything.",
+  "about_title": "About Priya Sharma",
+  "about": [
+    "It starts with retreats. Priya Sharma teaches online sessions and 200 hour teacher training too in Rishikesh.",
+    "You'll find Priya Sharma in Rishikesh. Tell us how many days a week you can practise."
+  ],
+  "features_title": "Classes and training",
+  "features": [
+    {
+      "title": "200 Hour Teacher Training",
+      "text": "Message us about 200 hour teacher training; we reply to every enquiry."
+    },
+    {
+      "title": "Morning Classes",
+      "text": "Feel free to ask us how morning classes works and what to expect."
+    },
+    {
+      "title": "Retreats",
+      "text": "New to retreats? Tell the teacher and they'll guide you."
+    },
+    {
+      "title": "Online Sessions",
+      "text": "Not sure about online sessions? Start with a short conversation."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Teacher-led",
+      "text": "Someone is watching your alignment."
+    },
+    {
+      "title": "Straight answers",
+      "text": "Ask and we'll say it plainly."
+    },
+    {
+      "title": "No hard sell",
+      "text": "Take your time."
+    }
+  ],
+  "stats_title": "Good to know",
+  "stats": [
+    {
+      "value": "Rishikesh",
+      "label": "Where we work"
+    }
+  ],
+  "steps_title": "From first message to finish",
+  "steps": [
+    {
+      "title": "Say hello",
+      "text": "Let us know what you have in mind."
+    },
+    {
+      "title": "Meet your teacher",
+      "text": "We will talk about your experience and any injuries."
+    },
+    {
+      "title": "Get started",
+      "text": "We begin when you're ready."
+    }
+  ],
+  "faq_title": "Quick answers",
+  "faq": [
+    {
+      "q": "I have an injury. Can I still train?",
+      "a": "Mention any injury at the time of booking and we will plan around it."
+    },
+    {
+      "q": "Where are you?",
+      "a": "We're in Rishikesh; get in touch for directions."
+    },
+    {
+      "q": "Can I ask about 200 hour teacher training?",
+      "a": "Yes; tell us what you'd like to know about 200 hour teacher training."
+    },
+    {
+      "q": "Is there anything I should prepare?",
+      "a": "Feel free to ask us and we'll tell you what to have ready."
+    }
+  ],
+  "blog_title": "Our notes",
+  "blog": [
+    {
+      "title": "Practice around a busy week",
+      "excerpt": "How to keep the habit when life gets full."
+    },
+    {
+      "title": "What to know before morning classes",
+      "excerpt": "A short guide for beginners."
+    },
+    {
+      "title": "Keeping track of your plans",
+      "excerpt": "A simple way to stay organised."
+    }
+  ],
+  "contact": {
+    "place": "Rishikesh"
+  },
+  "cta_primary": "Start a free class",
+  "cta_secondary": "Book a class",
+  "cta_text": "Your first class starts with a message.",
+  "cta_title": "Come and see for yourself",
+  "footer": "© Priya Sharma. All rights reserved.",
+  "offers": [],
+  "hours": "",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "Priya Sharma",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Rishikesh",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "200 hour teacher training",
+        "morning classes",
+        "retreats",
+        "online sessions"
+      ],
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "offers",
+    "hours",
+    "prices",
+    "phone",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "yoga (confidence high)",
+    "items_from_prompt": [
+      "200 hour teacher training",
+      "morning classes",
+      "retreats",
+      "online sessions"
+    ],
+    "place": "Rishikesh",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "yoga",
+    "kind": "fitness"
+  },
+  "needs_review": []
+}

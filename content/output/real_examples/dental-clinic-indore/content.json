@@ -1,0 +1,211 @@
+{
+  "brand": "Dental Clinic, Indore",
+  "niche": "care",
+  "kind": "health",
+  "profile": "dental",
+  "business_type": "dental",
+  "type_label": "Dental Clinic",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "calm",
+  "keywords": [
+    "run",
+    "small",
+    "am",
+    "dentist",
+    "years",
+    "experience"
+  ],
+  "eyebrow": "Dental Clinic · Indore",
+  "location": "Indore",
+  "audience": "",
+  "hero_heading": "Root canals and braces in Indore",
+  "tagline": "Teeth whitening and kids dentistry in Indore. Message first if you prefer.",
+  "about_title": "About us",
+  "about": [
+    "We offer teeth whitening, kids dentistry and root canals in Indore. Small questions are welcome too.",
+    "In Indore: online booking. Ask for details before you commit."
+  ],
+  "features_title": "Treatments",
+  "features": [
+    {
+      "title": "Root Canals",
+      "text": "Cleans out an infected tooth and seals it so it can be saved."
+    },
+    {
+      "title": "Braces",
+      "text": "Metal or clear brackets that straighten teeth gradually. Tell us what you need from braces and we will suggest where to start."
+    },
+    {
+      "title": "Teeth Whitening",
+      "text": "If teeth whitening is on your mind, book a visit and we'll talk it through."
+    },
+    {
+      "title": "Kids Dentistry",
+      "text": "Curious about kids dentistry? Ask us anything."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Online booking",
+      "text": "Book online at any hour; no phone call needed."
+    },
+    {
+      "title": "Easy to reach",
+      "text": "Message or call."
+    },
+    {
+      "title": "A real person replies",
+      "text": "Not a form that goes nowhere."
+    }
+  ],
+  "stats_title": "The basics",
+  "stats": [
+    {
+      "value": "12+",
+      "label": "Years of experience"
+    },
+    {
+      "value": "Indore",
+      "label": "Where we work"
+    }
+  ],
+  "steps_title": "Three simple steps",
+  "steps": [
+    {
+      "title": "Tell us your concern",
+      "text": "Share what's been bothering you when you book."
+    },
+    {
+      "title": "Meet the team",
+      "text": "We examine, explain your options and answer questions."
+    },
+    {
+      "title": "Start your treatment",
+      "text": "We begin when you are ready, and check in afterwards."
+    }
+  ],
+  "faq_title": "Quick answers",
+  "faq": [
+    {
+      "q": "How do I book an appointment?",
+      "a": "You can book online, or contact us directly."
+    },
+    {
+      "q": "Where are you?",
+      "a": "We're in Indore; get in touch for directions."
+    },
+    {
+      "q": "Can I ask about root canals?",
+      "a": "Yes; let us know what you'd like to know about root canals."
+    },
+    {
+      "q": "Is there anything I should prepare?",
+      "a": "We'll tell you what to bring or prepare when you get in touch."
+    }
+  ],
+  "blog_title": "Short guides",
+  "blog": [
+    {
+      "title": "How to choose a good dental clinic",
+      "excerpt": "Five questions worth asking before you decide."
+    },
+    {
+      "title": "Common myths about braces",
+      "excerpt": "What's true, what's not, and what to ask."
+    },
+    {
+      "title": "Planning ahead",
+      "excerpt": "How to give yourself time."
+    }
+  ],
+  "contact": {
+    "place": "Indore"
+  },
+  "cta_primary": "Book an appointment online",
+  "cta_secondary": "Call the clinic",
+  "cta_text": "Ready when you are: book an appointment online.",
+  "cta_title": "Let's talk",
+  "footer": "© Dental Clinic, Indore. All rights reserved.",
+  "offers": [
+    {
+      "id": "online_booking",
+      "text": "Online booking"
+    }
+  ],
+  "hours": "",
+  "prices": [],
+  "facts_used": {
+    "city": {
+      "value": "Indore",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "root canals",
+        "braces",
+        "teeth whitening",
+        "kids dentistry"
+      ],
+      "source": "prompt"
+    },
+    "offers": {
+      "value": [
+        "Online booking"
+      ],
+      "source": "prompt"
+    },
+    "years": {
+      "value": "12 years of experience",
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "name",
+    "hours",
+    "prices",
+    "phone",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "dental (confidence high)",
+    "items_from_prompt": [
+      "root canals",
+      "braces",
+      "teeth whitening",
+      "kids dentistry"
+    ],
+    "place": "Indore",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "dental",
+    "kind": "health"
+  },
+  "needs_review": [
+    "No business name was given, so the heading is 'Dental Clinic, Indore' (not a name). Add your business name to replace it."
+  ]
+}

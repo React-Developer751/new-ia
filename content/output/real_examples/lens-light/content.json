@@ -1,0 +1,213 @@
+{
+  "brand": "Lens & Light",
+  "niche": "portfolio",
+  "kind": "creative",
+  "profile": "",
+  "business_type": "photography",
+  "type_label": "Photography Studio",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "elegant",
+  "keywords": [
+    "photography",
+    "studio",
+    "hyderabad",
+    "wedding",
+    "pre",
+    "shoots"
+  ],
+  "eyebrow": "Photography Studio · Hyderabad",
+  "location": "Hyderabad",
+  "audience": "",
+  "hero_heading": "Wedding photography in Hyderabad",
+  "tagline": "Pre-wedding shoots and baby shoots in Hyderabad. Let us know what you have in mind.",
+  "about_title": "About Lens & Light",
+  "about": [
+    "Lens & Light shoots pre-wedding shoots, baby shoots and product photography in Hyderabad. A real person replies to every message.",
+    "You will find Lens & Light in Hyderabad. Tell us the brief and the date."
+  ],
+  "features_title": "Our work",
+  "features": [
+    {
+      "title": "Wedding Photography",
+      "text": "Ask to see examples of wedding photography before you decide."
+    },
+    {
+      "title": "Pre-wedding Shoots",
+      "text": "Pre-wedding shoots, with room for your feedback."
+    },
+    {
+      "title": "Baby Shoots",
+      "text": "Let us know what you need from baby shoots and we will suggest where to start."
+    },
+    {
+      "title": "Product Photography",
+      "text": "Not sure about product photography? Start with a short conversation."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Easy to reach",
+      "text": "Message or call."
+    },
+    {
+      "title": "See similar work",
+      "text": "Ask for examples."
+    },
+    {
+      "title": "Details explained",
+      "text": "Before anything begins."
+    }
+  ],
+  "stats_title": "In short",
+  "stats": [
+    {
+      "value": "Hyderabad",
+      "label": "Where we work"
+    }
+  ],
+  "steps_title": "From first message to finish",
+  "steps": [
+    {
+      "title": "Tell us the idea",
+      "text": "What it's for and when you need it."
+    },
+    {
+      "title": "First drafts",
+      "text": "We try wedding photography or pre-wedding shoots and listen."
+    },
+    {
+      "title": "Review and finish",
+      "text": "You give feedback; we polish until it's right."
+    }
+  ],
+  "faq_title": "Quick answers",
+  "faq": [
+    {
+      "q": "Can I see examples of your work?",
+      "a": "Message us and we will send a few."
+    },
+    {
+      "q": "Where are you based?",
+      "a": "Find us in Hyderabad."
+    },
+    {
+      "q": "Can you do wedding photography?",
+      "a": "Let us know the brief for wedding photography and we'll say how we'd approach it."
+    },
+    {
+      "q": "Can I ask questions before I decide?",
+      "a": "Certainly; that's what the first conversation is for."
+    }
+  ],
+  "blog_title": "From the journal",
+  "blog": [
+    {
+      "title": "Choosing references",
+      "excerpt": "What to send and what to leave out."
+    },
+    {
+      "title": "Why local matters",
+      "excerpt": "A few reasons to choose someone nearby."
+    },
+    {
+      "title": "Making the most of your first visit",
+      "excerpt": "A short list to bring with you."
+    }
+  ],
+  "contact": {
+    "place": "Hyderabad"
+  },
+  "cta_primary": "Start a project",
+  "cta_secondary": "See our work",
+  "cta_text": "Send a brief for baby shoots.",
+  "cta_title": "We'd like to hear from you",
+  "footer": "© Lens & Light. All rights reserved.",
+  "offers": [],
+  "hours": "",
+  "prices": [
+    {
+      "name": "Starting price",
+      "price": "from Rs 15000"
+    }
+  ],
+  "facts_used": {
+    "name": {
+      "value": "Lens & Light",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Hyderabad",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "wedding photography",
+        "pre-wedding shoots",
+        "baby shoots",
+        "product photography"
+      ],
+      "source": "prompt"
+    },
+    "prices": {
+      "value": [
+        {
+          "name": "Starting price",
+          "price": "from Rs 15000"
+        }
+      ],
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "offers",
+    "hours",
+    "phone",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "photography (confidence high)",
+    "items_from_prompt": [
+      "wedding photography",
+      "pre-wedding shoots",
+      "baby shoots",
+      "product photography"
+    ],
+    "place": "Hyderabad",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "",
+    "kind": "creative"
+  },
+  "needs_review": [],
+  "pricing": [
+    {
+      "name": "Starting price",
+      "price": "from Rs 15000"
+    }
+  ]
+}

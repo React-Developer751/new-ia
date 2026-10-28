@@ -3,7 +3,7 @@ Hindi pages are written only about what the user named (strict mode); typical of
 and are never mixed in. Like the English blocks, nothing here claims a fact about a specific business."""
 
 UI = {
-    "lang": "hi", "about": "हमारे बारे में", "faq": "सवाल-जवाब", "contact": "संपर्क", "call": "कॉल करें", "email": "ईमेल",
+    "lang": "hi", "about": "हमारे बारे में", "gallery": "गैलरी", "faq": "सवाल-जवाब", "contact": "संपर्क", "call": "कॉल करें", "email": "ईमेल",
     "based_in": "स्थान", "pricing": "कीमतें", "testimonials": "ग्राहकों की राय", "team": "हमारी टीम", "hours": "समय",
     "address": "पता", "where": "हम यहाँ हैं", "years": "वर्षों का अनुभव", "since": "शुरुआत", "features_title": "हमारी सेवाएं",
     "steps_title": "कैसे काम करता है", "faq_title": "अक्सर पूछे जाने वाले सवाल", "rights": "सर्वाधिकार सुरक्षित", "about_title": "%s के बारे में", "about_us": "हमारे बारे में",
@@ -117,3 +117,15 @@ FAQ_THIRD["beauty"] = ("क्या मैं पसंद की फोटो 
 HIGHLIGHTS["beauty"] = [("पहले सुनना", "हर अपॉइंटमेंट बातचीत से शुरू होता है."), ("आपके हिसाब से", "किसी साँचे से नहीं."), ("बिना जल्दबाज़ी", "ब्यौरों के लिए समय.")]
 CTAS["beauty"] = ("अपॉइंटमेंट बुक करें", "कॉल करें")
 KIND_KEY["beauty"] = "beauty"
+
+LABELS.update({
+    "consulting": "कंसल्टिंग फर्म", "recruitment": "भर्ती एजेंसी", "painting": "पेंटिंग सर्विस", "carpentry": "बढ़ईगीरी और फर्नीचर वर्क", "ac": "एसी और अप्लायंस रिपेयर",
+    "landscape": "गार्डन और लॉन केयर", "books": "किताबें और स्टेशनरी", "gifts": "गिफ्ट और फूलों की दुकान", "petshop": "पेट शॉप", "optical": "ऑप्टिकल स्टोर",
+    "pharmacy": "मेडिकल स्टोर", "shop": "दुकान", "music": "म्यूज़िक और डांस अकादमी", "design": "डिज़ाइन स्टूडियो", "printing": "प्रिंटिंग स्टूडियो", "tattoo": "टैटू स्टूडियो",
+    "gaming": "गेमिंग ज़ोन", "icecream": "आइसक्रीम पार्लर", "visa": "वीज़ा और इमिग्रेशन सलाहकार", "tenthouse": "टेंट हाउस", "welding": "फैब्रिकेशन और वेल्डिंग",
+    "tyres": "टायर और ऑटो एक्सेसरीज़", "sports": "स्पोर्ट्स अकादमी", "autosales": "वाहन शोरूम", "robotics": "रोबोटिक्स और STEM लैब", "pottery": "पॉटरी स्टूडियो",
+    "skin": "स्किन क्लिनिक", "eye": "आई क्लिनिक",
+})
+TYPE_ACT = {   # (call to action, online call to action) where the kind's default would sound wrong
+    "pharmacy": (("दवाई ऑर्डर करें", "स्टोर पर आएं"), ("ऑनलाइन ऑर्डर करें", "स्टोर पर आएं")),
+}

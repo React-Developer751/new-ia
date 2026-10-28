@@ -1,5 +1,6 @@
 """Run-time safety: whatever a person types, the engine returns a valid page or a clear error, never a traceback."""
 import json
+import os
 import subprocess
 import sys
 import tempfile
@@ -7,6 +8,7 @@ import unittest
 from html.parser import HTMLParser
 from pathlib import Path
 
+os.environ.setdefault("CORECRAFT_NO_PHOTOS", "1")        # content tests do not need pictures (test_photos.py does)
 from corecraft import pipeline
 from corecraft.content_engine import clean_text, generate_content
 from corecraft.validators import leaves_of

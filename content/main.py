@@ -13,6 +13,8 @@ def main():
     ap.add_argument("--lang", choices=["en", "hi"], help="page language (default: Hindi for Devanagari prompts)")
     ap.add_argument("--facts", help="JSON file with real details: name, city, services[], phone, email, address, hours[], "
                                     "prices[{name,price}], testimonials[{name,text}], team[{name,role}], whatsapp, years, tagline")
+    ap.add_argument("--no-photos", action="store_true", help="keep the built-in SVG artwork instead of pictures from the image engine")
+    ap.add_argument("--photo-count", type=int, default=6, help="pictures per site: hero, about and the rest as gallery (3 to 8, default 6)")
     ap.add_argument("--name"), ap.add_argument("--city"), ap.add_argument("--phone"), ap.add_argument("--email")
     ap.add_argument("--services", help="comma separated list of your real services")
     a = ap.parse_args()
@@ -37,7 +39,7 @@ def main():
     if a.services:
         facts["services"] = [x.strip() for x in a.services.split(",") if x.strip()]
     try:
-        r = pipeline.run(prompt, a.out, a.seed, facts or None, a.lang)
+        r = pipeline.run(prompt, a.out, a.seed, facts or None, a.lang, photos=not a.no_photos, photo_count=a.photo_count)
     except ValueError as e:
         sys.exit("error: %s" % e)
     except OSError as e:

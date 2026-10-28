@@ -1,0 +1,208 @@
+{
+  "brand": "PixelForge",
+  "niche": "portfolio",
+  "kind": "creative",
+  "profile": "",
+  "business_type": "design",
+  "type_label": "Design Studio",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "elegant",
+  "keywords": [
+    "design",
+    "agency",
+    "pune",
+    "mobile",
+    "apps",
+    "seo"
+  ],
+  "eyebrow": "Design Studio · Pune",
+  "location": "Pune",
+  "audience": "",
+  "hero_heading": "Website design in Pune",
+  "tagline": "PixelForge designs mobile apps, SEO and branding in Pune.",
+  "about_title": "About PixelForge",
+  "about": [
+    "On the list: branding, website design and mobile apps. PixelForge designs them in Pune. Message first if you prefer.",
+    "In Pune: free consultation. Message us a few notes and we'll reply."
+  ],
+  "features_title": "What we make",
+  "features": [
+    {
+      "title": "Website Design",
+      "text": "Bring your questions about website design."
+    },
+    {
+      "title": "Mobile Apps",
+      "text": "Mobile apps: ask for details before you make up your mind."
+    },
+    {
+      "title": "SEO",
+      "text": "We will explain SEO in plain words."
+    },
+    {
+      "title": "Branding",
+      "text": "Add branding to the brief and we will scope it."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Free consultation",
+      "text": "Start with a conversation and no obligation."
+    },
+    {
+      "title": "No hard sell",
+      "text": "Take your time."
+    },
+    {
+      "title": "Room for feedback",
+      "text": "Revisions are part of the process."
+    }
+  ],
+  "stats_title": "Details at a glance",
+  "stats": [
+    {
+      "value": "Pune",
+      "label": "Where we work"
+    }
+  ],
+  "steps_title": "How it works",
+  "steps": [
+    {
+      "title": "Get in touch",
+      "text": "Send a message or call and let us know what you need."
+    },
+    {
+      "title": "We talk it through",
+      "text": "We explain the options in plain words."
+    },
+    {
+      "title": "Get started",
+      "text": "We begin when you're ready."
+    }
+  ],
+  "faq_title": "Good questions",
+  "faq": [
+    {
+      "q": "How do I start a project?",
+      "a": "Use the contact details on this page and tell us what you have in mind."
+    },
+    {
+      "q": "Where are you based?",
+      "a": "We're in Pune; reach out."
+    },
+    {
+      "q": "Can you do website design?",
+      "a": "Yes; ask us about website design."
+    },
+    {
+      "q": "Can someone else book for me?",
+      "a": "Of course; share the details and we will take it from there."
+    }
+  ],
+  "blog_title": "From the journal",
+  "blog": [
+    {
+      "title": "Giving useful feedback",
+      "excerpt": "Be specific; be kind; be quick."
+    },
+    {
+      "title": "What a good first conversation covers",
+      "excerpt": "And what to expect afterwards."
+    },
+    {
+      "title": "What a fair price looks like",
+      "excerpt": "Questions that make quotes easier to compare."
+    }
+  ],
+  "contact": {
+    "email": "hello@pixelforge.in",
+    "place": "Pune"
+  },
+  "cta_primary": "Start a project",
+  "cta_secondary": "See our work",
+  "cta_text": "Ask to see work like yours.",
+  "cta_title": "Your next step is one message away",
+  "footer": "© PixelForge. All rights reserved.",
+  "offers": [
+    {
+      "id": "free_consult",
+      "text": "Free consultation"
+    }
+  ],
+  "hours": "",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "PixelForge",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Pune",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "website design",
+        "mobile apps",
+        "SEO",
+        "branding"
+      ],
+      "source": "prompt"
+    },
+    "offers": {
+      "value": [
+        "Free consultation"
+      ],
+      "source": "prompt"
+    },
+    "email": {
+      "value": "hello@pixelforge.in",
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "hours",
+    "prices",
+    "phone",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "design (confidence high)",
+    "items_from_prompt": [
+      "website design",
+      "mobile apps",
+      "SEO",
+      "branding"
+    ],
+    "place": "Pune",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "",
+    "kind": "creative"
+  },
+  "needs_review": []
+}

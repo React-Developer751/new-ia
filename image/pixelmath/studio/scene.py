@@ -10,7 +10,7 @@ ZONES = {                       # text zone as fractions of the picture: (x0, y0
     "bottom": (0.05, 0.64, 0.95, 0.94),
 }
 FREE = {                        # where the subject should live when that zone is reserved
-    "left": (0.54, 0.06, 0.97, 0.96),
+    "left": (0.49, 0.05, 0.99, 0.97),
     "center": (0.08, 0.58, 0.92, 0.98),
     "bottom": (0.06, 0.04, 0.94, 0.62),
     None: (0.08, 0.08, 0.92, 0.94),
@@ -33,7 +33,7 @@ def _union(boxes):
     return (min(b[1] for b in boxes), min(b[2] for b in boxes), max(b[3] for b in boxes), max(b[4] for b in boxes))
 
 
-def _fit_zoom(bw, bh, free, fa, pad=0.04):
+def _fit_zoom(bw, bh, free, fa, pad=0.03):
     fw, fh = (free[2] - free[0]) * (1 - pad), (free[3] - free[1]) * (1 - pad)
     return min(fw * fa / max(bw, 1e-6), fh / max(bh, 1e-6))
 

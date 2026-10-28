@@ -1277,7 +1277,7 @@ def tax_forms(c, color):
 @niche("accounting-finance", "Accounting / tax / finance firm", subjects=("digedu_calculator", "digedu_ledger"),
        strong=("accounting", "accountant", "tax consultant", "bookkeeping", "ca firm", "chartered accountant", "gst", "tax filing",
                "लेखा", "कर सलाहकार", "सीए", "लेखाकार", "income tax", "audit", "gst filing", "tax advisor", "financial advisor"),
-       weak=("finance", "tax", "payroll", "invoice", "accounts", "balance sheet", "itr", "financial planning"),
+       weak=("finance", "tax", "payroll", "invoice", "accounts", "balance sheet", "itr", "financial planning", "financial documents", "spreadsheet", "finance office", "ledger", "financial reports", "वित्त"),
        accent="#1e8449", mood="light", group="professional")
 def accounting_finance(S):
     P = S.pal

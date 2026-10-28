@@ -1,0 +1,215 @@
+{
+  "brand": "Mobile Mania",
+  "niche": "store",
+  "kind": "retail",
+  "profile": "electronics",
+  "business_type": "mobile",
+  "type_label": "Mobile & Electronics Store",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "cool",
+  "keywords": [
+    "surat",
+    "iphone",
+    "samsung",
+    "vivo",
+    "accessories",
+    "repair"
+  ],
+  "eyebrow": "Mobile & Electronics Store · Surat",
+  "location": "Surat",
+  "audience": "",
+  "hero_heading": "Mobile Mania: iPhone and Samsung in Surat",
+  "tagline": "Shop for Vivo in Surat. We'd rather you knew exactly what to expect.",
+  "about_title": "About Mobile Mania",
+  "about": [
+    "It starts with accessories. Mobile Mania sells repair and iPhone too in Surat.",
+    "You will find Mobile Mania in Surat. Tell us what you have in mind."
+  ],
+  "features_title": "Shop by category",
+  "features": [
+    {
+      "title": "IPhone",
+      "text": "Curious about iPhone? Ask us anything."
+    },
+    {
+      "title": "Samsung",
+      "text": "Samsung: let us know what you need it for and we'll suggest options."
+    },
+    {
+      "title": "Vivo",
+      "text": "Compare Vivo side by side, in person or over a message."
+    },
+    {
+      "title": "Accessories",
+      "text": "We can tell you what to look for in accessories."
+    },
+    {
+      "title": "Repair",
+      "text": "Message us about repair; we reply to every enquiry."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Easy EMI",
+      "text": "Ask us what payment options are available."
+    },
+    {
+      "title": "Warranty",
+      "text": "Feel free to ask us what comes with the item you choose."
+    },
+    {
+      "title": "Compare in person",
+      "text": "See and handle before you decide."
+    }
+  ],
+  "stats_title": "Quick facts",
+  "stats": [
+    {
+      "value": "Surat",
+      "label": "Where we work"
+    }
+  ],
+  "steps_title": "From first message to finish",
+  "steps": [
+    {
+      "title": "Get in touch",
+      "text": "Send a message or call and tell us what you need."
+    },
+    {
+      "title": "Ask questions",
+      "text": "Sizes, models, care: we're happy to explain."
+    },
+    {
+      "title": "Get started",
+      "text": "We begin when you're ready."
+    }
+  ],
+  "faq_title": "Good questions",
+  "faq": [
+    {
+      "q": "Do you have iPhone in stock?",
+      "a": "Message us and we'll check."
+    },
+    {
+      "q": "Can I pay in instalments?",
+      "a": "Yes, easy EMI is available; feel free to ask us for the details."
+    },
+    {
+      "q": "Where are you?",
+      "a": "Find us in Surat. Message us and we will send directions."
+    },
+    {
+      "q": "Can I ask questions before I decide?",
+      "a": "Of course; that's what the first conversation is for."
+    }
+  ],
+  "blog_title": "Short guides",
+  "blog": [
+    {
+      "title": "When to ask for a second opinion",
+      "excerpt": "And how to do it politely."
+    },
+    {
+      "title": "What to bring when you get in touch",
+      "excerpt": "A short list that saves a second message."
+    },
+    {
+      "title": "How long things really take",
+      "excerpt": "Setting expectations on both sides."
+    }
+  ],
+  "contact": {
+    "place": "Surat"
+  },
+  "cta_primary": "Shop now",
+  "cta_secondary": "Visit the store",
+  "cta_text": "Start with accessories.",
+  "cta_title": "Tell us what you need",
+  "footer": "© Mobile Mania. All rights reserved.",
+  "offers": [
+    {
+      "id": "emi",
+      "text": "Easy EMI"
+    },
+    {
+      "id": "warranty",
+      "text": "Warranty"
+    }
+  ],
+  "hours": "",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "Mobile Mania",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Surat",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "iPhone",
+        "Samsung",
+        "Vivo",
+        "accessories",
+        "repair"
+      ],
+      "source": "prompt"
+    },
+    "offers": {
+      "value": [
+        "Easy EMI",
+        "Warranty"
+      ],
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "hours",
+    "prices",
+    "phone",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "mobile (confidence high)",
+    "items_from_prompt": [
+      "iPhone",
+      "Samsung",
+      "Vivo",
+      "accessories",
+      "repair"
+    ],
+    "place": "Surat",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "electronics",
+    "kind": "retail"
+  },
+  "needs_review": []
+}

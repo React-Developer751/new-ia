@@ -1,0 +1,193 @@
+{
+  "brand": "Prime Pet Shop",
+  "niche": "store",
+  "kind": "retail",
+  "profile": "",
+  "business_type": "petshop",
+  "type_label": "Pet Shop",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "friendly",
+  "keywords": [
+    "bangalore",
+    "dog",
+    "food",
+    "cat",
+    "aquarium",
+    "fish"
+  ],
+  "eyebrow": "Pet Shop · Bangalore",
+  "location": "Bangalore",
+  "audience": "",
+  "hero_heading": "Dog food and cat food, picked with care",
+  "tagline": "Shop for aquarium fish in Bangalore. Browse, compare, then decide.",
+  "about_title": "About us",
+  "about": [
+    "Come in or message us; either works. We sell aquarium fish, toys and dog food in Bangalore.",
+    "You will find us in Bangalore. Ask for a photo before you visit."
+  ],
+  "features_title": "What we stock",
+  "features": [
+    {
+      "title": "Dog Food",
+      "text": "We can tell you what to look for in dog food."
+    },
+    {
+      "title": "Cat Food",
+      "text": "Not sure which cat food to pick? Describe how you will use it."
+    },
+    {
+      "title": "Aquarium Fish",
+      "text": "Aquarium fish: ask for details before you make up your mind."
+    },
+    {
+      "title": "Toys",
+      "text": "Message us about toys; we reply to every enquiry."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Picked with care",
+      "text": "A range chosen for use, not for shelf space."
+    },
+    {
+      "title": "Details explained",
+      "text": "Before anything begins."
+    },
+    {
+      "title": "Clear next steps",
+      "text": "You will know what comes next."
+    }
+  ],
+  "stats_title": "At a glance",
+  "stats": [
+    {
+      "value": "Bangalore",
+      "label": "Where we work"
+    }
+  ],
+  "steps_title": "Getting started",
+  "steps": [
+    {
+      "title": "Tell us what you need",
+      "text": "Message us the item, the size or the budget."
+    },
+    {
+      "title": "Ask questions",
+      "text": "Sizes, models, care: we're happy to explain."
+    },
+    {
+      "title": "Take it home",
+      "text": "Message us to ask about stock, and we'll confirm how to receive it."
+    }
+  ],
+  "faq_title": "Before you ask",
+  "faq": [
+    {
+      "q": "Is cash on delivery available?",
+      "a": "Feel free to ask us about payment options for your order."
+    },
+    {
+      "q": "Do you have dog food in stock?",
+      "a": "Send us a message and we'll check."
+    },
+    {
+      "q": "Where are you?",
+      "a": "Find us in Bangalore. Message us and we will send directions."
+    },
+    {
+      "q": "What if I'm not sure what I need?",
+      "a": "Let us know what you're trying to achieve and we'll point you in the right direction."
+    }
+  ],
+  "blog_title": "Notes and guides",
+  "blog": [
+    {
+      "title": "Why local matters",
+      "excerpt": "A few reasons to choose someone nearby."
+    },
+    {
+      "title": "Keeping track of your plans",
+      "excerpt": "A simple way to stay organised."
+    },
+    {
+      "title": "New in the store",
+      "excerpt": "What's worth a look this season."
+    }
+  ],
+  "contact": {
+    "place": "Bangalore"
+  },
+  "cta_primary": "Shop now",
+  "cta_secondary": "Visit the store",
+  "cta_text": "Shop now, and ask us anything.",
+  "cta_title": "Say hello",
+  "footer": "© Prime Pet Shop. All rights reserved.",
+  "offers": [],
+  "hours": "",
+  "prices": [],
+  "facts_used": {
+    "city": {
+      "value": "Bangalore",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "dog food",
+        "cat food",
+        "aquarium fish",
+        "toys"
+      ],
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "name",
+    "offers",
+    "hours",
+    "prices",
+    "phone",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "petshop (confidence high)",
+    "items_from_prompt": [
+      "dog food",
+      "cat food",
+      "aquarium fish",
+      "toys"
+    ],
+    "place": "Bangalore",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "",
+    "kind": "retail"
+  },
+  "needs_review": [
+    "No business name was given; 'Prime Pet Shop' is a placeholder."
+  ]
+}

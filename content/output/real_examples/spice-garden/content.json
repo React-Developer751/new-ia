@@ -1,0 +1,206 @@
+{
+  "brand": "Spice Garden",
+  "niche": "restaurant",
+  "kind": "food",
+  "profile": "chinese",
+  "business_type": "restaurant",
+  "type_label": "Chinese restaurant",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "warm",
+  "keywords": [
+    "looking",
+    "restaurant",
+    "serve",
+    "chinese",
+    "thai",
+    "food"
+  ],
+  "eyebrow": "Chinese restaurant · Siliguri",
+  "location": "Siliguri",
+  "audience": "",
+  "hero_heading": "Siliguri's momos and noodles",
+  "tagline": "Spice Garden cooks fried rice and manchurian in Siliguri.",
+  "about_title": "About Spice Garden",
+  "about": [
+    "On the list: manchurian, momos and noodles. Spice Garden cooks them in Siliguri. Bring friends; the food is made for sharing.",
+    "In Siliguri: home delivery. Send a short message and we'll take it from there."
+  ],
+  "features_title": "What we serve",
+  "features": [
+    {
+      "title": "Momos",
+      "text": "Momos is on the menu; ask what pairs well with it."
+    },
+    {
+      "title": "Noodles",
+      "text": "Bring your questions about noodles."
+    },
+    {
+      "title": "Fried Rice",
+      "text": "Rice wok-tossed with egg, vegetables and soy sauce. A good place to start if you like fried rice."
+    },
+    {
+      "title": "Manchurian",
+      "text": "Feel free to ask us how manchurian works and what to expect."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Home delivery",
+      "text": "Ask us what's possible for your area."
+    },
+    {
+      "title": "Take it slow",
+      "text": "Courses at the pace of your conversation."
+    },
+    {
+      "title": "Clear next steps",
+      "text": "You'll know what comes next."
+    }
+  ],
+  "stats_title": "Good to know",
+  "stats": [
+    {
+      "value": "Siliguri",
+      "label": "Where we work"
+    }
+  ],
+  "steps_title": "How it works",
+  "steps": [
+    {
+      "title": "Say hello",
+      "text": "Let us know what you have in mind."
+    },
+    {
+      "title": "Agree the plan",
+      "text": "We confirm what happens and when."
+    },
+    {
+      "title": "Share the table",
+      "text": "Pass the plates around."
+    }
+  ],
+  "faq_title": "Frequently asked questions",
+  "faq": [
+    {
+      "q": "Do you offer delivery or takeaway?",
+      "a": "Yes, home delivery is available."
+    },
+    {
+      "q": "Where are you?",
+      "a": "We're in Siliguri; reach out for directions."
+    },
+    {
+      "q": "Can I ask about momos?",
+      "a": "Yes; let us know what you'd like to know about momos."
+    },
+    {
+      "q": "Can someone else book for me?",
+      "a": "Certainly; share the details and we will take it from there."
+    }
+  ],
+  "blog_title": "Notes and guides",
+  "blog": [
+    {
+      "title": "Small things that make a difference",
+      "excerpt": "Notes from everyday experience."
+    },
+    {
+      "title": "Dessert first? A debate",
+      "excerpt": "On leaving room, or not, after fried rice."
+    },
+    {
+      "title": "How long things really take",
+      "excerpt": "Setting expectations on both sides."
+    }
+  ],
+  "contact": {
+    "place": "Siliguri"
+  },
+  "cta_primary": "Book a table",
+  "cta_secondary": "See the menu",
+  "cta_text": "Book a table and tell us who's coming.",
+  "cta_title": "Tell us what you need",
+  "footer": "© Spice Garden. All rights reserved.",
+  "offers": [
+    {
+      "id": "home_delivery",
+      "text": "Home delivery"
+    }
+  ],
+  "hours": "",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "Spice Garden",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Siliguri",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "momos",
+        "noodles",
+        "fried rice",
+        "manchurian"
+      ],
+      "source": "prompt"
+    },
+    "offers": {
+      "value": [
+        "Home delivery"
+      ],
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "hours",
+    "prices",
+    "phone",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "restaurant (confidence medium)",
+    "items_from_prompt": [
+      "momos",
+      "noodles",
+      "fried rice",
+      "manchurian"
+    ],
+    "place": "Siliguri",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "chinese",
+    "kind": "food"
+  },
+  "needs_review": [
+    "Business type 'Restaurant' was detected with medium confidence. If it is wrong, say what kind of business it is (e.g. 'dental clinic')."
+  ]
+}

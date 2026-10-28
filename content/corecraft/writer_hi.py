@@ -15,8 +15,10 @@ def oxford_hi(items):
     return "%s और %s" % (", ".join(items[:-1]), items[-1])
 
 
-def write_page_hi(*, kind, label, facts, name, rng, extra_cards=()):
-    voice = VH.VOICE[kind]
+def write_page_hi(*, kind, label, facts, name, rng, extra_cards=(), type_id=None):
+    voice = dict(VH.VOICE[kind])
+    if type_id in lang_hi.TYPE_ACT:
+        voice["act"], voice["act_online"] = lang_hi.TYPE_ACT[type_id]
     items = [i for i in facts.get("items", []) if i]
     offers = facts.get("offers") or []
     key = lang_hi.KIND_KEY[kind]
@@ -91,8 +93,10 @@ def write_page_hi(*, kind, label, facts, name, rng, extra_cards=()):
         feats.append({"title": raw if not raw.isascii() else " ".join(w[:1].upper() + w[1:] for w in raw.split(" ")), "text": text})
 
     hl = []
-    for o in offers[:3]:
-        hl.append({"title": o["text_hi"], "text": "विवरण के लिए संपर्क करें."})
+    hl_texts = ["विवरण के लिए संपर्क करें.", "इसके बारे में हमसे पूछिए.", "ज़्यादा जानकारी के लिए संदेश भेजिए.", "कैसे मिलेगा, यह हमसे पूछ लीजिए."]
+    rng.shuffle(hl_texts)
+    for n, o in enumerate(offers[:3]):
+        hl.append({"title": o["text_hi"], "text": hl_texts[n % len(hl_texts)]})
     if facts.get("hours") and len(hl) < 4:
         hl.append({"title": "खुलने का समय", "text": "समय: %s. आइए या संदेश भेजिए." % facts["hours"]})
     base_hl = list(lang_hi.HIGHLIGHTS.get(key) or lang_hi.HIGHLIGHTS["pro"])

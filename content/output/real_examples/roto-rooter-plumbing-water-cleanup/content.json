@@ -1,0 +1,224 @@
+{
+  "brand": "Roto-Rooter Plumbing & Water Cleanup",
+  "niche": "business",
+  "kind": "trades",
+  "profile": "",
+  "business_type": "plumbing",
+  "type_label": "Plumbing Service",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "calm",
+  "keywords": [
+    "waikele",
+    "hi",
+    "drain",
+    "cleaning",
+    "emergency",
+    "heaters"
+  ],
+  "eyebrow": "Plumbing Service · Waikele",
+  "location": "Waikele",
+  "audience": "",
+  "hero_heading": "Roto-Rooter Plumbing & Water Cleanup, Waikele: Plumbing Service",
+  "tagline": "Roto-Rooter Plumbing & Water Cleanup handles drain cleaning, emergency plumbing and water heaters in Waikele. Take a look around and ask us anything.",
+  "about_title": "About Roto-Rooter Plumbing & Water Cleanup",
+  "about": [
+    "One focus: pipe restoration, drain cleaning and emergency plumbing in Waikele. We tidy up before we leave.",
+    "You will find Roto-Rooter Plumbing & Water Cleanup in Waikele, open 24/7. Message us a few notes and we'll reply."
+  ],
+  "features_title": "Jobs we take on",
+  "features": [
+    {
+      "title": "Drain Cleaning",
+      "text": "Curious about drain cleaning? Feel free to ask us anything."
+    },
+    {
+      "title": "Emergency Plumbing",
+      "text": "We'll explain emergency plumbing in plain words."
+    },
+    {
+      "title": "Water Heaters",
+      "text": "Send a photo for water heaters and we'll say how we'd handle it."
+    },
+    {
+      "title": "Water Damage",
+      "text": "We explain water damage before we start and check it with you at the end."
+    },
+    {
+      "title": "Pipe Restoration",
+      "text": "Not sure about pipe restoration? Ask before you decide."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Financing",
+      "text": "Financing is available; ask for the details."
+    },
+    {
+      "title": "Opening hours",
+      "text": "Hours: 24/7. Drop by or send a message."
+    },
+    {
+      "title": "Straight answers",
+      "text": "Even when the answer is 'not needed'."
+    }
+  ],
+  "stats_title": "Good to know",
+  "stats": [
+    {
+      "value": "Waikele",
+      "label": "Where we work"
+    },
+    {
+      "value": "24/7",
+      "label": "Open"
+    }
+  ],
+  "steps_title": "What happens next",
+  "steps": [
+    {
+      "title": "Describe the problem",
+      "text": "Call or message us to book a visit, and let us know what's wrong."
+    },
+    {
+      "title": "Agree the visit",
+      "text": "Choose a time that suits you."
+    },
+    {
+      "title": "Check the result",
+      "text": "We show you the work and test it."
+    }
+  ],
+  "faq_title": "Good questions",
+  "faq": [
+    {
+      "q": "When are you available?",
+      "a": "Our hours are 24/7."
+    },
+    {
+      "q": "Where are you based?",
+      "a": "Find us in Waikele."
+    },
+    {
+      "q": "Can you do drain cleaning?",
+      "a": "Tell us what drain cleaning involves for you and we'll advise."
+    },
+    {
+      "q": "Can someone else book for me?",
+      "a": "Of course; share the details and we will take it from there."
+    }
+  ],
+  "blog_title": "Short guides",
+  "blog": [
+    {
+      "title": "Looking after the work",
+      "excerpt": "Simple habits that extend the life of the job."
+    },
+    {
+      "title": "When to ask for a second opinion",
+      "excerpt": "And how to do it politely."
+    },
+    {
+      "title": "How long things really take",
+      "excerpt": "Setting expectations on both sides."
+    }
+  ],
+  "contact": {
+    "phone": "808-622-2501",
+    "place": "Waikele",
+    "hours": [
+      "24/7"
+    ]
+  },
+  "cta_primary": "Get a free quote",
+  "cta_secondary": "Call now",
+  "cta_text": "Tell us how urgent it is.",
+  "cta_title": "We'd like to hear from you",
+  "footer": "© Roto-Rooter Plumbing & Water Cleanup. All rights reserved.",
+  "offers": [
+    {
+      "id": "financing",
+      "text": "Financing"
+    }
+  ],
+  "hours": "24/7",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "Roto-Rooter Plumbing & Water Cleanup",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Waikele",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "drain cleaning",
+        "emergency plumbing",
+        "water heaters",
+        "water damage",
+        "pipe restoration"
+      ],
+      "source": "prompt"
+    },
+    "offers": {
+      "value": [
+        "Financing"
+      ],
+      "source": "prompt"
+    },
+    "hours": {
+      "value": "24/7",
+      "source": "prompt"
+    },
+    "phone": {
+      "value": "808-622-2501",
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "prices",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "plumbing (confidence high)",
+    "items_from_prompt": [
+      "drain cleaning",
+      "emergency plumbing",
+      "water heaters",
+      "water damage",
+      "pipe restoration"
+    ],
+    "place": "Waikele",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "",
+    "kind": "trades"
+  },
+  "needs_review": []
+}

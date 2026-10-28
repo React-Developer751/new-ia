@@ -33,4 +33,6 @@ def load_all():
     import pkgutil
     for m in pkgutil.iter_modules(__path__):
         importlib.import_module("%s.%s" % (__name__, m.name))
+    from .. import vocab
+    vocab.apply(NICHES)                                        # idempotent: only adds words that are not there yet
     return NICHES

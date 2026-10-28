@@ -1,0 +1,208 @@
+{
+  "brand": "Speedy Motors",
+  "niche": "shop",
+  "kind": "retail",
+  "profile": "autosales",
+  "business_type": "autosales",
+  "type_label": "Vehicle Showroom",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "bold",
+  "keywords": [
+    "gurgaon",
+    "used",
+    "cars",
+    "car",
+    "service",
+    "insurance"
+  ],
+  "eyebrow": "Vehicle Showroom · Gurgaon",
+  "location": "Gurgaon",
+  "audience": "",
+  "hero_heading": "Used cars and car service, for everyday and special days",
+  "tagline": "Shop for insurance in Gurgaon. Message first if you prefer.",
+  "about_title": "About Speedy Motors",
+  "about": [
+    "On the list: used cars, car service and insurance. Speedy Motors offers them in Gurgaon. A real person replies to every message.",
+    "You will find Speedy Motors in Gurgaon. Let us know what you have in mind."
+  ],
+  "features_title": "In the store",
+  "features": [
+    {
+      "title": "Used Cars",
+      "text": "Looking for used cars? Feel free to ask us what's in stock and what suits you."
+    },
+    {
+      "title": "Car Service",
+      "text": "Tell us what you need from car service and we will suggest where to start."
+    },
+    {
+      "title": "Insurance",
+      "text": "Insurance: ask for details before you decide."
+    },
+    {
+      "title": "Finance",
+      "text": "Finance: tell us what you need it for and we'll suggest options."
+    },
+    {
+      "title": "Exchange Offers",
+      "text": "Curious about exchange offers? Feel free to ask us anything."
+    },
+    {
+      "title": "Free Test Drive",
+      "text": "Not sure about free test drive? Start with a short conversation."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Details explained",
+      "text": "Before anything begins."
+    },
+    {
+      "title": "No hard sell",
+      "text": "Take your time."
+    },
+    {
+      "title": "Easy to reach",
+      "text": "Message or call."
+    }
+  ],
+  "stats_title": "Where and when",
+  "stats": [
+    {
+      "value": "Gurgaon",
+      "label": "Where we work"
+    }
+  ],
+  "steps_title": "How it works",
+  "steps": [
+    {
+      "title": "Get in touch",
+      "text": "Send a message or call and let us know what you need."
+    },
+    {
+      "title": "We talk it through",
+      "text": "We explain the options in plain words."
+    },
+    {
+      "title": "Choose and finance",
+      "text": "Ask what payment options are available."
+    }
+  ],
+  "faq_title": "Good questions",
+  "faq": [
+    {
+      "q": "Is cash on delivery available?",
+      "a": "Ask us about payment options for your order."
+    },
+    {
+      "q": "Do you have used cars in stock?",
+      "a": "Ask us; stock changes, and we'll tell you honestly."
+    },
+    {
+      "q": "Where are you?",
+      "a": "We're in Gurgaon; reach out for directions."
+    },
+    {
+      "q": "Do you reply to messages?",
+      "a": "Send a message and you'll hear from us."
+    }
+  ],
+  "blog_title": "Short guides",
+  "blog": [
+    {
+      "title": "When to ask for a second opinion",
+      "excerpt": "And how to do it politely."
+    },
+    {
+      "title": "Shopping on a budget",
+      "excerpt": "Where to spend and where to save."
+    },
+    {
+      "title": "Why we answer every message",
+      "excerpt": "Replies are part of the service."
+    }
+  ],
+  "contact": {
+    "place": "Gurgaon"
+  },
+  "cta_primary": "Shop now",
+  "cta_secondary": "Visit the store",
+  "cta_text": "Shop now, and ask us anything.",
+  "cta_title": "Ready when you are",
+  "footer": "© Speedy Motors. All rights reserved.",
+  "offers": [],
+  "hours": "",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "Speedy Motors",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Gurgaon",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "used cars",
+        "car service",
+        "insurance",
+        "finance",
+        "exchange offers",
+        "free test drive"
+      ],
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "offers",
+    "hours",
+    "prices",
+    "phone",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "autosales (confidence low)",
+    "items_from_prompt": [
+      "used cars",
+      "car service",
+      "insurance",
+      "finance",
+      "exchange offers",
+      "free test drive"
+    ],
+    "place": "Gurgaon",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "autosales",
+    "kind": "retail"
+  },
+  "needs_review": [
+    "Business type 'Vehicle Showroom' was detected with low confidence. If it is wrong, say what kind of business it is (e.g. 'dental clinic')."
+  ]
+}

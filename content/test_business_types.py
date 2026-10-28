@@ -1,8 +1,10 @@
+import os
 import re
 import tempfile
 import unittest
 from pathlib import Path
 
+os.environ.setdefault("CORECRAFT_NO_PHOTOS", "1")        # content tests do not need pictures (test_photos.py does)
 from corecraft import design_engine, pipeline
 from corecraft.business_types import T, detect_type, parse_prompt
 from corecraft.content_engine import generate_content
@@ -148,11 +150,11 @@ class Content(unittest.TestCase):
     def test_review_notes_are_honest(self):
         c = generate_content("dental clinic", 1)
         notes = " ".join(c["needs_review"])
-        self.assertIn("placeholder", notes)
+        self.assertIn("No business name was given", notes)
         self.assertIn("Typical dental clinic offerings", notes)
         named = generate_content("dental clinic called 'Smile Hub' in Pune offering braces", 1)
         self.assertEqual(named["brand"], "Smile Hub")
-        self.assertNotIn("placeholder", " ".join(named["needs_review"]))
+        self.assertNotIn("No business name", " ".join(named["needs_review"]))
 
     def test_every_type_gives_valid_complete_content(self):
         for tid, t in T.items():
@@ -199,7 +201,7 @@ class RealFacts(unittest.TestCase):
         c = generate_content("dental clinic", 3, facts=self.FACTS)
         self.assertEqual([f["title"] for f in c["features"]], ["Braces", "Implants", "Teeth Whitening"])
         self.assertEqual(c["brand"], "Smile Hub")
-        self.assertFalse(any("Typical" in n or "placeholder" in n for n in c["needs_review"]))
+        self.assertFalse(any("Typical" in n or "No business name" in n for n in c["needs_review"]))
         self.assertEqual(c["generated_by"]["mode"], "strict (your phrases only)")
 
     def test_user_sections_are_verbatim_and_rendered(self):

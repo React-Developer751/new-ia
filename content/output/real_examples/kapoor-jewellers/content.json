@@ -1,0 +1,206 @@
+{
+  "brand": "Kapoor Jewellers",
+  "niche": "shop",
+  "kind": "retail",
+  "profile": "",
+  "business_type": "jewellery",
+  "type_label": "Jewellery Store",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "elegant",
+  "keywords": [
+    "chandni",
+    "chowk",
+    "delhi",
+    "gold",
+    "diamond",
+    "silver"
+  ],
+  "eyebrow": "Jewellery Store · Delhi",
+  "location": "Delhi",
+  "audience": "",
+  "hero_heading": "Gold in Delhi: easy to ask about",
+  "tagline": "Kapoor Jewellers crafts diamond, silver jewellery and bridal sets in Delhi. Message first if you prefer.",
+  "about_title": "About Kapoor Jewellers",
+  "about": [
+    "It starts with silver jewellery. Kapoor Jewellers crafts bridal sets and hallmark too in Delhi.",
+    "You will find Kapoor Jewellers in Delhi. Message us a few notes and we will reply."
+  ],
+  "features_title": "In the store",
+  "features": [
+    {
+      "title": "Gold",
+      "text": "We can tell you what to look for in gold."
+    },
+    {
+      "title": "Diamond",
+      "text": "We will explain diamond in plain words."
+    },
+    {
+      "title": "Silver Jewellery",
+      "text": "Not sure about silver jewellery? Start with a short conversation."
+    },
+    {
+      "title": "Bridal Sets",
+      "text": "Not sure which bridal sets to pick? Describe how you will use it."
+    },
+    {
+      "title": "Hallmark",
+      "text": "Compare hallmark side by side, in person or over a message."
+    },
+    {
+      "title": "Old Gold Exchange",
+      "text": "Old gold exchange is easier to choose with a person to ask."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Picked with care",
+      "text": "A range chosen for use, not for shelf space."
+    },
+    {
+      "title": "No hard sell",
+      "text": "Take your time."
+    },
+    {
+      "title": "Clear next steps",
+      "text": "You'll know what comes next."
+    }
+  ],
+  "stats_title": "Details at a glance",
+  "stats": [
+    {
+      "value": "Delhi",
+      "label": "Where we work"
+    }
+  ],
+  "steps_title": "Three simple steps",
+  "steps": [
+    {
+      "title": "Look around",
+      "text": "Start with gold or diamond."
+    },
+    {
+      "title": "Ask questions",
+      "text": "Sizes, models, care: we're happy to explain."
+    },
+    {
+      "title": "Get started",
+      "text": "We begin when you're ready."
+    }
+  ],
+  "faq_title": "Good questions",
+  "faq": [
+    {
+      "q": "Do you ship to my city?",
+      "a": "Tell us where you are and we will confirm delivery options."
+    },
+    {
+      "q": "Do you have gold in stock?",
+      "a": "Feel free to ask us; stock changes, and we'll tell you honestly."
+    },
+    {
+      "q": "Can I pay in instalments?",
+      "a": "Ask us what payment options are available."
+    },
+    {
+      "q": "Where are you?",
+      "a": "Find us in Delhi. Send us a message and we'll send directions."
+    }
+  ],
+  "blog_title": "Notes and guides",
+  "blog": [
+    {
+      "title": "Making the most of your first visit",
+      "excerpt": "A short list to bring with you."
+    },
+    {
+      "title": "How to choose old gold exchange",
+      "excerpt": "What to look for, what to skip and what to ask."
+    },
+    {
+      "title": "Planning ahead",
+      "excerpt": "How to give yourself time."
+    }
+  ],
+  "contact": {
+    "place": "Delhi",
+    "address": "Chandni Chowk"
+  },
+  "cta_primary": "Shop now",
+  "cta_secondary": "Visit the store",
+  "cta_text": "Start with diamond.",
+  "cta_title": "Tell us what you need",
+  "footer": "© Kapoor Jewellers. All rights reserved.",
+  "offers": [],
+  "hours": "",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "Kapoor Jewellers",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Delhi",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "gold",
+        "diamond",
+        "silver jewellery",
+        "bridal sets",
+        "hallmark",
+        "old gold exchange"
+      ],
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "offers",
+    "hours",
+    "prices",
+    "phone",
+    "email"
+  ],
+  "generated_by": {
+    "business_type": "jewellery (confidence high)",
+    "items_from_prompt": [
+      "gold",
+      "diamond",
+      "silver jewellery",
+      "bridal sets",
+      "hallmark",
+      "old gold exchange"
+    ],
+    "place": "Delhi",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "",
+    "kind": "retail"
+  },
+  "needs_review": []
+}

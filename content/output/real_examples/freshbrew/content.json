@@ -1,0 +1,219 @@
+{
+  "brand": "FreshBrew",
+  "niche": "restaurant",
+  "kind": "food",
+  "profile": "tea_cafe",
+  "business_type": "cafe",
+  "type_label": "Tea and coffee cafe",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "warm",
+  "keywords": [
+    "coffee",
+    "roasters",
+    "portland",
+    "single",
+    "origin",
+    "beans"
+  ],
+  "eyebrow": "Tea and coffee cafe · Portland",
+  "location": "Portland",
+  "audience": "",
+  "hero_heading": "FreshBrew: single origin beans and cold brew in Portland",
+  "tagline": "Free shipping, open 7am-5pm: FreshBrew brews espresso and pastries in Portland.",
+  "about_title": "About FreshBrew",
+  "about": [
+    "People come to FreshBrew for espresso and pastries in Portland. Come hungry.",
+    "You will find FreshBrew in Portland, open 7am-5pm. Ask what's included before you make up your mind."
+  ],
+  "features_title": "What to order",
+  "features": [
+    {
+      "title": "Single Origin Beans",
+      "text": "Curious about single origin beans? Ask, and we will talk you through it."
+    },
+    {
+      "title": "Cold Brew",
+      "text": "Not sure about cold brew? Start with a short conversation."
+    },
+    {
+      "title": "Espresso",
+      "text": "Espresso is on the menu; ask what pairs well with it."
+    },
+    {
+      "title": "Pastries",
+      "text": "Order pastries for the table, or keep it to yourself."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Free shipping",
+      "text": "No shipping charge; tell us where to send it."
+    },
+    {
+      "title": "Order online",
+      "text": "Order in a few clicks; no phone call needed."
+    },
+    {
+      "title": "Opening hours",
+      "text": "Hours: 7am-5pm. Drop by or send a message."
+    }
+  ],
+  "stats_title": "The basics",
+  "stats": [
+    {
+      "value": "Portland",
+      "label": "Where we work"
+    },
+    {
+      "value": "7am-5pm",
+      "label": "Open"
+    }
+  ],
+  "steps_title": "What happens next",
+  "steps": [
+    {
+      "title": "Say hello",
+      "text": "Tell us what you have in mind."
+    },
+    {
+      "title": "We talk it through",
+      "text": "We explain the options in plain words."
+    },
+    {
+      "title": "Enjoy the meal",
+      "text": "Stay for coffee if the conversation is good."
+    }
+  ],
+  "faq_title": "Good questions",
+  "faq": [
+    {
+      "q": "Do you have vegetarian options?",
+      "a": "Tell us what you eat and we will point you to the dishes that suit."
+    },
+    {
+      "q": "When are you open?",
+      "a": "Our hours are 7am-5pm."
+    },
+    {
+      "q": "Where are you?",
+      "a": "We're in Portland; get in touch for directions."
+    },
+    {
+      "q": "Can I ask about single origin beans?",
+      "a": "Certainly; ask us what goes into it and how to order it."
+    }
+  ],
+  "blog_title": "Notes and guides",
+  "blog": [
+    {
+      "title": "How to order for a table of four",
+      "excerpt": "A few rules of thumb for sharing cold brew, espresso and the rest of the menu."
+    },
+    {
+      "title": "What a fair price looks like",
+      "excerpt": "Questions that make quotes easier to compare."
+    },
+    {
+      "title": "Reading the small print",
+      "excerpt": "Where to look and what to ask."
+    }
+  ],
+  "contact": {
+    "place": "Portland",
+    "hours": [
+      "7am-5pm"
+    ]
+  },
+  "cta_primary": "Order online",
+  "cta_secondary": "See the menu",
+  "cta_text": "Your next cup is one message away.",
+  "cta_title": "Start with a conversation",
+  "footer": "© FreshBrew. All rights reserved.",
+  "offers": [
+    {
+      "id": "free_shipping",
+      "text": "Free shipping"
+    },
+    {
+      "id": "online_order",
+      "text": "Order online"
+    }
+  ],
+  "hours": "7am-5pm",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "FreshBrew",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Portland",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "single origin beans",
+        "cold brew",
+        "espresso",
+        "pastries"
+      ],
+      "source": "prompt"
+    },
+    "offers": {
+      "value": [
+        "Free shipping",
+        "Order online"
+      ],
+      "source": "prompt"
+    },
+    "hours": {
+      "value": "7am-5pm",
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "prices",
+    "phone",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "cafe (confidence high)",
+    "items_from_prompt": [
+      "single origin beans",
+      "cold brew",
+      "espresso",
+      "pastries"
+    ],
+    "place": "Portland",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "tea_cafe",
+    "kind": "food"
+  },
+  "needs_review": []
+}

@@ -1,0 +1,210 @@
+{
+  "brand": "Iron Temple",
+  "niche": "fitness",
+  "kind": "fitness",
+  "profile": "crossfit",
+  "business_type": "gym",
+  "type_label": "Gym & Fitness Studio",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "bold",
+  "keywords": [
+    "hi",
+    "gym",
+    "chandigarh",
+    "offer",
+    "weight",
+    "training"
+  ],
+  "eyebrow": "Gym & Fitness Studio · Chandigarh",
+  "location": "Chandigarh",
+  "audience": "",
+  "hero_heading": "Weight training and cardio in Chandigarh",
+  "tagline": "Iron Temple trains crossfit, personal training and diet plans in Chandigarh. Small questions are welcome too.",
+  "about_title": "About Iron Temple",
+  "about": [
+    "It starts with weight training. Iron Temple trains cardio and crossfit too in Chandigarh.",
+    "You will find Iron Temple in Chandigarh. Ask us anything before you decide."
+  ],
+  "features_title": "What you can train",
+  "features": [
+    {
+      "title": "Weight Training",
+      "text": "Weight training is coached from the first rep to the last; ask which level suits you."
+    },
+    {
+      "title": "Cardio",
+      "text": "Cardio: show up, follow the coach, and track your progress."
+    },
+    {
+      "title": "Crossfit",
+      "text": "Feel free to ask us how crossfit works and what to expect."
+    },
+    {
+      "title": "Personal Training",
+      "text": "One-to-one coaching around your goals. Let us know what you need from personal training and we will suggest where to start."
+    },
+    {
+      "title": "Diet Plans",
+      "text": "We will explain diet plans before you begin and adjust it as you improve."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Opening hours",
+      "text": "Hours: 5am to 10pm. Drop by or send a message."
+    },
+    {
+      "title": "Easy to start",
+      "text": "Come once and see."
+    },
+    {
+      "title": "Clear next steps",
+      "text": "You will know what comes next."
+    }
+  ],
+  "stats_title": "The basics",
+  "stats": [
+    {
+      "value": "Chandigarh",
+      "label": "Where we work"
+    },
+    {
+      "value": "5am to 10pm",
+      "label": "Open"
+    }
+  ],
+  "steps_title": "From first message to finish",
+  "steps": [
+    {
+      "title": "Say hello",
+      "text": "Tell us what you have in mind."
+    },
+    {
+      "title": "Warm up and learn",
+      "text": "The coach introduces weight training or cardio and checks your form."
+    },
+    {
+      "title": "Follow up",
+      "text": "We check in afterwards."
+    }
+  ],
+  "faq_title": "Before you ask",
+  "faq": [
+    {
+      "q": "How do I book?",
+      "a": "Use the contact details on this page."
+    },
+    {
+      "q": "When are you open?",
+      "a": "Our hours are 5am to 10pm."
+    },
+    {
+      "q": "Where are you?",
+      "a": "Find us in Chandigarh. Message us and we'll send directions."
+    },
+    {
+      "q": "Can I ask about weight training?",
+      "a": "Yes; tell us what you'd like to know about weight training."
+    }
+  ],
+  "blog_title": "From the journal",
+  "blog": [
+    {
+      "title": "Small things that make a difference",
+      "excerpt": "Notes from everyday experience."
+    },
+    {
+      "title": "How long things really take",
+      "excerpt": "Setting expectations on both sides."
+    },
+    {
+      "title": "Starting out: your first month",
+      "excerpt": "What to expect, how often to come and how to avoid burnout."
+    }
+  ],
+  "contact": {
+    "place": "Chandigarh",
+    "hours": [
+      "5am to 10pm"
+    ]
+  },
+  "cta_primary": "Start a free trial",
+  "cta_secondary": "Book a session",
+  "cta_text": "Your first session starts with a message.",
+  "cta_title": "Ready when you are",
+  "footer": "© Iron Temple. All rights reserved.",
+  "offers": [],
+  "hours": "5am to 10pm",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "Iron Temple",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Chandigarh",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "weight training",
+        "cardio",
+        "crossfit",
+        "personal training",
+        "diet plans"
+      ],
+      "source": "prompt"
+    },
+    "hours": {
+      "value": "5am to 10pm",
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "offers",
+    "prices",
+    "phone",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "gym (confidence high)",
+    "items_from_prompt": [
+      "weight training",
+      "cardio",
+      "crossfit",
+      "personal training",
+      "diet plans"
+    ],
+    "place": "Chandigarh",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "crossfit",
+    "kind": "fitness"
+  },
+  "needs_review": []
+}

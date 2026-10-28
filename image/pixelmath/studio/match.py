@@ -35,6 +35,10 @@ _DEVA_ENDINGS = "ेंोौाीिुूँं"
 
 def deva_stem(w):
     """Strip Hindi inflection endings (खिलौने / खिलौनों -> खिलौन, दांत / दांतों -> दांत): at most two trailing vowel signs."""
+    for plural in ("ियों", "ियाँ", "ियां", "ियाें"):                    # feminine plurals: कुर्तियों / कुर्तियाँ -> कुर्ती, साड़ियों -> साड़ी
+        if len(w) > len(plural) + 1 and w.endswith(plural):
+            w = w[:-len(plural)] + "ी"
+            break
     for _ in range(2):
         if len(w) > 3 and w[-1] in _DEVA_ENDINGS:
             w = w[:-1]
@@ -102,8 +106,8 @@ def _keyword_only(ranked, info):
 
 
 VETO_GAP = 3.0                    # keywords name a niche but the classifier prefers another by more than this (log-odds, tempered): not trusted
-NB_ONLY_PROB, NB_ONLY_MARGIN = 0.99, 0.5
-NB_AGREE_PROB = 0.75               # lower bar when some keyword (even a weak hint) points at the same niche as the classifier
+NB_ONLY_PROB, NB_ONLY_MARGIN = 0.95, 0.5     # chosen by a grid over three blind prompt sets: 0.99 refused ~1 in 10 good prompts, 0.90 let more off-niche ones through
+NB_AGREE_PROB = 0.60               # lower bar when some keyword (even a weak hint) points at the same niche as the classifier
 
 
 def match_niche(prompt, classifier=None):
@@ -132,11 +136,15 @@ def match_niche(prompt, classifier=None):
     info["classifier"] = (top, round(p1, 3), known)
     if kw_id:
         if top != kw_id and kw_id in tempered and max(tempered.values()) - tempered[kw_id] > VETO_GAP:
+            if top != "none" and margin >= NB_ONLY_MARGIN and p1 >= NB_ONLY_PROB and top in scores and scores[top][0] > 0 and not scores[top][3]:
+                return (top, dict(info, reason="classifier (%.2f) overrules keywords %s: a keyword hint also points at %s" % (p1, kw_id, top), learned=True))
             return (None, dict(info, reason="keywords say %s but the classifier prefers %s" % (kw_id, top)))
         return (kw_id, dict(kw_info, classifier=info["classifier"]))
     if top == "none":
         return (None, dict(info, reason="classifier: not one of the niches"))
-    support = top in scores and (scores[top][1] or scores[top][2])
+    if top in scores and scores[top][3]:                       # the prompt contains a word that means "not this niche": the classifier alone may not bring it back
+        return (None, dict(info, reason="classifier prefers %s but the prompt contains %s" % (top, ", ".join(scores[top][3]))))
+    support = top in scores and scores[top][0] > 0 and (scores[top][1] or scores[top][2])
     if margin >= NB_ONLY_MARGIN and (p1 >= NB_ONLY_PROB or (support and p1 >= NB_AGREE_PROB)):
         return (top, dict(info, reason="trained classifier (%.2f)%s" % (p1, " + keyword hint" if support else ""), learned=True))
     return (None, dict(info, reason=kw_info["reason"] if not ranked else "unclear: best guess %s at %.2f" % (top, p1)))

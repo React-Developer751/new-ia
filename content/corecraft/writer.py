@@ -31,7 +31,7 @@ OFFER_HIGHLIGHT = {   # (title, [text variants])
     "parking": ("Parking", ["Ask us where to park when you visit.", "Parking is available; ask where.", "Ask about parking before you come."]),
     "new_patients": ("New patients welcome", ["Say hello and tell us what you need; first visits are welcome.", "New here? Get in touch and we'll find you a time.", "Starting fresh is fine; contact us to arrange a first visit."]),
     "online_order": ("Order online", ["Choose what you like and order from home.", "Place your order online, whenever it suits you.", "Order in a few clicks; no phone call needed."]),
-    "pickup": ("Pickup", ["Collect your order in person; tell us when you'll be by.", "Order ahead and pick it up when it's ready.", "Pick up your order at a time that suits you."]),
+    "pickup": ("Pickup", ["Tell us when and where, and we'll confirm the pickup.", "Message us the details and we'll arrange the pickup.", "Ask us how pickup works and when it suits you."]),
     "financing": ("Financing", ["Ask us about payment plans before you decide.", "Spread the cost; ask what financing is available.", "Financing is available; ask for the details."]),
     "same_day": ("Same-day help", ["Need it today? Contact us and we'll tell you what's possible.", "Same-day help is available; get in touch early.", "Urgent? Message us and see what can be done today."]),
     "home_visit": ("Home visits", ["Tell us where you are and we'll confirm.", "We can come to you; share your address.", "A visit at home; ask what's possible."]),

@@ -399,18 +399,392 @@
    "cargo trucks on highway at dusk, fast delivery",
    "meri courier company ke liye godown ki photo",
    "माल को एक शहर से दूसरे शहर पहुँचाने वाली ट्रांसपोर्ट कंपनी"
+  ],
+  "ayurveda": [
+   "ayurvedic clinic with herbs and oils",
+   "panchakarma treatment centre photo",
+   "calming green herbal remedies, warm wooden shelves of dried roots and medicinal oils",
+   "earthy golden light, copper vessels, ayurvedic massage with warm herbal oil",
+   "humare ayurvedic clinic ke liye jadi booti aur tel wali photo",
+   "आयुर्वेदिक वैद्य जड़ी बूटियों के साथ"
+  ],
+  "physio": [
+   "physiotherapy centre exercise rehab",
+   "physiotherapist helping patient with knee exercise",
+   "bright clean rehab room, soft blue tones, patient stretching with therapist guidance",
+   "energetic recovery mood, resistance bands, exercise balls and treatment beds",
+   "physio centre ke liye patient ki kasrat karwate hue image chahiye",
+   "therapist helping someone recover from back injury on a treatment bed"
+  ],
+  "skin-clinic": [
+   "dermatology clinic skin treatment",
+   "skin specialist doctor examining patient's face",
+   "glowing clear skin, soft pink and white, clean dermatology room with laser device",
+   "fresh minimal clinical look, acne treatment, close up of radiant cheek",
+   "skin clinic ke liye pimples aur glowing skin wali photo",
+   "चेहरे की त्वचा का इलाज करता त्वचा रोग विशेषज्ञ"
+  ],
+  "eye-clinic": [
+   "eye hospital ophthalmologist checking vision",
+   "cataract surgery eye clinic",
+   "calm trustworthy blue tones, eye specialist with slit lamp examining patient's eye",
+   "clear vision theme, close up of a healthy eye, clinical white and teal",
+   "aankhon ke hospital ke liye doctor jo aankh check kar raha ho",
+   "आँखों के डॉक्टर द्वारा नेत्र जाँच"
+  ],
+  "optical": [
+   "eyeglasses store with frames on display",
+   "optical shop spectacles wall",
+   "stylish frames on glossy shelves, modern warm lighting, customer trying sunglasses",
+   "chic boutique feel, rows of colourful spectacle frames, mirror and soft spotlights",
+   "chashme ki dukaan ke liye frames wali photo",
+   "चश्मे की दुकान पर फ्रेम चुनता ग्राहक"
+  ],
+  "mehendi": [
+   "mehendi artist applying henna on hands",
+   "bridal henna design",
+   "intricate dark henna patterns on hands, warm terracotta and festive gold",
+   "festive celebration mood, fresh mehndi cones and delicate floral hand designs",
+   "mehendi wali ke liye haathon par design ki photo",
+   "हाथों पर रची हुई मेंहदी"
+  ],
+  "tattoo": [
+   "tattoo studio artist inking client",
+   "custom tattoo designs on arm",
+   "dark moody studio, neon red light, tattoo machine and bold black ink",
+   "edgy underground vibe, detailed sleeve artwork, gritty and raw",
+   "tattoo parlour ke liye hath par ink karte artist ki photo",
+   "बाजू पर गोदना बनाता कलाकार"
+  ],
+  "petshop": [
+   "pet shop with dog food and accessories",
+   "puppies and kittens in pet store",
+   "playful cheerful colours, happy dog with toys, leashes and bowls on shelves",
+   "cosy friendly mood, cat treats, fish tank and cute bird cages",
+   "kutte billi ke saman ki dukaan ke liye photo",
+   "पालतू जानवरों का सामान और खाना"
+  ],
+  "architect": [
+   "architecture studio for buildings",
+   "architect reviewing building blueprints",
+   "clean minimalist concrete and glass, sunlit modern building facade, neutral greys",
+   "creative studio mood, scale models on table, drafting sketches and warm lamp light",
+   "architect firm ke liye building ke naksha aur model wali image",
+   "इमारतों के नक्शे और मॉडल बनाने वाला दफ्तर"
+  ],
+  "insurance": [
+   "insurance advisor with family policy",
+   "life insurance and financial planning",
+   "trustworthy navy and gold, advisor explaining protection plan to happy family",
+   "secure reassuring mood, umbrella over family icons, calm professional office",
+   "bima salahkar ke liye family suraksha wali photo",
+   "परिवार की सुरक्षा के लिए बीमा सलाहकार"
+  ],
+  "consulting": [
+   "business consulting firm team meeting",
+   "management consultants presenting strategy",
+   "sharp corporate look, deep blue, consultants around boardroom table with charts",
+   "confident professional mood, whiteboard strategy session, glass office and city skyline",
+   "business consultancy ke liye strategy meeting ki photo",
+   "कंपनी को रणनीति बताते सलाहकारों की बैठक"
+  ],
+  "recruitment": [
+   "recruitment agency interviewing candidates",
+   "staffing agency hiring new employees",
+   "friendly professional mood, handshake after interview, resumes on desk, teal and white",
+   "bright office, HR manager meeting job seeker, hiring talent theme",
+   "naukri dilane wali placement agency ke liye interview ki photo",
+   "नौकरी चाहने वालों का साक्षात्कार लेता भर्ती अधिकारी"
+  ],
+  "coworking": [
+   "coworking space with desks and laptops",
+   "shared office space for freelancers",
+   "airy open plan, plants and warm wood, people working on laptops, creative buzz",
+   "modern startup vibe, hot desks, bright natural light and cosy lounge corner",
+   "coworking space ke liye shared desk wali office ki photo",
+   "फ्रीलांसरों और स्टार्टअप के लिए साझा दफ्तर"
+  ],
+  "astrology": [
+   "astrologer reading horoscope",
+   "tarot card reading session",
+   "mystical deep purple and gold, zodiac wheel, candles and star charts",
+   "spiritual night sky mood, crystal ball, glowing constellations and tarot spread",
+   "jyotish ji ki kundli aur rashifal wali photo",
+   "कुंडली देखकर भविष्य बताते ज्योतिषी"
+  ],
+  "visa": [
+   "visa and immigration consultancy",
+   "passport and visa documents for abroad",
+   "hopeful immigration mood, passport with approval stamp, world map, sky blue",
+   "overseas dream, student moving abroad, visa approved stamp, clean modern",
+   "visa consultant ke liye passport aur immigration wali image",
+   "विदेश जाने के लिए पासपोर्ट और वीज़ा के कागज़ात"
+  ],
+  "ngo": [
+   "NGO helping poor children",
+   "charity volunteers distributing food",
+   "warm hopeful mood, volunteers with smiling village kids, soft golden hour",
+   "compassionate humanitarian feel, donation drive, hands giving and community support",
+   "ngo ke liye gareeb bachon ki madad karte volunteers ki photo",
+   "ज़रूरतमंदों की सेवा करते समाजसेवी"
+  ],
+  "painting": [
+   "house painting service",
+   "painter painting wall with roller",
+   "fresh colourful walls, bright yellow and teal, painter on ladder, tidy finish",
+   "clean makeover mood, new coat of paint on living room, paint cans and brushes",
+   "ghar ki painting karne wale painter ki photo",
+   "घर की दीवारों पर रंग रोगन करता कारीगर"
+  ],
+  "carpentry": [
+   "carpentry and woodwork workshop",
+   "modular kitchen installation",
+   "warm wood grain, workshop with sawdust, craftsman planing a teak board",
+   "sleek modern kitchen cabinets in matte white, tidy and functional, soft light",
+   "carpenter ka kaam aur modular kitchen ki photo",
+   "लकड़ी का काम करता बढ़ई"
+  ],
+  "ac-repair": [
+   "AC repair technician",
+   "fridge and washing machine repair service",
+   "summer cooling relief, technician servicing split AC on wall, blue and white",
+   "reliable home service mood, repairman with toolkit fixing air conditioner",
+   "AC theek karne wale mistri ki photo",
+   "घर पर आकर एसी और फ्रिज ठीक करने वाला कारीगर"
+  ],
+  "movers": [
+   "packers and movers",
+   "moving boxes loaded into truck",
+   "smooth relocation mood, stacked cardboard boxes, orange and blue, careful team lifting",
+   "stress free house shifting, movers carrying sofa, tidy packed home",
+   "ghar shift karne ke liye packers movers ki photo",
+   "सामान पैक करके नए घर पहुँचाने वाली टीम"
+  ],
+  "landscape": [
+   "garden and lawn care service",
+   "gardener mowing lawn",
+   "lush green lawn, manicured hedges, golden sunlight, peaceful backyard garden",
+   "fresh outdoor mood, neat flower beds and stone pathway, landscaping design",
+   "bagicha aur ghaas ki dekhbhal karne wale mali ki photo",
+   "घर के बगीचे में पौधे और हरी घास की देखरेख"
+  ],
+  "welding": [
+   "welder fabricating steel",
+   "metal fabrication workshop",
+   "bright orange sparks flying, welding mask, dark industrial workshop, strong steel",
+   "heavy duty mood, steel gates and grills being welded, glowing seams",
+   "welding aur fabrication ki workshop, lohe ka kaam",
+   "चिंगारियाँ उड़ाते हुए लोहे को जोड़ता कारीगर"
+  ],
+  "tyres": [
+   "tyre shop and car accessories",
+   "car tyres and alloy wheels on display",
+   "bold black and red, stacked tyres in garage, rugged automotive look",
+   "fast service feel, wheel alignment machine, shiny rims and car accessories",
+   "gaadi ke tyre aur accessories ki dukaan ki photo",
+   "गाड़ियों के पहिए और टायर बदलने की दुकान"
+  ],
+  "security": [
+   "CCTV camera installation",
+   "security systems for home and office",
+   "dark blue night mood, dome camera watching building entrance, safe and alert",
+   "high tech surveillance, monitors showing camera feeds, secure and professional",
+   "CCTV camera lagane wali company ki photo",
+   "घर और दुकान की निगरानी के लिए सुरक्षा कैमरे"
+  ],
+  "fashion-boutique": [
+   "western wear boutique",
+   "women's dresses on clothing rack",
+   "chic and trendy, pastel dresses on hangers, bright airy boutique with mannequins",
+   "stylish editorial mood, model in modern outfit, neutral beige and soft pink",
+   "ladies western kapde ke boutique ke liye dress wali photo",
+   "आधुनिक पश्चिमी पोशाक पहने मॉडल"
+  ],
+  "furniture": [
+   "furniture showroom with sofas",
+   "sofa set and bed display",
+   "elegant living room showroom, plush grey sofa, warm lamps, cosy and upscale",
+   "contemporary home furnishings, wooden dining table and chairs, bright airy display",
+   "furniture ki dukaan mein sofa aur almirah dikhane wali photo",
+   "घर के लिए सोफ़ा, पलंग और मेज़ कुर्सी का शोरूम"
+  ],
+  "mobile-store": [
+   "mobile phone shop",
+   "smartphones and accessories on shelves",
+   "sleek tech look, latest smartphones glowing on display, dark background with blue accents",
+   "modern electronics store, bright neon price tags, phones and earbuds",
+   "mobile ki dukaan ke liye naye smartphone wali photo",
+   "नए फोन और चार्जर बेचने वाली दुकान"
+  ],
+  "printing": [
+   "printing press shop",
+   "flex banner and poster printing shop",
+   "vibrant CMYK colours, large format printer producing glossy banner, busy workshop",
+   "bold colourful prints, stacks of brochures and visiting cards, ink rollers",
+   "flex banner aur visiting card chhapne wali press ki photo",
+   "छपाई मशीन से निकलते हुए रंगीन पोस्टर"
+  ],
+  "tailor": [
+   "tailor stitching clothes",
+   "clothing alterations shop",
+   "warm workshop light, sewing machine and colourful threads, tape measure on fabric",
+   "traditional craft feel, tailor measuring a customer for a custom suit",
+   "darzi ki dukaan, kapde silai aur alteration ki photo",
+   "सिलाई मशीन पर कपड़े सिलता दर्जी"
+  ],
+  "bike-showroom": [
+   "motorcycle showroom with new bikes",
+   "two wheeler dealership",
+   "bold powerful look, sport bikes lined up, glossy red and black, dramatic spotlights",
+   "adventurous mood, cruiser motorcycle on open road at sunset",
+   "bike showroom ke liye naye motorcycle ki photo",
+   "नई चमचमाती दुपहिया गाड़ियाँ बिक्री के लिए"
+  ],
+  "pottery": [
+   "pottery studio with clay",
+   "ceramic mugs and clay pots",
+   "earthy terracotta tones, hands shaping wet clay on potter's wheel, handmade charm",
+   "cosy artisan mood, glazed ceramic bowls on wooden shelf, soft natural light",
+   "kumhar ki tarah mitti ke bartan banane wali studio ki photo",
+   "चाक पर मिट्टी के घड़े बनाता कुम्हार"
+  ],
+  "design-studio": [
+   "graphic design studio",
+   "brand identity and logo design",
+   "creative colourful desk, designer working on logo, color swatches and sketchbook",
+   "modern bold branding mood, mockups of packaging and stationery, vibrant gradients",
+   "logo aur branding karne wale design studio ki image",
+   "रचनात्मक डिज़ाइनर कंप्यूटर पर लोगो बनाता हुआ"
+  ],
+  "playschool": [
+   "play school with kids",
+   "daycare for toddlers",
+   "cheerful rainbow colours, toddlers playing with blocks in bright classroom, safe and fun",
+   "warm nurturing mood, kindergarten children painting, soft toys and cartoon wall",
+   "chhote bachchon ke play school ki photo",
+   "नन्हे बच्चों की देखभाल और खेल का केंद्र"
+  ],
+  "driving-school": [
+   "driving school with instructor",
+   "learning to drive car",
+   "confident learner mood, L-sign car on open road, bright sky and steady hands on wheel",
+   "friendly instructor beside student in dual control car, clear road, green and white",
+   "driving school ke liye gaadi sikhane wali photo",
+   "गाड़ी चलाना सिखाने वाला प्रशिक्षक और नया चालक"
+  ],
+  "music-academy": [
+   "music academy for students",
+   "dance classes for kids",
+   "expressive stage lighting, guitar and tabla, students rehearsing, rich warm tones",
+   "lively rhythmic mood, classical dancers in colourful costume, piano keys",
+   "music aur dance seekhne wali academy ki photo",
+   "सुर ताल सिखाने वाला संगीत विद्यालय"
+  ],
+  "sports-academy": [
+   "cricket academy coaching",
+   "football and badminton training academy",
+   "energetic sunny ground, young cricketers practising batting, green and blue",
+   "athletic determination, players on football field at dusk, dynamic action",
+   "cricket aur badminton sikhane wali sports academy ki photo",
+   "मैदान में खेल का अभ्यास करते युवा खिलाड़ी"
+  ],
+  "robotics-lab": [
+   "robotics lab for kids",
+   "STEM lab with robots",
+   "futuristic techy blue, children building small robot, circuit boards and screens",
+   "curious inventive mood, students coding robot arm, colourful kits on table",
+   "bachchon ke liye robotics lab ki photo",
+   "बच्चे रोबोट बनाना और कोडिंग सीखते हुए"
+  ],
+  "hotel": [
+   "hotel room with bed",
+   "resort with swimming pool",
+   "luxurious warm lighting, plush bed, welcoming lobby, calm cream and gold",
+   "relaxing getaway mood, guest house balcony view of hills, morning light",
+   "hotel ya guest house ke kamre ki photo",
+   "रुकने के लिए आरामदायक कमरे और रिसॉर्ट"
+  ],
+  "taxi": [
+   "taxi service in city",
+   "car rental with driver",
+   "reliable city ride, yellow cab at night, glowing streets, safe and quick",
+   "comfortable travel mood, chauffeur opening sedan door, airport pickup",
+   "cab booking aur gaadi kiraye par dene ki photo",
+   "किराये की गाड़ी और ड्राइवर की सेवा"
+  ],
+  "gaming-zone": [
+   "gaming zone for friends",
+   "esports cafe with gaming PCs",
+   "neon purple and blue glow, gamers with headsets, rows of RGB monitors",
+   "intense competitive mood, tournament screens, VR headsets and controllers, dark room",
+   "gaming cafe mein PC aur PlayStation khelte ladko ki photo",
+   "कंप्यूटर और कंसोल पर वीडियो गेम खेलते दोस्त"
+  ],
+  "restaurant": [
+   "family restaurant dining",
+   "fine dining restaurant interior",
+   "elegant candle lit tables, warm golden ambience, plated gourmet dishes",
+   "cosy upscale dining mood, families sharing multi cuisine meal, soft lighting",
+   "family restaurant ke liye khana aur table setting wali photo",
+   "परिवार के साथ बैठकर शानदार भोजन का आनंद"
+  ],
+  "south-indian": [
+   "South Indian restaurant dosa",
+   "idli sambar breakfast",
+   "crispy golden dosa with coconut chutney on banana leaf, warm earthy tones",
+   "traditional filter coffee and steaming idlis, rustic brass tumblers",
+   "dosa idli wale restaurant ke liye photo",
+   "केले के पत्ते पर परोसा गया सांभर, इडली और डोसा"
+  ],
+  "chinese-restaurant": [
+   "Chinese restaurant food",
+   "Indo-Chinese noodles and manchurian",
+   "fiery red and gold, steaming wok with noodles, lanterns, bold flavours",
+   "sizzling stir fry mood, hakka noodles and fried rice, chopsticks, dark moody",
+   "chinese khane ki dukaan ke liye noodles aur manchurian ki photo",
+   "कड़ाही में तले हुए नूडल्स और मंचूरियन"
+  ],
+  "street-food": [
+   "street food stall",
+   "chaat and golgappa vendor",
+   "vibrant bustling evening, spicy pani puri, colourful street cart, steam and bright bulbs",
+   "lively local market vibe, tangy chaat plates, tikki frying on tawa",
+   "chaat wale thele ki golgappe aur tikki ki photo",
+   "सड़क किनारे ठेले पर चटपटे गोलगप्पे"
+  ],
+  "bar-lounge": [
+   "cocktail bar interior",
+   "bar and lounge nightlife",
+   "dim moody lighting, bartender pouring colourful cocktails, neon and amber glow",
+   "classy evening vibe, leather lounge seats, whisky glasses and bottles on backlit shelf",
+   "bar lounge ke liye cocktails aur night party wali photo",
+   "रात में रोशनी वाले लाउंज में जाम और कॉकटेल"
+  ],
+  "catering": [
+   "catering service for events",
+   "buffet food for events",
+   "lavish buffet spread, silver chafing dishes, warm lights, uniformed staff serving guests",
+   "festive celebration feel, platters of appetizers and desserts, elegant arrangement",
+   "catering wale ke liye event ke buffet khane ki photo",
+   "बड़ी दावत के लिए बड़े पैमाने पर खाना बनाने वाले रसोइये"
+  ],
+  "tent-house": [
+   "tent house rental",
+   "event rentals tents chairs and stage",
+   "grand white draped canopy, fairy lights, rows of chairs, festive outdoor setup",
+   "colourful shamiana, decorated mandap and stage lights, big celebration setup",
+   "tent house ke liye shamiyana aur kursi table ki photo",
+   "समारोह के लिए किराये पर मिलने वाले पंडाल और कुर्सियाँ"
   ]
  },
  "off_niche": [
   "scuba diving school underwater coral reef",
   "hot air balloons floating over green valleys",
   "blacksmith forging a glowing sword",
-  "pottery workshop with clay on a spinning wheel",
   "ski resort with snowy slopes and chairlift",
   "pirate ship sailing in a stormy sea",
   "rocket launching from a space station at night",
   "floodlit cricket stadium during a match",
-  "ballet dance academy girls on stage",
   "bowling alley with neon lights",
   "casino poker table with chips",
   "skateboard park with graffiti walls",
@@ -419,8 +793,26 @@
   "robot arm in a futuristic laboratory",
   "bird watching in a dense rainforest",
   "meri paragliding company ke liye pahaadon ki picture",
-  "मेरी पॉटरी की कार्यशाला के लिए चित्र",
   "vintage vinyl record shop with turntables",
-  "lighthouse on a rocky cliff in a storm"
+  "lighthouse on a rocky cliff in a storm",
+  "submarine exploring deep under the sea",
+  "astronomy observatory with big telescope at night",
+  "chess tournament players at boards",
+  "ski resort snowy mountain slopes",
+  "old pirate ship sailing stormy seas",
+  "rocket launching into space",
+  "lighthouse on rocky coast at sunset",
+  "ballet dancers rehearsing in studio",
+  "bowling alley with strikes, neon lanes",
+  "beekeeper checking honey frames in hives",
+  "falconry display with hawk on gloved hand",
+  "glass blowing artisan with molten glass",
+  "skatepark with skaters doing tricks",
+  "hot air balloons floating over valley",
+  "scuba diving school coral reef",
+  "archery range target practice",
+  "ice skating rink family evening",
+  "dinosaur museum with fossil skeletons",
+  "ghode ki sawari wali horse riding stable ki photo"
  ]
 }

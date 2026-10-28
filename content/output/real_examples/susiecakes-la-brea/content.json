@@ -1,0 +1,244 @@
+{
+  "brand": "SusieCakes La Brea",
+  "niche": "restaurant",
+  "kind": "food",
+  "profile": "bakery",
+  "business_type": "bakery",
+  "type_label": "Bakery",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "warm",
+  "keywords": [
+    "bakery",
+    "los",
+    "angeles",
+    "custom",
+    "cakes",
+    "wedding"
+  ],
+  "eyebrow": "Bakery · Los Angeles",
+  "location": "Los Angeles",
+  "audience": "",
+  "hero_heading": "Custom cakes and wedding cakes, made for the occasion",
+  "tagline": "Order birthday cakes in Los Angeles. Tell us the occasion and we will help you choose.",
+  "about_title": "About SusieCakes La Brea",
+  "about": [
+    "It starts with cupcakes. SusieCakes La Brea sells cookies and pies too in Los Angeles.",
+    "In Los Angeles: home delivery, order online and pickup. Ask us anything before you decide."
+  ],
+  "features_title": "On the menu",
+  "features": [
+    {
+      "title": "Custom Cakes",
+      "text": "Cakes made to your flavour, size and design; share the idea when you order. Curious about custom cakes? Ask, and we'll talk you through it."
+    },
+    {
+      "title": "Wedding Cakes",
+      "text": "Sponges layered with cream, fruit or chocolate, for any occasion."
+    },
+    {
+      "title": "Birthday Cakes",
+      "text": "We'll explain birthday cakes in plain words."
+    },
+    {
+      "title": "Cupcakes",
+      "text": "Small single-serve cakes with a swirl of frosting."
+    },
+    {
+      "title": "Cookies",
+      "text": "Ask the team what goes into cookies; they like the question."
+    },
+    {
+      "title": "Pies",
+      "text": "If pies is why you came, say so when you order."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Home delivery",
+      "text": "We bring it to you; message us your location."
+    },
+    {
+      "title": "Order online",
+      "text": "Choose what you like and order from home."
+    },
+    {
+      "title": "Pickup",
+      "text": "Message us the details and we will arrange the pickup."
+    },
+    {
+      "title": "Opening hours",
+      "text": "Hours: 11am-8pm. Drop by or send a message."
+    }
+  ],
+  "stats_title": "Details at a glance",
+  "stats": [
+    {
+      "value": "Los Angeles",
+      "label": "Where we work"
+    },
+    {
+      "value": "11am-8pm",
+      "label": "Open"
+    }
+  ],
+  "steps_title": "Getting started",
+  "steps": [
+    {
+      "title": "Browse",
+      "text": "Start with custom cakes or wedding cakes."
+    },
+    {
+      "title": "Agree the plan",
+      "text": "We confirm what happens and when."
+    },
+    {
+      "title": "Pick it up and enjoy",
+      "text": "Fresh and ready for the day."
+    }
+  ],
+  "faq_title": "Questions we get asked",
+  "faq": [
+    {
+      "q": "How can I order something?",
+      "a": "Online ordering is available whenever it suits you."
+    },
+    {
+      "q": "Can I collect my order?",
+      "a": "You can pick up your order; message us the time."
+    },
+    {
+      "q": "Do you offer delivery or takeaway?",
+      "a": "We deliver; message us your location."
+    },
+    {
+      "q": "I have an allergy. Can you help?",
+      "a": "Tell us about it before you order and the team will explain what they can do safely."
+    }
+  ],
+  "blog_title": "Short guides",
+  "blog": [
+    {
+      "title": "Keeping track of your plans",
+      "excerpt": "A simple way to stay organised."
+    },
+    {
+      "title": "A short guide to custom cakes",
+      "excerpt": "What it is, how it is usually enjoyed and what goes with it."
+    },
+    {
+      "title": "Making the most of your first visit",
+      "excerpt": "A short list to bring with you."
+    }
+  ],
+  "contact": {
+    "phone": "323-266-2253",
+    "place": "Los Angeles",
+    "hours": [
+      "11am-8pm"
+    ]
+  },
+  "cta_primary": "Order online",
+  "cta_secondary": "See what's baked",
+  "cta_text": "Your order is one message away.",
+  "cta_title": "We'd like to hear from you",
+  "footer": "© SusieCakes La Brea. All rights reserved.",
+  "offers": [
+    {
+      "id": "home_delivery",
+      "text": "Home delivery"
+    },
+    {
+      "id": "online_order",
+      "text": "Order online"
+    },
+    {
+      "id": "pickup",
+      "text": "Pickup"
+    }
+  ],
+  "hours": "11am-8pm",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "SusieCakes La Brea",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Los Angeles",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "custom cakes",
+        "wedding cakes",
+        "birthday cakes",
+        "cupcakes",
+        "cookies",
+        "pies"
+      ],
+      "source": "prompt"
+    },
+    "offers": {
+      "value": [
+        "Home delivery",
+        "Order online",
+        "Pickup"
+      ],
+      "source": "prompt"
+    },
+    "hours": {
+      "value": "11am-8pm",
+      "source": "prompt"
+    },
+    "phone": {
+      "value": "323-266-2253",
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "prices",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "bakery (confidence high)",
+    "items_from_prompt": [
+      "custom cakes",
+      "wedding cakes",
+      "birthday cakes",
+      "cupcakes",
+      "cookies",
+      "pies"
+    ],
+    "place": "Los Angeles",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "bakery",
+    "kind": "food"
+  },
+  "needs_review": []
+}

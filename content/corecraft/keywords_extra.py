@@ -42,8 +42,8 @@ EXTRA_KEYS = {
     "gifts": "gift shop,gifts,florist,flowers,bouquet,hampers,phool,फूल,गिफ्ट",
     "petshop": "pet shop,pet store,pets,dog food,aquarium,पालतू,पेट शॉप",
     "optical": "optical,opticals,optician,spectacles,eyeglasses,chashma,chashme,contact lenses,eyewear,चश्मा,चश्मे,ऑप्टिकल",
-    "pharmacy": "pharmacy,chemist,medical store,medicine shop,medicines,dawai,dawa,दवाई,दवा,मेडिकल स्टोर,केमिस्ट",
-    "shop": "online store,ecommerce,e-commerce,online shop,webstore,handmade products,d2c brand,ऑनलाइन स्टोर",
+    "pharmacy": "pharmacy,chemist,दवाइयाँ,दवाईयां,फार्मेसी,medical store,medicine shop,medicines,dawai,dawa,दवाई,दवा,मेडिकल स्टोर,केमिस्ट",
+    "shop": "hardware store,hardware shop,paint shop,building material,online store,ecommerce,e-commerce,online shop,webstore,handmade products,d2c brand,ऑनलाइन स्टोर",
     "restaurant": "restaurant,ristorante,pizzeria,trattoria,dhaba,bistro,eatery,diner,food joint,bar and lounge,lounge,pub,bar,cocktails,brewery,street food,chaat,punjabi food,north indian,south indian,chinese food,indo chinese,"
                   "fast food,biryani,tandoori,rasoi,bhojnalay,रेस्टोरेंट,रेस्तरां,ढाबा,भोजनालय,होटल का खाना,चाट,बार",
     "cafe": "cafe,café,coffee shop,coffee house,chai,tea stall,tea shop,chai cafe,tapri,कैफे,कैफ़े,चाय की दुकान,चाय",

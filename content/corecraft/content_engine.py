@@ -7,6 +7,7 @@ from .ngram_model import Model, tokens as _model_tokens
 from .template_model import TemplateModel
 from . import lang_hi as hi_mod
 from . import detector as detector_mod
+from . import typos
 from .facts import OFFER_RE, extract_facts, find_offers, hours_for_english
 from .profiles import PROFILE_LABEL, TYPE_KIND, pick_profile
 from .writer import write_page, title_case as card_title
@@ -271,7 +272,7 @@ def _name(prompt, t, niche, rng):
 
 
 UI_EN = {
-    "lang": "en", "about": "About", "faq": "FAQ", "contact": "Contact", "call": "Call", "email": "Email", "based_in": "Based in",
+    "lang": "en", "about": "About", "gallery": "Gallery", "faq": "FAQ", "contact": "Contact", "call": "Call", "email": "Email", "based_in": "Based in",
     "pricing": "Pricing", "testimonials": "What customers say", "team": "Our team", "hours": "Opening hours", "address": "Address",
     "where": "Where we work", "years": "Years of experience", "since": "Serving since", "features_title": "What We Offer",
     "steps_title": "How It Works", "faq_title": "Frequently Asked Questions", "rights": "All rights reserved.", "about_title": "About %s", "about_us": "About us",
@@ -362,6 +363,7 @@ def _typical_for(t, tid, rng):
 
 
 MAX_PROMPT = 1500
+FREE_MAIL = {"gmail", "yahoo", "hotmail", "outlook", "rediffmail", "icloud", "proton", "protonmail", "live", "aol", "ymail", "zoho"}
 
 
 def clean_text(x, limit=MAX_PROMPT):
@@ -413,8 +415,18 @@ def generate_content(prompt, seed=None, use_model=True, learned=DEFAULT_LEARNED,
     if not cleaned:
         raise ValueError("prompt is empty")
     facts = _normalize_facts(_clean_facts(facts)) if facts else None
+    cleaned, typos_fixed, typos_hints = typos.fix(cleaned)
+    guess = detector_mod.detect(cleaned)[0]
+    if guess:   # second pass, inside the vocabulary of the detected trade ("bridal makup" in a salon, "cardeo" in a gym)
+        cleaned, more_fixed, typos_hints = typos.fix(cleaned, typos.scope_words(guess, cleaned))
+        typos_fixed += more_fixed
     try:
-        return _generate_once(cleaned, seed, use_model, learned, facts, lang)
+        c = _generate_once(cleaned, seed, use_model, learned, facts, lang)
+        if typos_fixed:
+            c["needs_review"] = list(c.get("needs_review", [])) + ["Corrected likely typing mistakes: %s. Check these are right." % ", ".join("'%s' to '%s'" % wr for wr in typos_fixed[:8])]
+        if typos_hints:
+            c["needs_review"] = list(c.get("needs_review", [])) + ["Left as typed, in case they are real names: %s." % ", ".join("'%s' (maybe '%s')" % wr for wr in typos_hints[:6])]
+        return c
     except (ValueError, TypeError, KeyError, IndexError, AttributeError):
         plain = " ".join(re.findall(r"[A-Za-z\u0900-\u097F]{2,20}", cleaned)[:12])
         if not plain:
@@ -459,19 +471,27 @@ def _generate_once(prompt, seed=None, use_model=True, learned=DEFAULT_LEARNED, f
     if not hi and F.get("hours"):
         F["hours"] = hours_for_english(F["hours"])
     items = list(F["items"])
+    for segs in F.get("cut") or []:
+        review.append("Services typed without commas were read as: %s. If that is wrong, put a comma between your services." % " | ".join(segs))
     place = F["city"]
     profile = pick_profile(tid, prompt + " " + " ".join(items), items) if t else None
     label = (hi_mod.LABELS.get(tid, hi_mod.DEFAULT_LABEL) if hi else (PROFILE_LABEL.get(profile) or (t["label"] if t else (inferred_label or "Business"))))
+    if tid == "shop" and not hi and not re.search(r"\bonline|e-?commerce|d2c|web\s*store|website", prompt, re.I):
+        label = "Store"   # a hardware or toy shop is not an \"Online Store\"
     rng0 = random.Random(seed)
     invented = not F["name"]
-    brand = F["name"] if not invented else _name(prompt, t, niche, rng0)[0]
+    brand = F["name"] if not invented else label + (", " + place if place else "")   # no made-up name: the heading just says what the business is and where
     if invented:
-        review.append("No business name was given; '%s' is a placeholder." % brand)
+        guess = ""
+        dom = re.search(r"@([\w-]+)\.", F.get("email") or "")
+        if dom and dom.group(1).lower() not in FREE_MAIL:
+            guess = " Your email address suggests '%s'." % dom.group(1).capitalize()
+        review.append("No business name was given, so the heading is '%s' (not a name). Add your business name to replace it.%s" % (brand, guess))
     if t and conf_label != "high":
         review.append("Business type '%s' was detected with %s confidence. If it is wrong, say what kind of business it is (e.g. 'dental clinic')." % (t["label"], conf_label))
 
     # promote a typical offering that the prompt itself names ("... repair and accessories shop")
-    if t and t["offers"] and not facts.get("services"):
+    if t and t["offers"] and not facts.get("services") and len(items) < 3:
         plain_prompt = prompt.lower()
         for _, rx, _, _ in OFFER_RE:
             plain_prompt = rx.sub(" ", plain_prompt)   # "first class free" is an offer, not the service "classes"
@@ -480,6 +500,8 @@ def _generate_once(prompt, seed=None, use_model=True, learned=DEFAULT_LEARNED, f
         given = {stem(x) for i in items for x in re.findall(r"[a-z]+", i.lower())}
         for w in t["offers"]:
             head = w.split()[-1]
+            if re.search(r"\b(?:i|we|to|will|can)\s+(?:also\s+)?" + re.escape(stem(head)), plain_prompt):
+                continue   # "I design logos": "design" is what they do, not a service called "designs"
             if stem(head) in given or head.rstrip("s") in given:
                 continue   # the person already named it ("pipe restoration" gives no extra "pipes")
             if (head in said or stem(head) in said or head[:-1] in said) and w not in items and not any(w in i or i in w for i in items):
@@ -504,7 +526,7 @@ def _generate_once(prompt, seed=None, use_model=True, learned=DEFAULT_LEARNED, f
     for attempt in range(MAX_ATTEMPTS):
         rng = random.Random(seed * 1000003 + attempt)
         if hi:
-            page = write_page_hi(kind=kind, label=label, facts=F2, name=None if invented else brand, rng=rng, extra_cards=fillers)
+            page = write_page_hi(kind=kind, label=label, facts=F2, name=None if invented else brand, rng=rng, extra_cards=fillers, type_id=tid)
         else:
             page = write_page(kind=kind, label=label, type_id=tid, profile=profile, facts=F2, name=None if invented else brand, rng=rng, typical=typical or None,
                               extra_cards=fillers, filler_lines=FILLER_LINES)

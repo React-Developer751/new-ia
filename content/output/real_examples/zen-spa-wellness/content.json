@@ -1,0 +1,220 @@
+{
+  "brand": "Zen Spa & Wellness",
+  "niche": "care",
+  "kind": "beauty",
+  "profile": "",
+  "business_type": "spa",
+  "type_label": "Spa & Wellness Centre",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "elegant",
+  "keywords": [
+    "bangalore",
+    "swedish",
+    "massage",
+    "aromatherapy",
+    "body",
+    "scrub"
+  ],
+  "eyebrow": "Spa & Wellness Centre · Bangalore",
+  "location": "Bangalore",
+  "audience": "",
+  "hero_heading": "Swedish massage and aromatherapy, with time for you",
+  "tagline": "Online booking, open 10am to 10pm: Zen Spa & Wellness offers body scrub, couples spa and steam in Bangalore.",
+  "about_title": "About Zen Spa & Wellness",
+  "about": [
+    "On the list: aromatherapy, body scrub and couples spa. Zen Spa & Wellness offers them in Bangalore. Take a seat; we will start with a chat.",
+    "In Bangalore: online booking. Book a time and let us know what you'd like."
+  ],
+  "features_title": "Looks and treatments",
+  "features": [
+    {
+      "title": "Swedish Massage",
+      "text": "Pair Swedish massage with another service to make a day of it."
+    },
+    {
+      "title": "Aromatherapy",
+      "text": "Bring your questions about aromatherapy."
+    },
+    {
+      "title": "Body Scrub",
+      "text": "Let us know what you need from body scrub and we'll suggest where to start."
+    },
+    {
+      "title": "Couples Spa",
+      "text": "We take time over couples spa, and we ask before we begin."
+    },
+    {
+      "title": "Steam",
+      "text": "Ask what to expect from steam before you book."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Online booking",
+      "text": "Reserve or book in a few clicks, whenever it suits you."
+    },
+    {
+      "title": "Opening hours",
+      "text": "Hours: 10am to 10pm. Drop by or send a message."
+    },
+    {
+      "title": "Clear next steps",
+      "text": "You'll know what comes next."
+    }
+  ],
+  "stats_title": "Where and when",
+  "stats": [
+    {
+      "value": "Bangalore",
+      "label": "Where we work"
+    },
+    {
+      "value": "10am to 10pm",
+      "label": "Open"
+    }
+  ],
+  "steps_title": "How it works",
+  "steps": [
+    {
+      "title": "Get in touch",
+      "text": "Send a message or call and tell us what you need."
+    },
+    {
+      "title": "Choose your service",
+      "text": "Pick from Swedish massage or aromatherapy, or ask for a suggestion."
+    },
+    {
+      "title": "Leave feeling good",
+      "text": "Look in the mirror and tell us what you think."
+    }
+  ],
+  "faq_title": "Quick answers",
+  "faq": [
+    {
+      "q": "How do I book an appointment?",
+      "a": "Online booking is available; you can also call us."
+    },
+    {
+      "q": "When are you open?",
+      "a": "We're open 10am to 10pm."
+    },
+    {
+      "q": "Where are you?",
+      "a": "We're in Bangalore; reach out for directions."
+    },
+    {
+      "q": "Is there anything I should prepare?",
+      "a": "Feel free to ask us and we'll tell you what to have ready."
+    }
+  ],
+  "blog_title": "From the journal",
+  "blog": [
+    {
+      "title": "Small things that make a difference",
+      "excerpt": "Notes from everyday experience."
+    },
+    {
+      "title": "Questions to ask before you book",
+      "excerpt": "Plain answers beat long brochures."
+    },
+    {
+      "title": "When to ask for a second opinion",
+      "excerpt": "And how to do it politely."
+    }
+  ],
+  "contact": {
+    "place": "Bangalore",
+    "hours": [
+      "10am to 10pm"
+    ]
+  },
+  "cta_primary": "Book a treatment online",
+  "cta_secondary": "Call the spa",
+  "cta_text": "Book a treatment online, and tell us the look you have in mind.",
+  "cta_title": "We'd like to hear from you",
+  "footer": "© Zen Spa & Wellness. All rights reserved.",
+  "offers": [
+    {
+      "id": "online_booking",
+      "text": "Online booking"
+    }
+  ],
+  "hours": "10am to 10pm",
+  "prices": [],
+  "facts_used": {
+    "name": {
+      "value": "Zen Spa & Wellness",
+      "source": "prompt"
+    },
+    "city": {
+      "value": "Bangalore",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "Swedish massage",
+        "aromatherapy",
+        "body scrub",
+        "couples spa",
+        "steam"
+      ],
+      "source": "prompt"
+    },
+    "offers": {
+      "value": [
+        "Online booking"
+      ],
+      "source": "prompt"
+    },
+    "hours": {
+      "value": "10am to 10pm",
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "prices",
+    "phone",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "spa (confidence high)",
+    "items_from_prompt": [
+      "Swedish massage",
+      "aromatherapy",
+      "body scrub",
+      "couples spa",
+      "steam"
+    ],
+    "place": "Bangalore",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "",
+    "kind": "beauty"
+  },
+  "needs_review": []
+}

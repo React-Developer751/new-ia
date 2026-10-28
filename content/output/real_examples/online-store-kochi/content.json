@@ -1,0 +1,202 @@
+{
+  "brand": "Online Store, Kochi",
+  "niche": "shop",
+  "kind": "retail",
+  "profile": "",
+  "business_type": "shop",
+  "type_label": "Online Store",
+  "lang": "en",
+  "ui": {
+    "lang": "en",
+    "about": "About",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "based_in": "Based in",
+    "pricing": "Pricing",
+    "testimonials": "What customers say",
+    "team": "Our team",
+    "hours": "Opening hours",
+    "address": "Address",
+    "where": "Where we work",
+    "years": "Years of experience",
+    "since": "Serving since",
+    "features_title": "What We Offer",
+    "steps_title": "How It Works",
+    "faq_title": "Frequently Asked Questions",
+    "rights": "All rights reserved.",
+    "about_title": "About %s",
+    "about_us": "About us"
+  },
+  "mood": "playful",
+  "keywords": [
+    "sell",
+    "handmade",
+    "candles",
+    "soaps",
+    "gift",
+    "hampers"
+  ],
+  "eyebrow": "Online Store · Kochi",
+  "location": "Kochi",
+  "audience": "",
+  "hero_heading": "Handmade candles and soaps, easy to ask about",
+  "tagline": "Shop for gift hampers in Kochi. Let us know what you need and we will point you to it.",
+  "about_title": "About us",
+  "about": [
+    "No hard sell; ask whatever you like. We sell soaps, gift hampers and handmade candles in Kochi.",
+    "In Kochi: cash on delivery and free shipping above Rs 500. Send a short message and we'll take it from there."
+  ],
+  "features_title": "Browse the range",
+  "features": [
+    {
+      "title": "Handmade Candles",
+      "text": "Feel free to ask us how handmade candles works and what to expect."
+    },
+    {
+      "title": "Soaps",
+      "text": "Pair soaps with something from the rest of the range."
+    },
+    {
+      "title": "Gift Hampers",
+      "text": "Not sure which gift hampers to pick? Describe how you'll use it."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Cash on delivery",
+      "text": "Pay when your order arrives."
+    },
+    {
+      "title": "Free shipping",
+      "text": "Shipping costs nothing; send us your address."
+    },
+    {
+      "title": "Easy to reach",
+      "text": "Message or call."
+    }
+  ],
+  "stats_title": "Where and when",
+  "stats": [
+    {
+      "value": "Kochi",
+      "label": "Where we work"
+    }
+  ],
+  "steps_title": "How it works",
+  "steps": [
+    {
+      "title": "Tell us what you need",
+      "text": "Message us the item, the size or the budget."
+    },
+    {
+      "title": "We talk it through",
+      "text": "We explain the options in plain words."
+    },
+    {
+      "title": "Decide with confidence",
+      "text": "Take it home when you're sure."
+    }
+  ],
+  "faq_title": "Good questions",
+  "faq": [
+    {
+      "q": "Do you ship to my city?",
+      "a": "Free shipping is available; message us your address."
+    },
+    {
+      "q": "Is cash on delivery available?",
+      "a": "Yes, cash on delivery is available."
+    },
+    {
+      "q": "Do you have handmade candles in stock?",
+      "a": "Message us and we'll check."
+    },
+    {
+      "q": "Does it come with a warranty?",
+      "a": "Feel free to ask us about warranty for the item you are considering."
+    }
+  ],
+  "blog_title": "Our notes",
+  "blog": [
+    {
+      "title": "How long things really take",
+      "excerpt": "Setting expectations on both sides."
+    },
+    {
+      "title": "How to choose a good online store",
+      "excerpt": "Five questions worth asking before you make up your mind."
+    },
+    {
+      "title": "A guide to the range",
+      "excerpt": "How to browse soaps, gift hampers and the rest."
+    }
+  ],
+  "contact": {
+    "place": "Kochi"
+  },
+  "cta_primary": "Shop now",
+  "cta_secondary": "Visit the store",
+  "cta_text": "Shop now, and feel free to ask us anything.",
+  "cta_title": "Let's talk",
+  "footer": "© Online Store, Kochi. All rights reserved.",
+  "offers": [
+    {
+      "id": "cod",
+      "text": "Cash on delivery"
+    },
+    {
+      "id": "free_shipping",
+      "text": "Free shipping above Rs 500"
+    }
+  ],
+  "hours": "",
+  "prices": [],
+  "facts_used": {
+    "city": {
+      "value": "Kochi",
+      "source": "prompt"
+    },
+    "services": {
+      "value": [
+        "handmade candles",
+        "soaps",
+        "gift hampers"
+      ],
+      "source": "prompt"
+    },
+    "offers": {
+      "value": [
+        "Cash on delivery",
+        "Free shipping above Rs 500"
+      ],
+      "source": "prompt"
+    }
+  },
+  "missing": [
+    "name",
+    "hours",
+    "prices",
+    "phone",
+    "email",
+    "address"
+  ],
+  "generated_by": {
+    "business_type": "shop (confidence high)",
+    "items_from_prompt": [
+      "handmade candles",
+      "soaps",
+      "gift hampers"
+    ],
+    "place": "Kochi",
+    "mode": "strict (your phrases only)",
+    "copy": "frames + user phrases",
+    "profile": "",
+    "kind": "retail"
+  },
+  "needs_review": [
+    "No business name was given, so the heading is 'Online Store, Kochi' (not a name). Add your business name to replace it."
+  ]
+}
