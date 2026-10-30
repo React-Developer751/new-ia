@@ -24,7 +24,7 @@ python3 -m pixelmath "लाल घर और पेड़" -o hindi.png        
 python3 train.py my_data --model my_model.json
 python3 -m pixelmath "aqua mossy" --model my_model.json -o out.png
 
-# studio: premium website pictures for 97 niches, hero/about/tiles with a judge (see "Studio")
+# studio: premium website pictures for 123 niches, hero/about/tiles with a judge (see "Studio")
 python3 -m pixelmath "gym with dumbbells in red light" --studio --text-zone left --width 1280 --height 640 -o hero.jpg
 python3 -m pixelmath "dental clinic reception, calm blue" --set 6 -o site_pictures/
 
@@ -195,7 +195,7 @@ size (about 10 ms each) and breeds from the best few; `python3 examples/generati
 160 px, then smoothly enlarged (a full-size Mandelbrot in pure Python would take minutes); L-systems and flow fields are drawn at the
 real size. A flow field takes about 2 s at 384 px.
 
-## Studio: premium website pictures for 97 business niches
+## Studio: premium website pictures for 123 business niches
 
 ```bash
 python3 -m pixelmath "wood fired pizza on a board" --studio -o hero.jpg                       # one picture, niche read from the prompt
@@ -207,10 +207,11 @@ curl -s localhost:8000/set -H 'Content-Type: application/json' -d '{"prompt":"ba
 
 What it is: for a website's first screen, About section and gallery. Not clip-art stickers but layered scenes: an out-of-focus backdrop (depth
 of field), a sharp middle layer with contact shadows and ambient occlusion, soft foreground accents, a key light, mood grading, vignette and film
-grain. 97 niches (restaurants and street food, cafes, bakeries, retail and boutiques, clinics, dental, eye care, physio, ayurveda, gym, yoga, spa, salon,
+grain. 123 niches (restaurants and street food, cafes, bakeries, retail and boutiques, clinics, dental, eye care, physio, ayurveda, gym, yoga, spa, salon,
 mehendi, tattoo, pets, SaaS, apps, law, accounting, insurance, architects, consulting, recruitment, coworking, schools, tuition, music, driving school,
 real estate, construction, plumbing, painting, welding, AC repair, movers, security, solar, farm, car repair / wash / showroom, tyres, taxi, hotel, photography,
-weddings, events, tent house, catering, travel, visa, NGO, logistics), each with its own props,
+weddings, events, tent house, catering, travel, visa, NGO, logistics, pest control, laundry, water purifier, scrap, funeral, notary, temple, DJ, video editing,
+drone, PG hostel, farm stay, cloud kitchen, tiffin, chai stall, banquet hall, bridal makeup and more), each with its own props,
 backdrop and surface. Pure Python, no model, no internet. It is illustrated, not photo-realistic.
 
 | You control | How |
@@ -284,6 +285,61 @@ What these numbers do not say: the prompts are the kind a client types for these
 a failure), and the engine draws illustrations, not photographs. Two of the ten sets sit exactly at the distance limit (14 bits) and tiles are within
 0.3 KB of their 25 KB budget: the judge redraws or lowers JPEG quality when needed, but there is no spare room. Neighbouring niches can still be swapped
 for each other on borderline wording ("furniture showroom" gives interior design, "pilates studio" gives yoga): the hold-out shows no such case, real prompts will.
+
+## The client's picture spec (Image-AI-training.pdf)
+
+The PDF is the training spec of the image AI: a system prompt, one STYLE LINE, 25 design styles, **99 businesses x 20 pictures** (3 hero, about, 6 gallery,
+6 card, 3 team portraits, 1 background) and **20 generic business types x 10 pictures**: 2180 prompts, each `"<subject>, for a <business> website"` plus the
+style line and `Palette: accent #x on #y`. Rules: one clear subject with calm space for a headline, **no text, letters, numbers or logos**, simple illustrated
+characters instead of real faces, one palette and style per site, sizes hero 1600x900 (subject right or centre, empty left), about 1200x900, gallery 900x900,
+card 800x600, team 600x600, background texture 1600x900 (no subject).
+
+```python
+from pixelmath.studio.spec import render, render_business
+res = render("Termite drilling (pest control), for a pest control website. Palette: accent #1565c0 on #f5f6f7.", slot="gallery-2", fmt="jpeg")
+res.data, res.report                       # JPEG bytes (900x900) and the report: niche, how it was found, palette, mood, camera, bytes
+render_business("pest_control", "out/pest_control", sheet="out/pest_control/sheet.jpg")     # all 20 pictures + manifest.json + contact sheet
+```
+```bash
+python3 examples/spec_render_all.py                    # all 99 businesses + 20 types -> samples/spec_run/ (about 17 min with 9 workers)
+python3 examples/spec_check.py                         # checks every picture against the spec, writes samples/spec_run/index.html
+python3 examples/spec_eval.py                          # how well the studio understands the spec's prompts
+curl -s localhost:8000/spec -H 'Content-Type: application/json' -d '{"prompt":"... for a dental clinic website","slot":"hero-1"}' -o hero.jpg
+curl -s localhost:8000/spec/business -H 'Content-Type: application/json' -d '{"business":"dental_clinic"}' -o dental.zip     # GET /spec/businesses lists the ids
+```
+
+What was done with the spec:
+
+* **Parsed and analysed** (`studio_data/spec/image_ai_spec.json`, `biz_niche.json`; `tools/build_spec_data.py` packs it into `pixelmath/studio/spec_data.json`).
+  Of the 99 businesses, 73 had a picture niche; **26 had none** (pest control, laundry, water purifier, funeral, notary, temple, DJ, video editing, drone,
+  PG hostel, farm stay, cloud kitchen, tiffin, chai stall, banquet hall, bridal makeup, car rental, bike garage, mobile repair, gift shop, loan agent, diagnostic lab,
+  counselling, nutritionist, animal welfare, scrap): they were drawn as new niches from the spec's own gallery / card subjects (123 niches now). Baseline before:
+  77.9% of the spec's prompts reached the right niche, 7.2% a wrong one.
+* **The business decides the scene.** `"for a <business> website"` is looked up (exact spec name or business type); the subject text is not used to guess the niche.
+  All 2180 prompts resolve to the mapped niche (100%). The slot decides size, camera and text zone: hero-1/2 fit (text zone left, headline contrast >= 4.5:1),
+  hero-3 close, about, gallery and card use different crops (zoom, pan, mirror) so no two pictures of a site are alike (min perceptual distance 8 of 63 bits).
+* **Palette:** accent from the prompt; a dark background gives a dark picture, a light one the niche's own mood. Design styles map to dark / light. A style the engine cannot draw
+  (photo-like, 3D, sketch) is reported in `report.style_note` and the default flat illustration is used (honest, not silent).
+* **Team portraits** (`pixelmath/studio/portrait.py`): illustrated character, shoulders up, hair / skin / glasses varied, outfit from the role and the business
+  (doctor coat, hard hat and hi-vis, chef jacket, headset, cap, apron, tie, whistle; a software "engineer" does not get a hard hat).
+* **Background texture:** palette-coloured soft light plus one quiet motif (dots, waves, rings, grid, diagonals), no subject.
+* **No text anywhere:** the studio (`stage.NO_TEXT`) never draws letters or numbers (older scenes drew "STOP", "TAXI", "GAME ON", "FRESH BREAD"); a test renders every niche with
+  the text drawer watched.
+* **Training:** the spec's prompts are classifier captions (`examples/make_spec_training.py`: 1618 train, 552 held out = hero-3, gallery-5/6, card-5/6 of every business).
+
+Measured (`examples/spec_eval.py`, `examples/spec_check.py`):
+
+| Check | Result |
+|---|---|
+| Production requests (business named in the text): right niche | **2180 of 2180** |
+| Rendered: 99 businesses x 20 + 20 types x 10 | **2180 pictures, 0 problems** (size = slot size, file size within budget, hero contrast >= 4.5, no neutral fallback, judge ok) |
+| File size (average / largest) | hero 64 / 100 KB, about 61 / 70, gallery 47 / 56, card 34 / 38, team 14 / 19, background 23 / 39 |
+| Subject only, no business name (552 held-out prompts) | right 48%, refused 36%, wrong 16% |
+| ... by slot | gallery 92% right (the caption says "(pest control)"); card 29% right, 22% wrong; hero 21% right, 25% wrong ("shield and house" names no business) |
+
+Read the last two rows as a limit, not a result: a hero or card caption without its business ("Loaded Sundaes ...") cannot be told apart reliably, so the studio
+relies on the business named in the request, as the spec guarantees. The studio draws one illustrated scene per business, so a gallery picture shows the business's props
+from another camera, not the exact object in the caption ("Termite drilling" shows the pest-control scene with its drill, sprayer and trap).
 
 ### Website bridge: pictures that fit a generated business site
 

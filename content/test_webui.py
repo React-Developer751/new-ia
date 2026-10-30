@@ -51,6 +51,13 @@ class UI(unittest.TestCase):
         self.assertEqual(code, 200)
         self.assertIn(b"Smile Hub", page)
 
+    def test_the_content_pack_endpoint(self):
+        code, raw = self.call("POST", "/api/pack", {"request": "mujhe termite treatment ki website banakar do"})
+        d = json.loads(raw)
+        self.assertEqual((code, d["understood"]["niche"], d["problems"]), (200, "pest_control", []))
+        self.assertEqual(len(d["pack"]["features"]), 6)
+        self.assertEqual(self.call("POST", "/api/pack", {"request": ""})[0], 400)
+
     def test_bad_requests_are_clean_errors(self):
         self.assertEqual(self.call("POST", "/api/generate", "{bad")[0], 400)
         self.assertEqual(self.call("POST", "/api/generate", {"prompt": ""})[0], 400)

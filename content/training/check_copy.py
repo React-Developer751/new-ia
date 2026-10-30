@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from corecraft import lexicon, template_data, voice_a, voice_b, voice_c, voice_data, writer   # noqa: E402
+from corecraft import lexicon, pack_families_a, pack_families_b, pack_niches, template_data, voice_a, voice_b, voice_c, voice_data, voice_profile, writer   # noqa: E402
 from corecraft.content_engine import generate_content   # noqa: E402
 from corecraft.validators import leaves_of   # noqa: E402
 
@@ -50,7 +50,7 @@ def main():
     src, files = source_shingles()
     print("sources read:", ", ".join(files), "|", len(src), "distinct 6-word spans")
     static = []
-    for mod in (voice_a, voice_b, voice_c):
+    for mod in (voice_a, voice_b, voice_c, voice_profile, pack_families_a, pack_families_b, pack_niches):
         for name in dir(mod):
             if name.isupper():
                 strings_of(getattr(mod, name), static)

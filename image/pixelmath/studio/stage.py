@@ -22,6 +22,7 @@ from ..props.core import REGISTRY, Ctx
 from ..raster import Canvas, Noise, clamp, mix, scale
 from .palette import WHITE
 
+NO_TEXT = True                # the client's rule: no text, letters, numbers or logos in any picture. Signs and screens stay as plain shapes.
 ASPECT = 2.0                 # stage width / stage height
 FAR_SCALE = 0.25             # the far layer is drawn at a quarter of the resolution and enlarged: free depth of field
 STUDIO_PROPS = {}            # props made for the studio (kept apart from the older clip-art registry)
@@ -285,7 +286,7 @@ class Stage:
             self.circle(u, v, self.rng.uniform(rmin, rmax), c, alpha=alpha * self.rng.uniform(0.5, 1.0), lift=0, soft=4.0)
 
     def text(self, txt, u, v, h, color, weight=0.14):
-        if self.dry:
+        if self.dry or NO_TEXT:
             return
         from ..text import draw_text
         x, y = self.px(u, v)
@@ -366,7 +367,9 @@ class Stage:
             self.shadow(u, v, (shadow_w or wd) * 0.95, alpha=shadow_alpha)
         x, y = self.px(u, v)
         s = self.length(h) / max(0.3, pr.fill)
-        pr.fn(Ctx(self._layer.painter, x, y, s), color)
+        c = Ctx(self._layer.painter, x, y, s)
+        c.no_text = NO_TEXT
+        pr.fn(c, color)
 
     def mark_subject(self, name, u0, v0, u1, v1):
         """Declare a subject you drew with primitives (so the judge can find it)."""

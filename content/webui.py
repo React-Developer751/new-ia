@@ -114,6 +114,9 @@ class Handler(BaseHTTPRequestHandler):
                 return self.send(200, {"count": feedback.add(body.get("prompt", ""), body.get("type", ""))})
             if self.path == "/api/feedback/remove":
                 return self.send(200, {"count": feedback.remove(body.get("prompt", ""))})
+            if self.path == "/api/pack":
+                from corecraft.pack_api import generate_pack
+                return self.send(200, generate_pack(str(body.get("request", ""))))
             if self.path == "/api/train":
                 return self.send(200, train())
             self.send(404, {"error": "not found"})
@@ -146,7 +149,7 @@ dl{display:grid;grid-template-columns:110px 1fr;gap:4px 10px;margin:0}dt{color:v
 table{width:100%;border-collapse:collapse}td{padding:6px 4px;border-top:1px solid var(--line);vertical-align:top;overflow-wrap:anywhere}
 .hide{display:none}h2{font-size:15px;margin:0 0 8px}
 </style></head><body>
-<header><h1>Core-Craft AI</h1><nav><button id="t-gen" class="on">Generate &amp; check</button><button id="t-train">Train</button></nav><span class="mute" id="stat"></span></header>
+<header><h1>Core-Craft AI</h1><nav><button id="t-gen" class="on">Generate &amp; check</button><button id="t-pack">Content pack</button><button id="t-train">Train</button></nav><span class="mute" id="stat"></span></header>
 <main id="gen">
  <section class="card"><label for="prompt">Describe the business (English, Hinglish or Hindi)</label>
   <textarea id="prompt" placeholder="Italian restaurant Forno Rosso, Mumbai, wood fired pizza, fresh pasta, tiramisu, open 12pm to 11pm, online booking"></textarea>
@@ -160,6 +163,12 @@ table{width:100%;border-collapse:collapse}td{padding:6px 4px;border-top:1px soli
    <div style="margin-top:12px" class="row"><select id="fix" aria-label="Correct business type"></select><button class="sm" id="save">Wrong type? Save as training example</button></div><p id="saved" class="mute"></p></div>
   <iframe id="pv" title="Page preview"></iframe></section>
 </main>
+<main id="pk" class="hide" style="grid-template-columns:minmax(300px,380px) 1fr">
+ <section class="card"><label for="req">What would a person type? (English, Hinglish)</label>
+  <textarea id="req" placeholder="Create a website for a pest control in Jaipur&#10;mujhe termite treatment ki website banakar do"></textarea><button class="go" id="mk">Write the content pack</button><p id="perr" class="bad"></p>
+  <p class="mute">The pack follows the Content AI training spec: 3 hero titles, 6 features, 4 steps, 5 FAQ, pricing, gallery, team, testimonials, blog, marquee (and a menu for food).</p></section>
+ <section class="card"><h2>Understood</h2><dl id="pu"></dl><div id="pn" style="margin:8px 0"></div><h2>Pack (JSON)</h2><pre id="pj" style="white-space:pre-wrap;max-height:60vh;overflow:auto;font-size:12px"></pre></section>
+</main>
 <main id="trn" class="hide" style="grid-template-columns:1fr">
  <section class="card"><h2>Detector training</h2><p class="mute" id="tinfo"></p><button class="go" id="train" style="max-width:320px">Train on my corrections</button><p id="tres"></p>
   <p class="mute">Training runs on this computer only (no internet). The new model is kept only if its score on the held-out prompts does not drop; otherwise the old one is restored.</p></section>
@@ -169,7 +178,10 @@ table{width:100%;border-collapse:collapse}td{padding:6px 4px;border-top:1px soli
 const $=id=>document.getElementById(id);let last="",types=[];
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 async function api(p,b){const r=await fetch(p,b===undefined?{}:{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(b)});const j=await r.json();if(!r.ok)throw new Error(j.error||r.status);return j}
-function tab(n){$("gen").classList.toggle("hide",n!=="gen");$("trn").classList.toggle("hide",n!=="trn");$("t-gen").classList.toggle("on",n==="gen");$("t-train").classList.toggle("on",n==="trn");if(n==="trn")refresh()}
+function tab(n){$("pk").classList.toggle("hide",n!=="pk");$("t-pack").classList.toggle("on",n==="pk");$("gen").classList.toggle("hide",n!=="gen");$("trn").classList.toggle("hide",n!=="trn");$("t-gen").classList.toggle("on",n==="gen");$("t-train").classList.toggle("on",n==="trn");if(n==="trn")refresh()}
+$("t-pack").onclick=()=>tab("pk");$("mk").onclick=async()=>{$("perr").textContent="";$("mk").disabled=true;try{const r=await api("/api/pack",{request:$("req").value});const u=r.understood;
+ $("pu").innerHTML=[["Source",esc(r.source)],["Niche",esc(u.niche||u.type_theme||"-")],["Brand",esc(u.brand||"not given: {brand} stays")],["City",esc(u.city||"not given")],["Language",esc(u.lang)],["Spec check",r.problems.length?'<span class="bad">'+esc(r.problems.join("; "))+"</span>":'<span class="high">0 problems</span>']].map(x=>`<dt>${x[0]}</dt><dd>${x[1]}</dd>`).join("");
+ $("pn").innerHTML=r.notes.map(n=>`<div class="warn">• ${esc(n)}</div>`).join("");$("pj").textContent=JSON.stringify(r.pack,null,2)}catch(e){$("perr").textContent=e.message}finally{$("mk").disabled=false}};
 $("t-gen").onclick=()=>tab("gen");$("t-train").onclick=()=>tab("trn");
 async function refresh(){const s=await api("/api/status");types=s.types;
  $("stat").textContent="held-out detection: "+s.holdout[0]+"/"+s.holdout[1]+" ("+Math.round(100*s.holdout[0]/s.holdout[1])+"%)";

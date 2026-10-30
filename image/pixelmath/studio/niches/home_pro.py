@@ -720,6 +720,7 @@ def construction(S):
     steel = mix(scale(P.ink, 2.0), sk_bot, 0.35)
     conc = mix((0.70, 0.70, 0.68), P.wall_bot, 0.22)
     with S.far():
+        S.rect((u0 + u1) / 2, -1.0, u1 - u0, 1.6, sk_top, lift=0.0)                                                  # sky above the gradient (wide crops show more of it)
         S.gradient_rect(u0, -0.2, u1, 0.64, sk_top, sk_bot)
         S.glow(1.9, 0.30, 0.9, P.light, 0.30)
         # concrete frame of a building going up: columns and slabs, with rebar sticking out of the top

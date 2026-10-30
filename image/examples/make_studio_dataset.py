@@ -41,7 +41,7 @@ def build(root, size=(128, 80), log=print):
     load_all()
     with open(os.path.join(root, "captions_train.json"), encoding="utf-8") as fh:
         train = json.load(fh)
-    for extra in ("prompts_train.json",):                                  # client-style prompts, if present
+    for extra in ("prompts_train.json", "spec_train.json"):                # client-style prompts and the picture spec's captions (make_spec_training.py), if present
         path = os.path.join(root, extra)
         if os.path.exists(path):
             with open(path, encoding="utf-8") as fh:

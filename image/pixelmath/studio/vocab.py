@@ -29,8 +29,58 @@ EXTRA = {
 }
 
 
+# Words that separate the niches added for the client's picture spec from the older neighbours that already claimed them (found by running the
+# spec's training captions through the keyword matcher; the held-out spec prompts were not used).
+EXTRA_SPEC = {
+    "farm-stay": {"strong": ("farm stay", "farmstay", "homestay", "home stay", "village stay", "rural stay", "farmhouse stay", "फार्म स्टे", "होमस्टे")},
+    "agriculture-farm": {"avoid": ("farm stay", "farmstay", "homestay", "home stay", "फार्म स्टे", "होमस्टे")},
+    "hotel": {"avoid": ("homestay", "home stay", "farm stay", "pg", "paying guest", "hostel")},
+    "tiffin-service": {"strong": ("tiffin", "tiffin box", "dabba service", "dabba", "meal subscription", "lunch box delivery", "टिफिन", "डब्बा सर्विस")},
+    "catering": {"avoid": ("tiffin", "टिफिन")},
+    "indian-thali": {"avoid": ("tiffin", "टिफिन")},
+    "banquet-hall": {"strong": ("banquet hall", "banquet", "function hall", "marriage hall", "party hall", "wedding venue", "venue booking", "बैंक्वेट हॉल", "मैरिज हॉल")},
+    "wedding": {"avoid": ("banquet hall", "function hall", "party hall", "venue booking", "बैंक्वेट हॉल")},
+    "bike-garage": {"strong": ("bike garage", "bike repair", "scooter repair", "two wheeler garage", "bike service", "scooter service", "bike and scooter garage", "बाइक गैराज")},
+    "car-repair": {"avoid": ("bike garage", "bike repair", "scooter", "two wheeler", "motorcycle", "बाइक गैराज")},
+    "drone-photography": {"strong": ("drone photography", "drone shoot", "drone videography", "aerial photography", "aerial videography", "drone", "drone operator", "ड्रोन")},
+    "photography": {"avoid": ("drone", "aerial", "ड्रोन")},
+    "dj-sound": {"strong": ("dj", "dj sound", "dj and sound", "dj setup", "dj night", "sound and light", "wedding dj", "डीजे")},
+    "event-party": {"avoid": ("dj sound", "dj and sound", "wedding dj", "डीजे")},
+    "nutritionist": {"strong": ("dietitian", "nutritionist", "diet plan", "diet chart", "weight loss diet", "nutrition consultant", "डाइटीशियन", "आहार योजना")},
+    "clinic-doctor": {"avoid": ("dietitian", "nutritionist", "diet plan", "diet chart", "डाइटीशियन")},
+    "bridal-makeup": {"strong": ("bridal makeup", "bridal makeup artist", "makeup artist", "bridal artist", "bride makeup", "दुल्हन मेकअप", "ब्राइडल मेकअप")},
+    "salon": {"avoid": ("bridal makeup", "makeup artist", "bridal artist", "ब्राइडल मेकअप")},
+    "mobile-repair": {"strong": ("mobile repair", "phone repair", "screen replacement", "mobile service centre", "mobile service center", "phone screen repair", "मोबाइल रिपेयर")},
+    "mobile-store": {"avoid": ("mobile repair", "phone repair", "screen replacement", "मोबाइल रिपेयर")},
+    "car-rental": {"strong": ("car rental", "self drive", "self-drive", "rent a car", "car hire", "car on rent", "cars on rent", "कार रेंटल")},
+    "taxi": {"avoid": ("car rental", "self drive", "self-drive", "rent a car", "car hire", "car on rent", "cars on rent", "कार रेंटल")},
+    "loan-finance": {"strong": ("loan agent", "loan advisor", "home loan", "personal loan", "business loan", "loan against property", "loan consultant", "लोन एजेंट")},
+    "insurance": {"avoid": ("loan agent", "loan advisor", "home loan", "personal loan", "business loan", "लोन एजेंट")},
+    "accounting-finance": {"avoid": ("loan agent", "loan advisor", "home loan", "personal loan", "business loan")},
+    "pg-hostel": {"strong": ("pg", "pg accommodation", "paying guest", "hostel", "student hostel", "girls hostel", "boys hostel", "पीजी", "हॉस्टल")},
+    "cloud-kitchen": {"strong": ("cloud kitchen", "ghost kitchen", "delivery kitchen", "online food kitchen", "क्लाउड किचन")},
+    "restaurant": {"avoid": ("cloud kitchen", "ghost kitchen", "क्लाउड किचन")},
+    "fast-food": {"avoid": ("cloud kitchen", "ghost kitchen")},
+    "scrap-recycling": {"strong": ("scrap", "scrap dealer", "kabadi", "recycling", "scrap recycling", "waste recycling", "कबाड़ी", "रीसाइक्लिंग")},
+    "animal-welfare": {"strong": ("animal welfare", "animal rescue", "stray animals", "dog shelter", "animal shelter", "pashu seva", "पशु सेवा")},
+    "ngo": {"avoid": ("animal welfare", "animal rescue", "stray animals", "dog shelter", "animal shelter")},
+    "temple": {"strong": ("temple trust", "mandir", "temple", "dharamshala", "annadaan", "मंदिर", "मंदिर ट्रस्ट")},
+    "counselling": {"strong": ("counselling", "counselling centre", "therapy practice", "therapist", "mental health counselling", "काउंसलिंग")},
+    "funeral-services": {"strong": ("funeral", "funeral services", "last rites", "antim sanskar", "अंतिम संस्कार")},
+    "pest-control": {"strong": ("pest control", "termite treatment", "cockroach control", "deemak", "पेस्ट कंट्रोल", "दीमक")},
+    "laundry": {"strong": ("laundry", "dry cleaning", "dry cleaner", "ironing service", "धुलाई और प्रेस")},
+    "cleaning": {"avoid": ("laundry", "dry cleaning", "dry cleaner")},
+    "water-purifier": {"strong": ("water purifier", "ro service", "ro purifier", "water filter service", "वाटर प्यूरीफायर")},
+    "plumbing": {"avoid": ("water purifier", "ro service", "ro purifier")},
+    "video-editing": {"strong": ("video editing", "video editor", "post production", "reel editing", "video edit", "वीडियो एडिटिंग")},
+    "gift-shop": {"strong": ("gift shop", "gift store", "gift hamper", "gift items", "return gifts", "गिफ्ट शॉप")},
+    "diagnostic-lab": {"strong": ("diagnostic lab", "pathology lab", "blood test", "lab tests", "diagnostic centre", "diagnostic center", "पैथोलॉजी लैब")},
+    "notary-documents": {"strong": ("notary", "notary public", "documentation service", "affidavit", "stamp paper", "नोटरी", "एफिडेविट")},
+}
+
+
 def apply(niches):
-    for nid, extra in EXTRA.items():
+    for nid, extra in list(EXTRA.items()) + list(EXTRA_SPEC.items()):
         n = niches.get(nid)
         if n is None:
             raise KeyError("vocab for unknown niche %s" % nid)

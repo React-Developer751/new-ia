@@ -92,12 +92,16 @@ def visible_fraction(box, cam, W, H):
     return iw * ih / area
 
 
-def render_niche(niche, width, height, seed, pal, zone_name=None, variant="fit", light_u=None):
+def render_niche(niche, width, height, seed, pal, zone_name=None, variant="fit", light_u=None, view=None):
     """Draw `niche` into a width x height canvas. Returns Rendered (canvas is graded but the text-zone scrim is not applied yet)."""
     lu = light_u if light_u is not None else (-0.6 if variant.endswith("flip") else 0.6) * (1 if seed % 2 == 0 else -1) * -1
     dry = Stage(width, height, pal, seed, dry=True, light_u=lu)
     niche.fn(dry)
     cam = solve_camera(dry, width, height, zone_name, variant)
+    if view:                                                       # (zoom factor, pan u, pan v): another crop of the same view
+        cam.zoom = max(0.5, min(cam.zoom * view[0], 2.8))
+        cam.cx += view[1]
+        cam.cy += view[2]
     S = Stage(width, height, pal, seed, cam=cam, light_u=lu)
     niche.fn(S)
     cv = S.finish()

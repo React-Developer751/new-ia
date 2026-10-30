@@ -371,6 +371,22 @@ class SurfaceTests(unittest.TestCase):
         finally:
             live.close()
 
+    def test_spec_api(self):
+        live = Live()
+        try:
+            st, hdr, data = live.json("POST", "/spec", {"prompt": "Termite drilling (pest control), for a pest control website. Palette: accent #1565c0 on #f5f6f7.", "slot": "card-2"})
+            self.assertEqual((st, hdr["content-type"], hdr["x-pixelmath-niche"], hdr["x-pixelmath-size"], hdr["x-pixelmath-slot"]), (200, "image/jpeg", "pest-control", "800x600", "card-2"))
+            self.assertEqual(data[:2], b"\xff\xd8")
+            st, _, j = live.json("POST", "/spec", {"prompt": "portrait of a friendly dentist, illustrated character, shoulders up, for a dental clinic website", "response": "base64"})
+            self.assertEqual((st, j["report"]["slot"], j["width"]), (200, "team-1", 600))
+            st, _, j = live.json("GET", "/spec/businesses")
+            self.assertEqual((st, len(j["businesses"])), (200, 99))
+            for bad in ({"prompt": "x", "slot": "banner"}, {"prompt": ""}, {"prompt": "x", "nope": 1}, {"prompt": "x", "format": "gif"}, {}):
+                self.assertEqual(live.json("POST", "/spec", bad)[0], 400, bad)
+            self.assertEqual(live.json("POST", "/spec/business", {"business": "nothing"})[0], 400)
+        finally:
+            live.close()
+
 
 if __name__ == "__main__":
     unittest.main()

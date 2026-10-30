@@ -584,6 +584,9 @@ ROUTES = {
     "/imagine": {"POST": "post_imagine"},
     "/scene": {"POST": "post_scene"},
     "/set": {"POST": "post_set"},
+    "/spec": {"POST": "post_spec"},
+    "/spec/business": {"POST": "post_spec_business"},
+    "/spec/businesses": {"GET": "get_spec_businesses"},
     "/niches": {"GET": "get_niches"},
     "/parse": {"POST": "post_parse"},
     "/model": {"GET": "get_model_info"},
@@ -974,6 +977,80 @@ class Handler(BaseHTTPRequestHandler):
         self._send(200, buf.getvalue(), "application/zip", {"X-PixelMath-Niche": str(rep["niche"]), "X-PixelMath-Fallback": str(rep["fallback"]).lower(),
                                                               "X-PixelMath-Redrawn": str(rep["redrawn"]), "X-Render-Seconds": str(secs),
                                                               "Content-Disposition": 'attachment; filename="site-pictures.zip"'})
+
+    def get_spec_businesses(self, parts, path):
+        from .studio.spec import businesses
+        self._json({"businesses": [{"id": b["id"], "name": b["name"], "niche": b["niche"], "palettes": b["palettes"]} for b in businesses()]})
+
+    def _spec_fields(self, body, allowed):
+        extra = sorted(set(body) - allowed)
+        if extra:
+            raise ApiError(400, "bad_parameter", "unknown field(s): %s" % ", ".join(extra))
+        fmt = body.get("format", "jpeg")
+        if fmt not in ("jpeg", "png"):
+            raise ApiError(400, "bad_parameter", "format must be jpeg or png")
+        seed = body.get("seed", 0)
+        if not isinstance(seed, int) or isinstance(seed, bool) or not 0 <= seed <= 2 ** 31:
+            raise ApiError(400, "bad_parameter", "seed must be an integer 0..2147483647")
+        return fmt, seed
+
+    def post_spec(self, parts, path):
+        """One picture from the client's spec: {prompt, slot?, seed?, accent?, bg?, format?, response?}."""
+        from .studio.spec import render
+        body = self._json_body()
+        fmt, seed = self._spec_fields(body, {"prompt", "slot", "seed", "accent", "bg", "format", "response", "niche", "design_style"})
+        prompt = body.get("prompt")
+        if not isinstance(prompt, str) or not prompt.strip() or len(prompt) > 2000:
+            raise ApiError(400, "bad_parameter", "prompt must be a non-empty string (max 2000 characters)")
+        self._studio_slot()
+        try:
+            t0 = time.time()
+            try:
+                res = render(prompt, slot=body.get("slot"), seed=seed, accent=body.get("accent"), bg=body.get("bg"), fmt=fmt, niche=body.get("niche"),
+                             design_style=body.get("design_style"))
+            except ValueError as exc:
+                raise ApiError(400, "bad_parameter", str(exc))
+            secs = round(time.time() - t0, 3)
+        finally:
+            self.app.render_slots.release()
+        rep, mime = res.report, "image/jpeg" if fmt == "jpeg" else "image/png"
+        if body.get("response") == "base64":
+            self._json({"image_base64": base64.b64encode(res.data).decode("ascii"), "mime": mime, "width": rep["size"][0], "height": rep["size"][1],
+                        "render_seconds": secs, "report": rep})
+            return
+        self._send(200, res.data, mime, {"X-PixelMath-Niche": str(rep.get("niche")), "X-PixelMath-Slot": str(rep["slot"]), "X-PixelMath-Size": "%dx%d" % tuple(rep["size"]),
+                                         "X-PixelMath-Fallback": str(bool(rep.get("fallback"))).lower(), "X-Render-Seconds": str(secs),
+                                         "Content-Disposition": 'inline; filename="%s.%s"' % (rep["slot"], "jpg" if fmt == "jpeg" else "png")})
+
+    def post_spec_business(self, parts, path):
+        """All 20 pictures of one spec business as a zip: {business: id, palette?: 0|1, seed?}. Takes about a minute."""
+        import io
+        import tempfile
+        from .studio.spec import businesses, render_business
+        body = self._json_body()
+        fmt, seed = self._spec_fields(body, {"business", "palette", "seed", "format"})
+        ids = {b["id"] for b in businesses()}
+        if body.get("business") not in ids:
+            raise ApiError(400, "bad_parameter", "business must be one of the spec's ids (GET /spec/businesses)")
+        pal = body.get("palette", 0)
+        if not isinstance(pal, int) or isinstance(pal, bool) or not 0 <= pal <= 5:
+            raise ApiError(400, "bad_parameter", "palette must be an integer 0..5")
+        self._studio_slot()
+        try:
+            t0 = time.time()
+            with tempfile.TemporaryDirectory() as d:
+                man = render_business(body["business"], d, palette_index=pal, seed=seed, fmt=fmt)
+                buf = io.BytesIO()
+                with zipfile.ZipFile(buf, "w", zipfile.ZIP_STORED) as z:
+                    for it in man["items"]:
+                        with open(os.path.join(d, it["file"]), "rb") as fh:
+                            z.writestr(it["file"], fh.read())
+                    z.writestr("manifest.json", json.dumps(man, indent=2, ensure_ascii=False))
+            secs = round(time.time() - t0, 3)
+        finally:
+            self.app.render_slots.release()
+        self._send(200, buf.getvalue(), "application/zip", {"X-PixelMath-Niche": str(man["niche"]), "X-Render-Seconds": str(secs),
+                                                              "Content-Disposition": 'attachment; filename="%s.zip"' % body["business"]})
 
     def post_create(self, parts, path):
         self._creative(parse_creative_params(self._json_body(), self.app.cfg, False, False), False)

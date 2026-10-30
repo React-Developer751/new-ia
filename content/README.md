@@ -29,6 +29,28 @@ python3 webui.py        # then open http://127.0.0.1:8765  (this computer only)
 
 Training teaches business-type detection only. Wording comes from the hand-written frames in `corecraft/voice_*.py`.
 
+## Niche content packs (the "Content AI training prompts" spec)
+
+The training PDF asks for the text of 99 niches and 20 business types in one JSON shape (hero titles, 6 features, steps, FAQ, pricing, gallery, team, testimonials, blog, marquee,
+and a menu for food). The engine now writes exactly that, from a plain request.
+
+```bash
+python3 main.py --pack "Create a website for a pest control in Jaipur"           # prints the pack (JSON)
+python3 main.py --pack "mujhe termite treatment ki website banakar do" --out packs/pest.json
+python3 main.py --pack-site "Create a website for a bakery called Sweet Crumbs in Pune" --out sites   # pack -> website
+python3 training/export_packs.py            # output/niche_packs/batch-1..10.json (99 niches) + type-packs.json (20 types), checked
+python3 training/eval_requests.py --fresh   # how well requests are understood
+python3 webui.py                            # "Content pack" tab
+```
+
+- `corecraft/pack_request.py` reads the request (English, Hinglish, typos) and finds the niche; `pack_writer.py` writes the pack from the niche's six services plus hand-written text banks
+  (`pack_families_*.py`); `pack_check.py` is the spec's rules as code (counts, lengths, Title Case, no emoji or "!", no invented numbers, awards or ratings, no repeated text, USD prices).
+- Prices in a pack are sample figures (USD, the generator converts them); testimonials are generic samples. A named business replaces `{brand}`; a named city goes once into the hero subtitles.
+- A pack is checked by the spec checker before it is returned (`PackError` if it ever fails: that would be a bug, never bad input). Names and cities from a request are cleaned (no markup, braces, links);
+  a city too long for the subtitle rules moves to the contact text. `--pack-site` uses the image engine when it is installed and falls back to the built-in artwork when it is not.
+- Not built: Hindi (Devanagari) packs. A Hindi request is understood, but the pack comes back in English with a note.
+- Data: `data/niche_spec.json` (read from the PDF by `training/import_niches.py`), the hand-written layer is `corecraft/pack_niches.py`.
+
 ## What it promises
 
 - Uses only facts you gave (name, city, services, offers, hours, prices, phone, address). Nothing is invented; what is missing is listed in `missing`.

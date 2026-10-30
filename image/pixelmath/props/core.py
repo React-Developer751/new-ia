@@ -135,6 +135,8 @@ class Ctx:
 
     def text(self, txt, u, v, h, color, weight=0.16, max_w=None):
         """Write text (unit coordinates, h = cap height); returns its pixel box."""
+        if getattr(self, "no_text", False):             # studio pictures carry no letters or numbers (see studio/stage.py NO_TEXT)
+            return None
         from ..text import draw_text
         return draw_text(self.cv, txt, self.X(u), self.Y(v), h * self.s, color, weight, "center",
                          None if max_w is None else max_w * self.s)
@@ -147,7 +149,9 @@ class Ctx:
 
     def sub(self, du, dv, scale_):
         """A child context moved by (du, dv) and scaled: lets one prop be built from others."""
-        return Ctx(self.p, self.X(du), self.Y(dv), self.s * scale_)
+        child = Ctx(self.p, self.X(du), self.Y(dv), self.s * scale_)
+        child.no_text = getattr(self, "no_text", False)
+        return child
 
 
 def _catmull(pts, n, closed):

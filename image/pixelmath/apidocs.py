@@ -157,6 +157,32 @@ def openapi(cfg=None):
                 "responses": {"200": {"description": "zip or JSON", "content": {"application/zip": {"schema": {"type": "string", "format": "binary"}},
                                                                                 "application/json": {}}},
                               "400": _err("Invalid parameter"), "401": _err("Missing or invalid API key"), "503": _err("Server busy")}}},
+            "/spec": {"post": {
+                "summary": "One picture for the client's picture spec: \"<subject>, for a <business> website. ... Palette: accent #x on #y.\"",
+                "description": "The business named in the prompt decides the scene (99 businesses + 20 business types of the spec), the slot (hero-1..3, about, gallery-1..6, "
+                               "card-1..6, team-1..3, background) decides size (1600x900, 1200x900, 900x900, 800x600, 600x600, 1600x900), camera and text zone. "
+                               "No text, letters or numbers are ever drawn; an unknown business gets a neutral abstract (fallback: true). Palette: accent and background "
+                               "from the prompt or the accent / bg fields; a dark background gives a dark picture.",
+                "operationId": "spec",
+                "requestBody": {"required": True, "content": {"application/json": {"schema": {
+                    "type": "object", "required": ["prompt"], "additionalProperties": False,
+                    "properties": {"prompt": {"type": "string"}, "slot": {"type": "string", "description": "hero-1, about, gallery-3, card-2, team-1, background ..."},
+                                   "seed": {"type": "integer"}, "accent": {"type": "string"}, "bg": {"type": "string"}, "niche": {"type": "string"},
+                                   "design_style": {"type": "string"}, "format": {"type": "string", "enum": ["jpeg", "png"]},
+                                   "response": {"type": "string", "enum": ["image", "base64"]}}}}}},
+                "responses": {"200": {"description": "JPEG/PNG bytes or JSON with base64 + report", "content": {**image, "application/json": {}}},
+                              "400": _err("Invalid parameter"), "401": _err("Missing or invalid API key"), "503": _err("Server busy")}}},
+            "/spec/business": {"post": {
+                "summary": "All 20 pictures of one spec business (3 hero, about, 6 gallery, 6 card, 3 team, background) as a zip with manifest.json",
+                "operationId": "specBusiness",
+                "requestBody": {"required": True, "content": {"application/json": {"schema": {
+                    "type": "object", "required": ["business"], "additionalProperties": False,
+                    "properties": {"business": {"type": "string", "description": "id from GET /spec/businesses"}, "palette": {"type": "integer"},
+                                   "seed": {"type": "integer"}, "format": {"type": "string", "enum": ["jpeg", "png"]}}}}}},
+                "responses": {"200": {"description": "zip", "content": {"application/zip": {"schema": {"type": "string", "format": "binary"}}}},
+                              "400": _err("Invalid parameter"), "401": _err("Missing or invalid API key"), "503": _err("Server busy")}}},
+            "/spec/businesses": {"get": {"summary": "The spec's 99 businesses with their niche and palettes", "operationId": "specBusinesses",
+                                         "responses": {"200": {"description": "{businesses: [{id, name, niche, palettes}]}"}, "401": _err("Missing or invalid API key")}}},
             "/niches": {"get": {"summary": "The niches the studio can draw", "operationId": "niches",
                                 "responses": {"200": {"description": "{niches: [{id, title, group, accent, mood}]}"}, "401": _err("Missing or invalid API key")}}},
             "/parse": {"post": {"summary": "Show how a prompt is understood", "operationId": "parse",

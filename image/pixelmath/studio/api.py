@@ -112,7 +112,7 @@ def _judge(rd, n, zone_name, variant, pal):
 
 
 def scene(prompt, width=640, height=400, seed=0, accent=None, mood=None, text_zone=None, variant="fit", niche=None, classifier=None,
-          attempts=ATTEMPTS, role=None, fmt=None, quality=None, model=None, _resolved=None):
+          attempts=ATTEMPTS, role=None, fmt=None, quality=None, model=None, _resolved=None, byte_budget=None, view=None):
     """One picture for `prompt`. Returns SceneResult(canvas, report[, data if fmt is 'jpeg'|'png']).
 
     report: niche, title, fallback (+ why), mood, accent, text zone and text colour, redrawn (extra tries the judge asked for),
@@ -131,7 +131,7 @@ def scene(prompt, width=640, height=400, seed=0, accent=None, mood=None, text_zo
     for k in range(max(1, attempts)):
         s = seed + k * 7919
         v = variant if k < 2 else ("fit-flip" if variant.endswith("flip") else "fit")      # a crop that hides the subject falls back to the full view
-        rd = render_niche(n, width, height, s, pal, text_zone, v)
+        rd = render_niche(n, width, height, s, pal, text_zone, v, view=view if k < 2 else None)
         scores, zone_rep, ok, thumb = _judge(rd, n, text_zone, v, pal)
         if best is None or sum(scores.values()) > best[0]:
             best = (sum(scores.values()), rd, scores, zone_rep, thumb, s, ok)
@@ -155,19 +155,19 @@ def scene(prompt, width=640, height=400, seed=0, accent=None, mood=None, text_zo
               "variant": variant if not is_fallback else "fit", "role": role, "size": [width, height]}
     res = SceneResult(rd.canvas, report, None, thumb, post.phash(thumb))
     if fmt:
-        _encode(res, fmt, quality, role)
+        _encode(res, fmt, quality, role, byte_budget)
     report["seconds"] = round(time.time() - t0, 2)
     return res
 
 
-def _encode(res, fmt, quality, role):
+def _encode(res, fmt, quality, role, byte_budget=None):
     cv = res.canvas
     if fmt == "png":
         res.data = encode_png(cv.w, cv.h, cv.to_rgb_bytes())
     elif fmt == "jpeg":
         px = cv.w * cv.h
         kind = role if role in ("hero", "about") else ("hero" if px > 400000 else "about" if px > 300000 else "tile")     # budget by size when no role is given
-        budget = BYTE_BUDGET[kind]
+        budget = byte_budget or BYTE_BUDGET[kind]
         try:
             res.data = encode_jpeg(cv.w, cv.h, cv.px, quality or 72, target_bytes=budget, min_quality=22)
             res.report["size_budget_met"] = True

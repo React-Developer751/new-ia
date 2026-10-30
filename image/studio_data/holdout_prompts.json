@@ -775,6 +775,188 @@
    "colourful shamiana, decorated mandap and stage lights, big celebration setup",
    "tent house ke liye shamiyana aur kursi table ki photo",
    "समारोह के लिए किराये पर मिलने वाले पंडाल और कुर्सियाँ"
+  ],
+  "pest-control": [
+   "shield and house",
+   "Water tank fogging (pest control)",
+   "Technician at work (pest control)",
+   "Mosquito Control: Fogging and larvae treatment around drains, gardens and water tanks before the rainy season",
+   "Pre Construction Treatment: Soil treatment before the floor is laid, so your new building is protected from termites early"
+  ],
+  "laundry": [
+   "clothes and shirts",
+   "Quilt washing (laundry and dry cleaning)",
+   "Ready for delivery (laundry and dry cleaning)",
+   "Curtains And Bedding: Heavy quilts, blankets, bedsheets and curtains washed in large machines and dried fully",
+   "Shoe And Bag Cleaning: Sneakers and leather bags cleaned and freshened, with stain treatment where needed"
+  ],
+  "water-purifier": [
+   "wrench and tap",
+   "Tank cleaning (water purifier service)",
+   "Wall mounted RO (water purifier service)",
+   "Leak And Low Flow Repair: Fixing leaking tubes, weak pumps, faulty valves and low water flow from the tap",
+   "Annual Service Plan: Scheduled visits with filter changes and cleaning at a fixed price for the whole year"
+  ],
+  "car-rental": [
+   "cars on a road",
+   "Clean interior (car rental)",
+   "Ready for pickup (car rental)",
+   "Monthly And Corporate Hire: Dedicated cars for companies and long-stay visitors, billed monthly with one fixed rate",
+   "Outstation Tours: Round-trip and one-way trips to hill stations and temples, with route advice and toll details"
+  ],
+  "mobile-repair": [
+   "repair workshop with a phone",
+   "Charging port fix (mobile phone repair)",
+   "Tested and ready (mobile phone repair)",
+   "Software And Data Help: Hang, boot loop, update trouble and data backup or recovery wherever it is possible",
+   "Speaker, Mic And Camera Fix: Replacing faulty speakers, microphones and camera modules so calls and photos work again"
+  ],
+  "bike-garage": [
+   "mechanic with a bicycle",
+   "Scooter service (bike and scooter garage)",
+   "Washed and ready (bike and scooter garage)",
+   "Electrical And Battery: Self start, lights, horn, wiring faults and battery testing or replacement",
+   "Scooter Care: CVT, belt, variator and brake service for scooters, plus carburettor or injector cleaning"
+  ],
+  "cloud-kitchen": [
+   "delivery van with food",
+   "Rider handover (cloud kitchen)",
+   "Dessert cups ready (cloud kitchen)",
+   "Multiple Brands, One Kitchen: Choose north Indian, biryani, rolls or healthy bowls from separate menus cooked in the same facility",
+   "Live Order Tracking: Get message updates when your food is being cooked, packed and handed to the rider"
+  ],
+  "tiffin-service": [
+   "chef and a delivery van",
+   "Packed for delivery (tiffin service)",
+   "Sunday special thali (tiffin service)",
+   "Steel Dabba Delivery: Food arrives in a clean steel tiffin and we collect the empty one on the next delivery",
+   "Pause And Resume Easily: Going home for a week? Tell us a day ahead and we skip the delivery without any fuss"
+  ],
+  "gift-shop": [
+   "gift box shop",
+   "Festival gift table (gift shop)",
+   "Handwritten card corner (gift shop)",
+   "Wedding And Anniversary Gifts: Couple frames, decor pieces and silver-look gift items packed in elegant boxes",
+   "Gift Wrapping And Cards: Choose a wrapping theme, add a card and ribbon, and we pack it so it is ready to hand over"
+  ],
+  "loan-finance": [
+   "loan documents and coins",
+   "Property paper check (loan and finance agent)",
+   "Client meeting (loan and finance agent)",
+   "Vehicle Loans: New and used car or two-wheeler finance with down payment and EMI options set out clearly",
+   "Credit Report Guidance: Reading your credit report together and noting entries that may need correction before applying"
+  ],
+  "diagnostic-lab": [
+   "hospital with a medical cross",
+   "Home collection kit (diagnostic lab)",
+   "Microscope station (diagnostic lab)",
+   "Urine And Stool Tests: Routine and culture tests with clear collection instructions and labelled containers",
+   "Report Delivery: Reports sent by WhatsApp or email and printed on request, with reference ranges shown"
+  ],
+  "counselling": [
+   "calm green plants and lotus",
+   "Online session setup (counselling and therapy practice)",
+   "Calming corner (counselling and therapy practice)",
+   "Family Sessions: A guided space for families to talk through changes, caregiving strain and misunderstandings",
+   "Online Sessions: Secure video sessions for people who prefer privacy at home or live in another city"
+  ],
+  "notary-documents": [
+   "document and pencil",
+   "Document filing (notary and documentation service)",
+   "Signing desk (notary and documentation service)",
+   "Name Change Papers: Affidavit and publication steps explained for name change in records and certificates",
+   "Power Of Attorney: General and special power of attorney drafts prepared for you to review before execution"
+  ],
+  "drone-photography": [
+   "city skyline at sunset",
+   "Festival crowd (drone photography)",
+   "Resort at dusk (drone photography)",
+   "Inspection And Survey Shots: Rooftops, towers and large solar plants checked from the air, with close images of problem areas",
+   "Editing And Delivery: Footage is colour graded, trimmed with music if you want it, and delivered as reel, full video and raw photos"
+  ],
+  "dj-sound": [
+   "wedding celebration with music",
+   "Lawn sound setup (wedding dj and sound)",
+   "Cold spark finale (wedding dj and sound)",
+   "Mics And Stage Audio: Wireless handhelds and lapel mics for speeches, anchors and live singers, tested before the first guest arrives",
+   "Corporate And Birthday Gigs: Smaller setups for office parties, birthdays and house parties, with a DJ who keeps the volume friendly"
+  ],
+  "bridal-makeup": [
+   "salon with scissors and comb",
+   "Bridal hairstyle (bridal makeup)",
+   "Mehendi day look (bridal makeup)",
+   "Family And Guest Makeup: Mother, sisters and bridesmaids can book the same artist team, so everyone is ready on schedule",
+   "Skin Prep And Touch-Up Kit: Skin is prepped with suitable products for your type, and you get a small kit for lips and shine control"
+  ],
+  "video-editing": [
+   "camera and laptop",
+   "Podcast clips (video editing studio)",
+   "Motion title intro (video editing studio)",
+   "Colour And Sound Cleanup: Skin tones corrected, shots matched and background noise reduced so voices stay clear",
+   "Motion Graphics And Intros: Logo animations, animated titles and simple explainer graphics designed in your brand colours"
+  ],
+  "funeral-services": [
+   "moon with stars over mountains",
+   "Seating for family (funeral services)",
+   "Cremation ground (funeral services)",
+   "Documents And Certificates: We guide you on the death certificate, municipal records and other papers the family will need later",
+   "Ashes And Final Rites: Collection of ashes and arrangements for immersion or later rituals can be planned with your family"
+  ],
+  "scrap-recycling": [
+   "factory with a truck",
+   "Loaded pickup truck (scrap and recycling)",
+   "Mixed plastic bales (scrap and recycling)",
+   "Bulk And Industrial Scrap: Factory offcuts, machinery, drums and demolition metal cleared with a truck and a loading crew",
+   "Home And Office Clearance: Old furniture, appliances and storeroom junk removed in one visit, with usable items priced fairly"
+  ],
+  "farm-stay": [
+   "cottage with grass and flowers on a sunny day",
+   "Bonfire evening (farm stay and homestay)",
+   "Cosy farm room (farm stay and homestay)",
+   "Village Walks And Cycling: Guided walks to ponds, temples and local markets, with cycles available for the shorter routes",
+   "Family And Group Stays: Larger groups, kids and grandparents can stay together with extra beds and flexible meal timings"
+  ],
+  "pg-hostel": [
+   "student room with a bed and a chair",
+   "Laundry area (pg and hostel)",
+   "Gated entrance (pg and hostel)",
+   "Laundry And Housekeeping: Rooms are cleaned regularly and washing machines are available in a separate, tidy laundry area",
+   "Study And Common Areas: Quiet study room, TV lounge and a water purifier on each floor, with dining space for residents"
+  ],
+  "temple": [
+   "mandala in orange and gold",
+   "Diya lighting (temple trust)",
+   "Evening bhajan (temple trust)",
+   "Dharamshala Stay: Simple, clean rooms for pilgrims and visiting families, booked ahead on a donation basis",
+   "Donations And Seva: Contribute towards temple upkeep, annadaan or education seva, with a receipt for every offering"
+  ],
+  "nutritionist": [
+   "hospital building with a doctor",
+   "Portion guide (dietitian and nutritionist)",
+   "Consultation desk (dietitian and nutritionist)",
+   "Sports And Muscle Nutrition: Protein and energy planning for people who train, based on your schedule and diet preferences",
+   "Weekly Follow Ups: Regular check ins to review your progress and adjust meals when life gets in the way"
+  ],
+  "banquet-hall": [
+   "mandala in red and gold",
+   "Entrance gate (banquet hall and venue)",
+   "Dining area (banquet hall and venue)",
+   "Parking And Power Backup: Parking space for guests and generator support so the function does not stop",
+   "Kitchen And Dining Area: A kitchen space and dining hall for your own caterer, or tie-ups we can introduce"
+  ],
+  "animal-welfare": [
+   "tree and sunrise over a green field",
+   "Recovery ward (animal welfare and rescue)",
+   "Volunteer walk (animal welfare and rescue)",
+   "Adoption: Healthy, vaccinated animals matched with families who are ready for them",
+   "Volunteer Walks: Weekend shifts for walking, cleaning and caring for animals in the shelter"
+  ],
+  "chai-stall": [
+   "coffee shop",
+   "Takeaway cups (chai stall)",
+   "Evening crowd (chai stall)",
+   "Cold Coffee And Lemon Tea: Cold coffee and lemon tea for hot afternoons when chai feels heavy",
+   "Takeaway Cups: Your chai to go in a sturdy cup that will not leak on the way"
   ]
  },
  "off_niche": [
